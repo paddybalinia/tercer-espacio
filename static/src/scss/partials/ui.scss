@@ -1,0 +1,16 @@
+@import '../vars.scss';
+
+.row {
+    margin: 0 auto;
+    max-width: $grid-width;
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+}
+
+[data-lazyload] {
+    opacity: 0;
+}
+
+
+@media (min-width: 768px) {}
