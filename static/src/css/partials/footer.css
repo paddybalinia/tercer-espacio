@@ -1,0 +1,97 @@
+.footer {
+  border-top: 1px solid #000;
+  padding: 55px 20px 0 20px;
+  font: 200 16px/25px "Sharp Grotesk", sans-serif;
+}
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__copy__a {
+  display: block;
+}
+.footer__social {
+  margin: 51px 0 0;
+}
+.footer__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+  margin: 30px 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: 300 32px/36px "Sharp Grotesk", sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 53px 0 95px;
+}
+.footer__link {
+  margin-right: 18px;
+}
+
+@media (min-width: 760px) {
+  .footer {
+    padding-top: 55px;
+    width: 100%;
+  }
+  .footer__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1240px;
+  }
+  .footer__copy__a {
+    display: initial;
+  }
+  .footer__ul, .footer__social {
+    margin: 0;
+  }
+  .footer__top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__title {
+    margin: 0 0 29px;
+  }
+  .footer__text {
+    max-width: 200px;
+  }
+  .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 70px;
+       -moz-column-gap: 70px;
+            column-gap: 70px;
+  }
+  .footer__bottom {
+    font: 300 128px/128px "Sharp Grotesk", sans-serif;
+    margin: 115px 0;
+  }
+}
