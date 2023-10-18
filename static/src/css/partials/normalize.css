@@ -12,9 +12,9 @@ html {
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #F4F4F4;
   color: rgb(0, 0, 1);
-  font: 1rem/1.1 "Roboto", sans-serif;
+  font: 1rem/1.1 "Sharp Grotesk", sans-serif;
   margin: 0;
   padding-top: 0;
 }
@@ -22,6 +22,7 @@ body {
 a {
   text-decoration: none;
   outline: 0;
+  color: inherit;
 }
 
 h1,

@@ -1,0 +1,22 @@
+.row {
+  margin: 0 auto;
+  max-width: 1240px;
+  position: relative;
+  width: 100%;
+}
+.row__container {
+  margin: 0 -15px;
+  line-height: 0;
+  font-size: 0;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.col_6 {
+  width: 50%;
+}

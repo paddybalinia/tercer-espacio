@@ -62,10 +62,10 @@
     <link rel="image_src" href="static/dist/images/apps/facebook.jpg" />
     <link rel="manifest" href="manifest.json">
 
-    <link rel="preload" href="static/dist/fonts/roboto-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="static/dist/fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="static/dist/fonts/sharpgrotesk-200.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="static/dist/css/style.min.css" media="all">
+
+    <link rel="stylesheet" href="static/dist/css/home.min.css" media="all">
 
 
     <!-- Google tag (gtag.js) -->
@@ -82,13 +82,79 @@
 <body>
     <!-- header -->
     <header class="header">
-
+        <div class="header__container">
+            <div class="header__left">
+                <a href="/" rel="noopener noreferrer" title="Logo Tercer Espacio Studio">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.11206 17.4307H29.3169L16.1353 30.5359" stroke="black" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M56.5671 36.6045H7.43298" stroke="black" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M55.3114 41.7522C53.4349 45.3566 49.6496 47.821 45.2854 47.821C39.0546 47.821 34.0039 42.8 34.0039 36.6058C34.0039 30.4116 39.0546 25.3906 45.2854 25.3906C51.5163 25.3906 56.567 30.4116 56.567 36.6058"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M20.9882 25.6172C26.1292 26.6625 29.9961 31.1854 29.9961 36.6049C29.9961 42.799 24.9454 47.82 18.7145 47.82C12.4837 47.82 7.43298 42.799 7.43298 36.6049"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            <div class="header__right">
+                <h1 class="header__text hide_mobile">→ Tercer espacio</h1>
+                <button type="button" class="header__nav">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 5H30" stroke="black" />
+                        <path d="M0 15H30" stroke="black" />
+                        <path d="M0 25H30" stroke="black" />
+                    </svg></button>
+            </div>
+        </div>
     </header>
 
-    <!-- home -->
-    <section>
 
-    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <p class="footer__copy">Please get in touch at <a href="mailto:info@tercerespacio.tv"
+                            title="info@tercerespacio.tv" class="footer__copy__a">info@tercerespacio.tv</a></p>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__col">
+                        <p class="footer__title">Headquarters</p>
+                        <p class="footer__text">Av. Crámer 3226 4° Piso, C1429 CABA</p>
+                    </div>
+                    <div class="footer__col footer__social">
+                        <p class="footer__title">Digital</p>
+                        <ul class="footer__ul">
+                            <li class="footer__li">
+                                <a href="http://" target="_blank" title="Instagram Tercer Espacio"
+                                    rel="noopener noreferrer">Instagram <span class="footer__arrow">↗</span></a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="http://" target="_blank" title="Linkedin Tercer Espacio"
+                                    rel="noopener noreferrer">Linkedin <span class="footer__arrow">↗</span></a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="http://" target="_blank" title="Behance Tercer Espacio"
+                                    rel="noopener noreferrer">Behance <span class="footer__arrow">↗</span></a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="http://" target="_blank" title="Vimeo Tercer Espacio"
+                                    rel="noopener noreferrer">Vimeo
+                                    <span class="footer__arrow">↗</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="work.html" title="Projects" class="footer__link">Projects</a>
+                <a href="about.html" title="About" class="footer__link">About</a>
+            </div>
+        </div>
+    </footer>
 
     <script>
         if ('serviceWorker' in navigator) {
@@ -104,5 +170,6 @@
     <script async src="static/dist/js/Home-min.js"></script>
 
 </body>
+
 
 </html>
