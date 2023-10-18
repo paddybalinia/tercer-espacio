@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /private/
-
-Sitemap: https://tercerespacio.tv/sitemap.xml
+Disallow: /
