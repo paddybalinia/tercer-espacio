@@ -3,9 +3,12 @@
 .header {
     font-size: 22px;
     color: black;
+    background: #f4f4f4;
     position: absolute;
     top: 0;
+    position: fixed;
     width: 100%;
+    z-index: 9;
 
     &__container {
         display: flex;
