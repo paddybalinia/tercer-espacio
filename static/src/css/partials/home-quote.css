@@ -6,6 +6,10 @@
   max-width: 335px;
   margin: 20px auto 71px;
 }
+.mod-quote__svg {
+  -webkit-animation: arrow-anim 1.2s ease-in-out infinite;
+          animation: arrow-anim 1.2s ease-in-out infinite;
+}
 
 @media (min-width: 768px) {
   .mod-quote__text {

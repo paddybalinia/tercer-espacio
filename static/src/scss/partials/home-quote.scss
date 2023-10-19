@@ -8,6 +8,10 @@
         max-width: 335px;
         margin: 20px auto 71px;
     }
+
+    &__svg {
+        animation: arrow-anim 1.2s ease-in-out infinite;
+    }
 }
 
 @media (min-width: 768px) {
@@ -20,7 +24,6 @@
 
         &__quote {
             font: 300 120px/72px $font-primary;
-
         }
     }
 }

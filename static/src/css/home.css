@@ -562,6 +562,8 @@ input {
 .home-top__arrow {
   position: absolute;
   bottom: 35px;
+  -webkit-animation: arrow-anim 1.2s ease-in-out infinite;
+          animation: arrow-anim 1.2s ease-in-out infinite;
 }
 .home-top__bg {
   background: url(../../dist/images/bg-home-top.png) no-repeat center;
@@ -584,6 +586,26 @@ input {
     text-align: center;
     letter-spacing: -0.25px;
     max-width: 1128px;
+  }
+}
+@-webkit-keyframes arrow-anim {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+}
+@keyframes arrow-anim {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
   }
 }
 .home-video {
@@ -739,6 +761,10 @@ input {
 .mod-quote__text {
   max-width: 335px;
   margin: 20px auto 71px;
+}
+.mod-quote__svg {
+  -webkit-animation: arrow-anim 1.2s ease-in-out infinite;
+          animation: arrow-anim 1.2s ease-in-out infinite;
 }
 
 @media (min-width: 768px) {
