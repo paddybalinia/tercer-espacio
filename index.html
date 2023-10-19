@@ -63,6 +63,8 @@
     <link rel="manifest" href="manifest.json">
 
     <link rel="preload" href="static/dist/fonts/sharpgrotesk-200.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="static/dist/fonts/sharpgrotesk-300.woff2" as="font" type="font/woff2" crossorigin>
+
 
 
     <link rel="stylesheet" href="static/dist/css/home.min.css" media="all">
@@ -130,42 +132,96 @@
             </svg>
         </button>
     </section>
-    <!-- 
+
     <section class="home-video">
         <img src="static/dist/images/bg-video.jpg" alt="Video" class="home-top__video">
-    </section> -->
+    </section>
 
     <section class="mod-work">
         <div class="row">
-            <div class="row__container">
-                <div class="mod-work__header">
-                    <h3 class="mod-work__title">Our Recent Work</h3>
-                    <div class="mod-work__more">
-                        <a href="#" class="mod-work__link" title="View all Projects">View all Projects</a>
-                    </div>
-                </div>
-                <div class="mod-work__content">
-                    <div class="col_6">
-                        <div class="work">
-                            <figure class="work__figure">
-                                <a href="#" title="#">
-                                    <img src="static/dist/images/bg-video.jpg" alt="work" width="610" height="375"
-                                        class="work__figure__img">
-                                </a>
-                            </figure>
-                            <div class="work__data">
-                                <h3 class="work__title"><a href="#" title="Docusign">Docusign</a></h3>
-                                <span class="work__tag">Tercer Espacio + cresci's agency</span>
-                                <span class="work__caption">art direction / animation</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="mod-work__more mod-work__more--center">
-                        <a href="#" class="mod-work__link" title="View all Projects">View all Projects</a>
-                    </div>
+            <div class="mod-work__header">
+                <h3 class="mod-work__title">Our Recent Work</h3>
+                <div class="mod-work__more">
+                    <a href="#" class="mod-work__link" title="View all Projects">View all Projects</a>
                 </div>
             </div>
+
+            <div class="mod-work__content">
+
+                <div class="col col_6">
+                    <div class="work">
+                        <figure class="work__figure">
+                            <a href="#" title="#">
+                                <img src="static/dist/images/bg-video.jpg" alt="work" width="610" height="375"
+                                    class="work__figure__img">
+                            </a>
+                        </figure>
+                        <div class="work__data">
+                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                            </h3>
+                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                            <span class="work__caption">art direction / animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col_6">
+                    <div class="work">
+                        <figure class="work__figure">
+                            <a href="#" title="#">
+                                <img src="static/dist/images/bg-video.jpg" alt="work" width="610" height="375"
+                                    class="work__figure__img">
+                            </a>
+                        </figure>
+                        <div class="work__data">
+                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                            </h3>
+                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                            <span class="work__caption">art direction / animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col_6">
+                    <div class="work">
+                        <figure class="work__figure">
+                            <a href="#" title="#">
+                                <img src="static/dist/images/bg-video.jpg" alt="work" width="610" height="375"
+                                    class="work__figure__img">
+                            </a>
+                        </figure>
+                        <div class="work__data">
+                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                            </h3>
+                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                            <span class="work__caption">art direction / animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col_6">
+                    <div class="work">
+                        <figure class="work__figure">
+                            <a href="#" title="#">
+                                <img src="static/dist/images/bg-video.jpg" alt="work" width="610" height="375"
+                                    class="work__figure__img">
+                            </a>
+                        </figure>
+                        <div class="work__data">
+                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                            </h3>
+                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                            <span class="work__caption">art direction / animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-work__more mod-work__more--center">
+                    <a href="#" class="mod-work__link" title="View all Projects">View all Projects</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -179,7 +235,8 @@
                         stroke="black" stroke-width="2" stroke-linejoin="round" />
                 </svg>
             </button>
-            <p class="mod-quote__text">* We're an intentionally flexible studio — designed to scale with the needs of
+            <p class="mod-quote__text"><span class="mod-quote__quote">*</span> We're an intentionally flexible studio —
+                designed to scale with the needs of
                 our clients.</p>
         </section>
 
@@ -201,12 +258,12 @@
             <div class="mod-lab__content">
                 <span class="mod-lab__text">Illustration</span>
                 <figure class="mod-lab__figure">
-                    <img src="static/dist/images/lab-motion.jpg" alt="Motion" width="193" height="177"
+                    <img src="static/dist/images/lab-illustration.jpg" alt="Motion" width="193" height="177"
                         class="mod-lab__img">
                 </figure>
                 <span class="mod-lab__text">◊ Creative</span>
                 <figure class="mod-lab__figure">
-                    <img src="static/dist/images/lab-branding-art.jpg" alt="Branding * Art " width="346" height="177"
+                    <img src="static/dist/images/lab-creative.jpg" alt="Branding * Art " width="346" height="177"
                         class="mod-lab__img">
                 </figure>
                 <span class="mod-lab__text">Direction → Illustration</span>
@@ -215,12 +272,11 @@
             <div class="mod-lab__content">
                 <span class="mod-lab__text">Design </span>
                 <figure class="mod-lab__figure">
-                    <img src="static/dist/images/lab-motion.jpg" alt="Motion" width="193" height="177"
-                        class="mod-lab__img">
+                    <img src="static/dist/images/lab-3d.jpg" alt="Motion" width="193" height="177" class="mod-lab__img">
                 </figure>
                 <span class="mod-lab__text">3D ↗ Lab</span>
                 <figure class="mod-lab__figure">
-                    <img src="static/dist/images/lab-branding-art.jpg" alt="Branding * Art " width="346" height="177"
+                    <img src="static/dist/images/lab-lab.jpg" alt="Branding * Art " width="346" height="177"
                         class="mod-lab__img">
                 </figure>
                 <span class="mod-lab__text">Motion</span>
@@ -246,19 +302,19 @@
                         <p class="footer__title">Digital</p>
                         <ul class="footer__ul">
                             <li class="footer__li">
-                                <a href="http://" target="_blank" title="Instagram Tercer Espacio"
+                                <a href="#" class="footer__li__a" target="_blank" title="Instagram Tercer Espacio"
                                     rel="noopener noreferrer">Instagram <span class="footer__arrow">↗</span></a>
                             </li>
                             <li class="footer__li">
-                                <a href="http://" target="_blank" title="Linkedin Tercer Espacio"
+                                <a href="#" class="footer__li__a" target="_blank" title="Linkedin Tercer Espacio"
                                     rel="noopener noreferrer">Linkedin <span class="footer__arrow">↗</span></a>
                             </li>
                             <li class="footer__li">
-                                <a href="http://" target="_blank" title="Behance Tercer Espacio"
+                                <a href="#" class="footer__li__a" target="_blank" title="Behance Tercer Espacio"
                                     rel="noopener noreferrer">Behance <span class="footer__arrow">↗</span></a>
                             </li>
                             <li class="footer__li">
-                                <a href="http://" target="_blank" title="Vimeo Tercer Espacio"
+                                <a href="#" class="footer__li__a" target="_blank" title="Vimeo Tercer Espacio"
                                     rel="noopener noreferrer">Vimeo
                                     <span class="footer__arrow">↗</span></a>
                             </li>

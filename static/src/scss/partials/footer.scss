@@ -38,6 +38,11 @@
 
     &__link {
         margin-right: 18px;
+        transition: $transition;
+
+        &:hover {
+            color: $color-primary-hover
+        }
     }
 }
 
@@ -56,7 +61,12 @@
 
         &__copy__a {
             display: initial;
+            transition: $transition;
 
+            &:hover {
+                color: $color-primary-hover;
+                text-decoration: underline;
+            }
         }
 
         &__ul,
@@ -73,6 +83,24 @@
             margin: 0 0 29px;
         }
 
+        &__arrow {
+            display: inline-block;
+            transform: rotate(0deg);
+            transition: transform 0.2s
+        }
+
+        &__li__a {
+            transition: $transition;
+
+            &:hover {
+                color: $color-primary-hover;
+
+                & .footer__arrow {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
         &__text {
             max-width: 200px;
         }
@@ -86,6 +114,10 @@
         &__bottom {
             font: 300 128px/128px $font-primary;
             margin: 115px 0;
+        }
+
+        &__link {
+            margin-bottom: 88px;
         }
     }
 }

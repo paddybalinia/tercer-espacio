@@ -18,8 +18,15 @@
     vertical-align: top;
     padding: 0 15px;
     box-sizing: border-box;
+    width: 100%;
+}
 
-    &_6 {
-        width: 50%;
+@media (min-width: 768px) {
+
+    .col {
+
+        &_6 {
+            width: 50%;
+        }
     }
 }
