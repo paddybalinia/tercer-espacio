@@ -89,3 +89,9 @@
 .mod-work__more--center {
   margin-bottom: 90px;
 }
+
+@media (min-width: 768px) {
+  .mod-work__header {
+    padding: 58px 10px 33px;
+  }
+}

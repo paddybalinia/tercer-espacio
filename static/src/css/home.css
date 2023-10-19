@@ -87,7 +87,7 @@ input {
   width: 100%;
 }
 .row__container {
-  margin: 0 -15px;
+  margin: 0 -10px;
   line-height: 0;
   font-size: 0;
 }
@@ -95,7 +95,7 @@ input {
 .col {
   display: inline-block;
   vertical-align: top;
-  padding: 0 15px;
+  padding: 0 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -391,7 +391,7 @@ input {
   .footer__container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
     max-width: 1240px;
   }
   .footer__copy__a {
@@ -711,6 +711,11 @@ input {
   margin-bottom: 90px;
 }
 
+@media (min-width: 768px) {
+  .mod-work__header {
+    padding: 58px 10px 33px;
+  }
+}
 .work {
   margin-bottom: 35px;
 }
