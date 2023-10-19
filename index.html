@@ -103,7 +103,7 @@
             </div>
             <div class="header__right">
                 <h1 class="header__text hide_mobile">→ Tercer espacio</h1>
-                <button type="button" class="header__nav">
+                <button type="button" class="header__nav" aria-label="Navigator">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 5H30" stroke="black" />
                         <path d="M0 15H30" stroke="black" />
@@ -126,7 +126,7 @@
                 <span class="home-top__block texto-animado" data-delay="2000">→We bring ideas * to life.</span>
             </h2>
         </div>
-        <button type="button" class="home-top__arrow" data-anchor="video">
+        <button type="button" class="home-top__arrow" data-anchor="video" aria-label="Scroll to video">
             <svg class="home-top__svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path
                     d="M27.6061 18.8188C21.3854 21.5932 17.4974 28.7273 17.4974 28.7273M17.4974 28.7273C17.4974 28.7273 13.6095 21.1968 7.00002 18.8188M17.4974 28.7273L17.4974 4"
@@ -136,7 +136,7 @@
     </section>
 
     <section class="home-video " data-section="video">
-        <img data-lazyload="static/dist/images/bg-video.jpg" alt="Video"
+        <img data-lazyload="static/dist/images/bg-video.jpg" width="1200" height="500" alt="Video"
             class="home-top__video viewport-observer animation-bottom delay-4">
     </section>
 
@@ -230,15 +230,16 @@
 
     <div class="mod-background">
 
-        <section class="mod-quote viewport-observer animation-bottom delay-4" data-section="quote">
-            <button type="button" class="mod-quote__arrow" data-anchor="quote">
+        <section class="mod-quote " data-section="quote">
+            <button type="button" class="mod-quote__arrow" data-anchor="quote" aria-label="Scroll to anchor">
                 <svg class="mod-quote__svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                     <path
                         d="M27.6061 18.8188C21.3854 21.5932 17.4974 28.7273 17.4974 28.7273M17.4974 28.7273C17.4974 28.7273 13.6095 21.1968 7.00002 18.8188M17.4974 28.7273L17.4974 4"
                         stroke="black" stroke-width="2" stroke-linejoin="round" />
                 </svg>
             </button>
-            <p class="mod-quote__text"><span class="mod-quote__quote">*</span> We're an
+            <p class="mod-quote__text viewport-observer animation-bottom delay-4"><span
+                    class="mod-quote__quote">*</span> We're an
                 intentionally flexible studio —
                 designed to scale with the needs of
                 our clients.</p>
