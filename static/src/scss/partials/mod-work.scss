@@ -68,3 +68,12 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+
+    .mod-work {
+        &__header {
+            padding: 58px 10px 33px;
+        }
+    }
+}
