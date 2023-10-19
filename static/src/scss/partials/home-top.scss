@@ -42,6 +42,7 @@
     &__arrow {
         position: absolute;
         bottom: 35px;
+        animation: arrow-anim 1.2s ease-in-out infinite;
     }
 
     &__bg {
@@ -71,4 +72,16 @@
         }
     }
 
+}
+
+@keyframes arrow-anim {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
 }
