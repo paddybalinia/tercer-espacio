@@ -1,0 +1,62 @@
+@import '../vars.scss';
+
+.mod-lab {
+    position: relative;
+    overflow: hidden;
+
+    &__content {
+        text-align: center;
+        font: 600 32px/138px $font-secondary;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 16px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        border-radius: 12px;
+    }
+
+    &__content,
+    &__figure,
+    &__img {
+        height: 95px;
+        width: auto;
+    }
+
+    &__view-more {
+        border: 1px solid #000;
+        border-radius: 125px;
+        font: 400 24px/40px $font-secondary;
+        height: 42px;
+        display: block;
+        margin: 29px auto 56px;
+        max-width: 257px;
+        text-align: center;
+        transition: $transition;
+
+        &:hover {
+            background: #000;
+            color: white;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .mod-lab {
+        &__content {
+            font: 600 96px/138px $font-secondary;
+            column-gap: 35px;
+            margin-bottom: 15px;
+        }
+
+        &__content,
+        &__figure,
+        &__img {
+            height: 177px;
+        }
+    }
+}

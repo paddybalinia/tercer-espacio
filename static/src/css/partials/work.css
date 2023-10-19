@@ -1,0 +1,42 @@
+.work {
+  margin-bottom: 35px;
+}
+.work__figure {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-bottom: 27px;
+  background-color: #999;
+  border-radius: 12px;
+}
+.work__figure__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.work__title {
+  font: 200 22px/28px "Sharp Grotesk", sans-serif;
+  margin: 0 0 2px;
+}
+.work__title__a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.work__title__a:hover {
+  color: #a891ff;
+}
+.work__tag {
+  font: 200 16px/26px "Sharp Grotesk", sans-serif;
+  margin: 0 0 3px;
+  display: block;
+}
+.work__caption {
+  font: 300 12px/20px "Sharp Grotesk", sans-serif;
+  color: #606060;
+  letter-spacing: 0.1px;
+  display: block;
+}

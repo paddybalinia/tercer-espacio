@@ -1,0 +1,26 @@
+@import '../vars.scss';
+
+.mod-quote {
+    font: 300 24px/28px $font-primary;
+    text-align: center;
+
+    &__text {
+        max-width: 335px;
+        margin: 20px auto 71px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mod-quote {
+        &__text {
+            font: 300 64px/72px $font-primary;
+            letter-spacing: -0.25px;
+            max-width: 1100px;
+        }
+
+        &__quote {
+            font: 300 120px/72px $font-primary;
+
+        }
+    }
+}

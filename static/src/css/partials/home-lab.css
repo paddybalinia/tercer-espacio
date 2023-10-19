@@ -1,0 +1,62 @@
+.mod-lab {
+  position: relative;
+  overflow: hidden;
+}
+.mod-lab__content {
+  text-align: center;
+  font: 600 32px/138px "Recoleta", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.mod-lab__img {
+  border-radius: 12px;
+}
+.mod-lab__content, .mod-lab__figure, .mod-lab__img {
+  height: 95px;
+  width: auto;
+}
+.mod-lab__view-more {
+  border: 1px solid #000;
+  border-radius: 125px;
+  font: 400 24px/40px "Recoleta", sans-serif;
+  height: 42px;
+  display: block;
+  margin: 29px auto 56px;
+  max-width: 257px;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.mod-lab__view-more:hover {
+  background: #000;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .mod-lab__content {
+    font: 600 96px/138px "Recoleta", sans-serif;
+    -webkit-column-gap: 35px;
+       -moz-column-gap: 35px;
+            column-gap: 35px;
+    margin-bottom: 15px;
+  }
+  .mod-lab__content, .mod-lab__figure, .mod-lab__img {
+    height: 177px;
+  }
+}

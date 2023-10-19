@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: #F4F4F4;
-  color: rgb(0, 0, 1);
+  color: black;
   font: 1rem/1.1 "Sharp Grotesk", sans-serif;
   margin: 0;
   padding-top: 0;
@@ -98,11 +98,14 @@ input {
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.col_6 {
-  width: 50%;
+  width: 100%;
 }
 
+@media (min-width: 768px) {
+  .col_6 {
+    width: 50%;
+  }
+}
 @font-face {
   font-family: "Recoleta";
   src: url("../fonts/recoleta-400.woff2") format("woff2");
@@ -373,6 +376,11 @@ input {
 }
 .footer__link {
   margin-right: 18px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer__link:hover {
+  color: #a891ff;
 }
 
 @media (min-width: 760px) {
@@ -388,6 +396,12 @@ input {
   }
   .footer__copy__a {
     display: initial;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .footer__copy__a:hover {
+    color: #a891ff;
+    text-decoration: underline;
   }
   .footer__ul, .footer__social {
     margin: 0;
@@ -403,6 +417,26 @@ input {
   }
   .footer__title {
     margin: 0 0 29px;
+  }
+  .footer__arrow {
+    display: inline-block;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .footer__li__a {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .footer__li__a:hover {
+    color: #a891ff;
+  }
+  .footer__li__a:hover .footer__arrow {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .footer__text {
     max-width: 200px;
@@ -422,6 +456,9 @@ input {
   .footer__bottom {
     font: 300 128px/128px "Sharp Grotesk", sans-serif;
     margin: 115px 0;
+  }
+  .footer__link {
+    margin-bottom: 88px;
   }
 }
 .header {
@@ -549,4 +586,230 @@ input {
     max-width: 1128px;
   }
 }
-/* Artboard 2@2x 3 */
+.home-video {
+  width: 100%;
+  max-height: 100vh;
+}
+.home-video * {
+  width: 100%;
+  max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mod-work__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 58px 20px 33px;
+  font: 200 16px/28px "Sharp Grotesk", sans-serif;
+}
+.mod-work__content {
+  line-height: 0;
+  font-size: 0;
+}
+.mod-work__title {
+  font-weight: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+}
+.mod-work__title::after {
+  content: "";
+  background: black;
+  height: 1px;
+  width: 18px;
+}
+.mod-work__link {
+  font: 200 14px/24px "Sharp Grotesk", sans-serif;
+  letter-spacing: 0.15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.mod-work__link::after {
+  content: "";
+  background: black;
+  height: 1px;
+  width: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.mod-work__link:hover {
+  color: #a891ff;
+}
+.mod-work__link:hover::after {
+  background-color: #a891ff;
+  width: 80%;
+}
+.mod-work__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mod-work__more--center {
+  margin-bottom: 90px;
+}
+
+.work {
+  margin-bottom: 35px;
+}
+.work__figure {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-bottom: 27px;
+  background-color: #999;
+  border-radius: 12px;
+}
+.work__figure__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.work__title {
+  font: 200 22px/28px "Sharp Grotesk", sans-serif;
+  margin: 0 0 2px;
+}
+.work__title__a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.work__title__a:hover {
+  color: #a891ff;
+}
+.work__tag {
+  font: 200 16px/26px "Sharp Grotesk", sans-serif;
+  margin: 0 0 3px;
+  display: block;
+}
+.work__caption {
+  font: 300 12px/20px "Sharp Grotesk", sans-serif;
+  color: #606060;
+  letter-spacing: 0.1px;
+  display: block;
+}
+
+.mod-quote {
+  font: 300 24px/28px "Sharp Grotesk", sans-serif;
+  text-align: center;
+}
+.mod-quote__text {
+  max-width: 335px;
+  margin: 20px auto 71px;
+}
+
+@media (min-width: 768px) {
+  .mod-quote__text {
+    font: 300 64px/72px "Sharp Grotesk", sans-serif;
+    letter-spacing: -0.25px;
+    max-width: 1100px;
+  }
+  .mod-quote__quote {
+    font: 300 120px/72px "Sharp Grotesk", sans-serif;
+  }
+}
+.mod-lab {
+  position: relative;
+  overflow: hidden;
+}
+.mod-lab__content {
+  text-align: center;
+  font: 600 32px/138px "Recoleta", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.mod-lab__img {
+  border-radius: 12px;
+}
+.mod-lab__content, .mod-lab__figure, .mod-lab__img {
+  height: 95px;
+  width: auto;
+}
+.mod-lab__view-more {
+  border: 1px solid #000;
+  border-radius: 125px;
+  font: 400 24px/40px "Recoleta", sans-serif;
+  height: 42px;
+  display: block;
+  margin: 29px auto 56px;
+  max-width: 257px;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.mod-lab__view-more:hover {
+  background: #000;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .mod-lab__content {
+    font: 600 96px/138px "Recoleta", sans-serif;
+    -webkit-column-gap: 35px;
+       -moz-column-gap: 35px;
+            column-gap: 35px;
+    margin-bottom: 15px;
+  }
+  .mod-lab__content, .mod-lab__figure, .mod-lab__img {
+    height: 177px;
+  }
+}

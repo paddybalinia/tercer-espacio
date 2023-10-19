@@ -16,7 +16,11 @@
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
 }
-.col_6 {
-  width: 50%;
+
+@media (min-width: 768px) {
+  .col_6 {
+    width: 50%;
+  }
 }

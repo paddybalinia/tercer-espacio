@@ -1,0 +1,91 @@
+.mod-work__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 58px 20px 33px;
+  font: 200 16px/28px "Sharp Grotesk", sans-serif;
+}
+.mod-work__content {
+  line-height: 0;
+  font-size: 0;
+}
+.mod-work__title {
+  font-weight: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+}
+.mod-work__title::after {
+  content: "";
+  background: black;
+  height: 1px;
+  width: 18px;
+}
+.mod-work__link {
+  font: 200 14px/24px "Sharp Grotesk", sans-serif;
+  letter-spacing: 0.15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.mod-work__link::after {
+  content: "";
+  background: black;
+  height: 1px;
+  width: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.mod-work__link:hover {
+  color: #a891ff;
+}
+.mod-work__link:hover::after {
+  background-color: #a891ff;
+  width: 80%;
+}
+.mod-work__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mod-work__more--center {
+  margin-bottom: 90px;
+}
