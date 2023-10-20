@@ -33,7 +33,7 @@
         font: 400 24px/40px $font-secondary;
         height: 42px;
         display: block;
-        margin: 29px auto 56px;
+        margin: 33px auto 0;
         max-width: 257px;
         text-align: center;
         transition: $transition;
@@ -57,6 +57,12 @@
         &__figure,
         &__img {
             height: 177px;
+        }
+
+        &__view-more {
+            margin: 81px auto 0;
+            height: 47px;
+            line-height: 45px;
         }
     }
 }

@@ -5,13 +5,14 @@
     &__header {
         display: flex;
         justify-content: space-between;
-        padding: 58px 20px 33px;
+        padding: 58px 20px 37px;
         font: 200 16px/28px $font-primary;
     }
 
     &__content {
         line-height: 0;
         font-size: 0;
+        padding: 0 10px;
     }
 
     &__title {
@@ -64,7 +65,11 @@
         justify-content: center;
 
         &--center {
-            margin-bottom: 90px;
+            margin: 79px 0 0;
+
+            .mod-work__link {
+                font: 200 16px/24px $font-primary;
+            }
         }
     }
 }
@@ -73,7 +78,17 @@
 
     .mod-work {
         &__header {
-            padding: 58px 10px 33px;
+            padding: 58px 10px 35px;
+        }
+
+        &__content {
+            padding: 0;
+        }
+
+        &__more {
+            &--center {
+                margin: 16px 0 0;
+            }
         }
     }
 }

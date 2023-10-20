@@ -5,12 +5,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 58px 20px 33px;
+  padding: 58px 20px 37px;
   font: 200 16px/28px "Sharp Grotesk", sans-serif;
 }
 .mod-work__content {
   line-height: 0;
   font-size: 0;
+  padding: 0 10px;
 }
 .mod-work__title {
   font-weight: 200;
@@ -87,11 +88,20 @@
           justify-content: center;
 }
 .mod-work__more--center {
-  margin-bottom: 90px;
+  margin: 79px 0 0;
+}
+.mod-work__more--center .mod-work__link {
+  font: 200 16px/24px "Sharp Grotesk", sans-serif;
 }
 
 @media (min-width: 768px) {
   .mod-work__header {
-    padding: 58px 10px 33px;
+    padding: 58px 10px 35px;
+  }
+  .mod-work__content {
+    padding: 0;
+  }
+  .mod-work__more--center {
+    margin: 16px 0 0;
   }
 }

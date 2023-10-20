@@ -37,7 +37,7 @@
   font: 400 24px/40px "Recoleta", sans-serif;
   height: 42px;
   display: block;
-  margin: 29px auto 56px;
+  margin: 33px auto 0;
   max-width: 257px;
   text-align: center;
   -webkit-transition: all 0.2s;
@@ -58,5 +58,10 @@
   }
   .mod-lab__content, .mod-lab__figure, .mod-lab__img {
     height: 177px;
+  }
+  .mod-lab__view-more {
+    margin: 81px auto 0;
+    height: 47px;
+    line-height: 45px;
   }
 }

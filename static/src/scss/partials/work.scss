@@ -1,7 +1,7 @@
 @import '../vars.scss';
 
 .work {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     &__figure {
         position: relative;
@@ -46,5 +46,11 @@
         color: #606060;
         letter-spacing: 0.1px;
         display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .work {
+        margin-bottom: 41px;
     }
 }

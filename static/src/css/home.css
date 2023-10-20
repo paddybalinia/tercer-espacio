@@ -332,14 +332,14 @@ input {
 
 .footer {
   border-top: 1px solid #000;
-  padding: 55px 20px 0 20px;
+  padding: 52px 20px 1px;
   font: 200 16px/25px "Sharp Grotesk", sans-serif;
 }
 .footer__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 24px;
+  gap: 26px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -349,7 +349,7 @@ input {
   display: block;
 }
 .footer__social {
-  margin: 51px 0 0;
+  margin: 54px 0 0;
 }
 .footer__ul {
   display: -webkit-box;
@@ -372,7 +372,7 @@ input {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 53px 0 95px;
+  margin: 53px 0 85px;
 }
 .footer__link {
   margin-right: 18px;
@@ -385,7 +385,7 @@ input {
 
 @media (min-width: 760px) {
   .footer {
-    padding-top: 55px;
+    padding-top: 59px;
     width: 100%;
   }
   .footer__container {
@@ -439,7 +439,7 @@ input {
             transform: rotate(45deg);
   }
   .footer__text {
-    max-width: 200px;
+    max-width: 210px;
   }
   .footer__right {
     display: -webkit-box;
@@ -455,7 +455,7 @@ input {
   }
   .footer__bottom {
     font: 300 128px/128px "Sharp Grotesk", sans-serif;
-    margin: 115px 0;
+    margin: 82px 0 0;
   }
   .footer__link {
     margin-bottom: 88px;
@@ -498,9 +498,10 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 70px;
-     -moz-column-gap: 70px;
-          column-gap: 70px;
+  -webkit-column-gap: 73px;
+     -moz-column-gap: 73px;
+          column-gap: 73px;
+  margin: 5px 13px 0 0;
 }
 .header--sticky {
   -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
@@ -515,6 +516,9 @@ input {
   }
   .header__text {
     font: 200 16px/1 "Sharp Grotesk", sans-serif;
+  }
+  .header__right {
+    margin: 0;
   }
 }
 .home-top {
@@ -639,12 +643,13 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 58px 20px 33px;
+  padding: 58px 20px 37px;
   font: 200 16px/28px "Sharp Grotesk", sans-serif;
 }
 .mod-work__content {
   line-height: 0;
   font-size: 0;
+  padding: 0 10px;
 }
 .mod-work__title {
   font-weight: 200;
@@ -721,16 +726,25 @@ input {
           justify-content: center;
 }
 .mod-work__more--center {
-  margin-bottom: 90px;
+  margin: 79px 0 0;
+}
+.mod-work__more--center .mod-work__link {
+  font: 200 16px/24px "Sharp Grotesk", sans-serif;
 }
 
 @media (min-width: 768px) {
   .mod-work__header {
-    padding: 58px 10px 33px;
+    padding: 58px 10px 35px;
+  }
+  .mod-work__content {
+    padding: 0;
+  }
+  .mod-work__more--center {
+    margin: 16px 0 0;
   }
 }
 .work {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 .work__figure {
   position: relative;
@@ -772,13 +786,18 @@ input {
   display: block;
 }
 
+@media (min-width: 768px) {
+  .work {
+    margin-bottom: 41px;
+  }
+}
 .mod-quote {
   font: 300 24px/28px "Sharp Grotesk", sans-serif;
   text-align: center;
 }
 .mod-quote__text {
   max-width: 335px;
-  margin: 20px auto 71px;
+  margin: 30px auto 76px;
 }
 .mod-quote__svg {
   -webkit-animation: arrow-anim 1.2s ease-in-out infinite;
@@ -789,6 +808,7 @@ input {
   opacity: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  padding: 90px 0 58px;
 }
 .mod-background.visible {
   background: url(../../dist/images/bg-mod-background.jpg) no-repeat 0 0;
@@ -801,9 +821,13 @@ input {
     font: 300 64px/72px "Sharp Grotesk", sans-serif;
     letter-spacing: -0.25px;
     max-width: 1100px;
+    margin: 87px auto 244px;
   }
   .mod-quote__quote {
     font: 300 120px/72px "Sharp Grotesk", sans-serif;
+  }
+  .mod-background {
+    padding: 122px 0 99px;
   }
 }
 .mod-lab {
@@ -845,7 +869,7 @@ input {
   font: 400 24px/40px "Recoleta", sans-serif;
   height: 42px;
   display: block;
-  margin: 29px auto 56px;
+  margin: 33px auto 0;
   max-width: 257px;
   text-align: center;
   -webkit-transition: all 0.2s;
@@ -866,6 +890,11 @@ input {
   }
   .mod-lab__content, .mod-lab__figure, .mod-lab__img {
     height: 177px;
+  }
+  .mod-lab__view-more {
+    margin: 81px auto 0;
+    height: 47px;
+    line-height: 45px;
   }
 }
 .navigation {
@@ -916,6 +945,10 @@ input {
   -webkit-column-gap: 70px;
      -moz-column-gap: 70px;
           column-gap: 70px;
+  margin: 5px 13px 0 0;
+  -webkit-column-gap: 73px;
+     -moz-column-gap: 73px;
+          column-gap: 73px;
 }
 .navigation__content {
   position: relative;
@@ -1017,6 +1050,9 @@ input {
   }
   .navigation__header__text {
     font: 200 16px/1 "Sharp Grotesk", sans-serif;
+  }
+  .navigation__right {
+    margin: 0;
   }
   .navigation__content {
     max-width: 1240px;

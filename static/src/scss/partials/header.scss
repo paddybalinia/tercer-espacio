@@ -25,7 +25,8 @@
     &__right {
         display: flex;
         align-items: center;
-        column-gap: 70px;
+        column-gap: 73px;
+        margin: 5px 13px 0 0;
     }
 
     &--sticky {
@@ -37,7 +38,6 @@
     .header {
 
         &__container {
-
             max-width: $grid-width;
             margin: 0 auto;
             padding: 0 20px;
@@ -45,6 +45,10 @@
 
         &__text {
             font: 200 16px/1 $font-primary;
+        }
+
+        &__right {
+            margin: 0;
         }
     }
 
