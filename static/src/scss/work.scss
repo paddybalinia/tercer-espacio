@@ -1,8 +1,3 @@
-html,
-body {
-    height: 100%;
-}
-
 @import 'partials/normalize.scss';
 @import 'partials/grid.scss';
 @import 'partials/fonts.scss';
@@ -10,10 +5,13 @@ body {
 @import 'partials/ui.scss';
 @import 'partials/footer.scss';
 @import 'partials/header.scss';
-@import 'partials/home-top.scss';
-@import 'partials/home-video.scss';
+@import 'partials/navigation.scss';
+// generic
 @import 'partials/mod-work.scss';
 @import 'partials/work.scss';
-@import 'partials/home-quote.scss';
-@import 'partials/home-lab.scss';
-@import 'partials/navigation.scss';
+@import 'partials/work-workmin.scss';
+@import 'partials/work-follow.scss';
+
+body {
+    padding-top: 94px;
+}

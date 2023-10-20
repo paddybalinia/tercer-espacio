@@ -1,0 +1,10 @@
+.mod-follow {
+  font: 300 32px/36px "Sharp Grotesk", sans-serif;
+  margin: 55px 0 71px;
+}
+
+@media (min-width: 768px) {
+  .mod-follow {
+    font: 300 72px/72px "Sharp Grotesk", sans-serif;
+  }
+}
