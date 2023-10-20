@@ -11,6 +11,17 @@
           animation: arrow-anim 1.2s ease-in-out infinite;
 }
 
+.mod-background {
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.mod-background.visible {
+  background: url(../../dist/images/bg-mod-background.jpg) no-repeat 0 0;
+  background-size: cover;
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
   .mod-quote__text {
     font: 300 64px/72px "Sharp Grotesk", sans-serif;
