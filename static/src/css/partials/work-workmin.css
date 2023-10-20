@@ -1,0 +1,66 @@
+.workmin__item {
+  border-top: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+  width: 100%;
+  font: 200 16px/24px "Sharp Grotesk", sans-serif;
+  letter-spacing: 0.15px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.workmin__item:hover {
+  background: black;
+  color: white;
+}
+.workmin__item:hover .workmin__caption {
+  color: white;
+}
+.workmin__item:hover .workmin__arrow__svg {
+  stroke: white;
+}
+.workmin__arrow__svg {
+  position: relative;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.workmin__title {
+  max-width: 100px;
+}
+.workmin__caption {
+  color: #606060;
+  font: 200 12px/20px "Sharp Grotesk", sans-serif;
+  width: 59px;
+}
+.workmin__tag {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .workmin__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font: 200 16px/24px "Sharp Grotesk", sans-serif;
+  }
+  .workmin__item:hover .workmin__arrow__svg {
+    left: -15px;
+  }
+  .workmin__arrow__svg {
+    left: -25px;
+  }
+  .workmin__title {
+    max-width: inherit;
+  }
+  .workmin__tag {
+    width: auto;
+  }
+  .workmin__caption {
+    color: #606060;
+    width: auto;
+  }
+}

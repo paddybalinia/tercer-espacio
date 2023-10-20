@@ -1,0 +1,82 @@
+@import '../vars.scss';
+
+.workmin {
+    &__item {
+        border-top: 1px solid #000;
+        display: flex;
+        justify-content: space-between;
+
+        padding: 16px 0;
+        width: 100%;
+        font: 200 16px/24px $font-primary;
+        letter-spacing: 0.15px;
+        transition: $transition ease-out;
+
+        &:hover {
+            background: black;
+            color: white;
+
+            & .workmin__caption {
+                color: white;
+            }
+
+            & .workmin__arrow__svg {
+                stroke: white;
+            }
+        }
+    }
+
+    &__arrow__svg {
+        position: relative;
+
+        transition: $transition ease-out;
+    }
+
+    &__title {
+        max-width: 100px;
+    }
+
+    &__caption {
+        color: #606060;
+        font: 200 12px/20px $font-primary;
+        width: 59px;
+    }
+
+    &__tag {
+        width: 100px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .workmin {
+        &__item {
+            align-items: center;
+            font: 200 16px/24px $font-primary;
+
+            &:hover {
+                & .workmin__arrow__svg {
+                    left: -15px;
+                }
+            }
+        }
+
+        &__arrow__svg {
+            left: -25px;
+        }
+
+        &__title {
+            max-width: inherit;
+        }
+
+        &__tag {
+            width: auto;
+        }
+
+        &__caption {
+            color: #606060;
+            width: auto;
+        }
+    }
+}

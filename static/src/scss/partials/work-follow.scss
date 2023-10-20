@@ -1,0 +1,15 @@
+@import '../vars.scss';
+
+.mod-follow {
+    font: 300 32px/36px $font-primary;
+    margin: 55px 0 71px;
+}
+
+
+@media (min-width: 768px) {
+
+    .mod-follow {
+        font: 300 72px/72px $font-primary;
+
+    }
+}
