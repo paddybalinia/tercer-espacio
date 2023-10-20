@@ -78,11 +78,17 @@
 
     .mod-work {
         &__header {
-            padding: 58px 10px 33px;
+            padding: 58px 10px 35px;
         }
 
         &__content {
             padding: 0;
+        }
+
+        &__more {
+            &--center {
+                margin: 16px 0 0;
+            }
         }
     }
 }

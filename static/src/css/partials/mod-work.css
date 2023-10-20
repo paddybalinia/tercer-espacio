@@ -96,9 +96,12 @@
 
 @media (min-width: 768px) {
   .mod-work__header {
-    padding: 58px 10px 33px;
+    padding: 58px 10px 35px;
   }
   .mod-work__content {
     padding: 0;
+  }
+  .mod-work__more--center {
+    margin: 16px 0 0;
   }
 }

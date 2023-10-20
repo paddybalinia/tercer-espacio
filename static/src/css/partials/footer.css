@@ -53,7 +53,7 @@
 
 @media (min-width: 760px) {
   .footer {
-    padding-top: 55px;
+    padding-top: 59px;
     width: 100%;
   }
   .footer__container {
@@ -107,7 +107,7 @@
             transform: rotate(45deg);
   }
   .footer__text {
-    max-width: 200px;
+    max-width: 210px;
   }
   .footer__right {
     display: -webkit-box;
@@ -123,7 +123,7 @@
   }
   .footer__bottom {
     font: 300 128px/128px "Sharp Grotesk", sans-serif;
-    margin: 115px 0;
+    margin: 82px 0 0;
   }
   .footer__link {
     margin-bottom: 88px;

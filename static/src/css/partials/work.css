@@ -40,3 +40,9 @@
   letter-spacing: 0.1px;
   display: block;
 }
+
+@media (min-width: 768px) {
+  .work {
+    margin-bottom: 41px;
+  }
+}
