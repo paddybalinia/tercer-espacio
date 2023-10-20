@@ -866,10 +866,13 @@ input {
   transition: all 0.2s;
   pointer-events: none;
 }
-.navigation.active {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: inherit;
+.navigation__ani {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 .navigation__header {
   display: -webkit-box;
@@ -959,6 +962,35 @@ input {
 }
 .navigation__social__a:hover {
   color: #a891ff;
+}
+.navigation.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
+}
+.navigation.active .navigation__ani {
+  -webkit-transform: translate(0, 0px);
+          transform: translate(0, 0px);
+}
+.navigation.active .navigation__ani-1 {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+.navigation.active .navigation__ani-2 {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.navigation.active .navigation__ani-3 {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+.navigation.active .navigation__ani-4 {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+.navigation.active .navigation__ani-5 {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
 }
 
 @media (min-width: 760px) {

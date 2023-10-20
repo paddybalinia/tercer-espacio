@@ -14,11 +14,14 @@
     pointer-events: none;
 
 
-    &.active {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: inherit;
+
+    &__ani {
+        transition: $transition;
+        transform: translate(0, 30px);
+        transition-delay: 0s;
     }
+
+
 
     &__header {
         display: flex;
@@ -94,7 +97,22 @@
                 color: $color-primary-hover;
             }
         }
+    }
 
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: inherit;
+
+        .navigation__ani {
+            transform: translate(0, 0px);
+        }
+
+        @for $i from 1 to 6 {
+            .navigation__ani-#{$i} {
+                transition-delay: $i * 0.15s;
+            }
+        }
     }
 }
 
