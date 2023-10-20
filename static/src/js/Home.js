@@ -19,10 +19,10 @@
   }
 
   function NavToggle() {
-    const Nav = document.querySelector(".nav");
-    const NavOverlay = document.querySelector(".nav__overlay");
+    const Nav = document.querySelector(".navigation");
     Nav.classList.toggle("active");
-    NavOverlay.classList.toggle("active");
+    // const NavOverlay = document.querySelector(".nav__overlay");
+    // NavOverlay.classList.toggle("active");
   }
 
   /**
