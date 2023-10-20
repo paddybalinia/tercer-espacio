@@ -46,6 +46,7 @@
   -webkit-column-gap: 70px;
      -moz-column-gap: 70px;
           column-gap: 70px;
+  margin: 5px 13px 0 0;
 }
 .navigation__content {
   position: relative;
@@ -147,6 +148,9 @@
   }
   .navigation__header__text {
     font: 200 16px/1 "Sharp Grotesk", sans-serif;
+  }
+  .navigation__right {
+    margin: 0;
   }
   .navigation__content {
     max-width: 1240px;

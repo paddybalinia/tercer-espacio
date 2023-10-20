@@ -4,7 +4,7 @@
 }
 .mod-quote__text {
   max-width: 335px;
-  margin: 20px auto 71px;
+  margin: 30px auto 76px;
 }
 .mod-quote__svg {
   -webkit-animation: arrow-anim 1.2s ease-in-out infinite;
@@ -15,6 +15,7 @@
   opacity: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  padding: 90px 0 58px;
 }
 .mod-background.visible {
   background: url(../../dist/images/bg-mod-background.jpg) no-repeat 0 0;

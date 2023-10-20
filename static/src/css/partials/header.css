@@ -38,6 +38,7 @@
   -webkit-column-gap: 70px;
      -moz-column-gap: 70px;
           column-gap: 70px;
+  margin: 5px 13px 0 0;
 }
 .header--sticky {
   -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
@@ -52,5 +53,8 @@
   }
   .header__text {
     font: 200 16px/1 "Sharp Grotesk", sans-serif;
+  }
+  .header__right {
+    margin: 0;
   }
 }

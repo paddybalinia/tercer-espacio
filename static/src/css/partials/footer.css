@@ -1,13 +1,13 @@
 .footer {
   border-top: 1px solid #000;
-  padding: 55px 20px 0 20px;
+  padding: 52px 20px 1px;
   font: 200 16px/25px "Sharp Grotesk", sans-serif;
 }
 .footer__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 24px;
+  gap: 26px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -17,7 +17,7 @@
   display: block;
 }
 .footer__social {
-  margin: 51px 0 0;
+  margin: 54px 0 0;
 }
 .footer__ul {
   display: -webkit-box;
@@ -40,7 +40,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 53px 0 95px;
+  margin: 53px 0 85px;
 }
 .footer__link {
   margin-right: 18px;

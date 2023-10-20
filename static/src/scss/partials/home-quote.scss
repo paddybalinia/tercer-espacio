@@ -6,7 +6,7 @@
 
     &__text {
         max-width: 335px;
-        margin: 20px auto 71px;
+        margin: 30px auto 76px;
     }
 
     &__svg {
@@ -17,6 +17,7 @@
 .mod-background {
     opacity: 0;
     transition: $transition;
+    padding: 90px 0 58px;
 
     &.visible {
         background: url(../../dist/images/bg-mod-background.jpg) no-repeat 0 0;

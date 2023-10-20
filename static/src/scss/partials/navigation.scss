@@ -37,6 +37,7 @@
         display: flex;
         align-items: center;
         column-gap: 70px;
+        margin: 5px 13px 0 0;
     }
 
     &__content {
@@ -127,6 +128,11 @@
             &__text {
                 font: 200 16px/1 $font-primary;
             }
+        }
+
+        &__right {
+
+            margin: 0;
         }
 
         &__content {

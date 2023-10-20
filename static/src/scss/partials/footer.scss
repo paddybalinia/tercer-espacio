@@ -2,12 +2,12 @@
 
 .footer {
     border-top: 1px solid #000;
-    padding: 55px 20px 0 20px;
+    padding: 52px 20px 1px;
     font: 200 16px/25px $font-primary;
 
     &__top {
         display: flex;
-        gap: 24px;
+        gap: 26px;
         flex-direction: column;
     }
 
@@ -18,7 +18,7 @@
     }
 
     &__social {
-        margin: 51px 0 0;
+        margin: 54px 0 0;
     }
 
     &__ul {
@@ -33,7 +33,7 @@
         font: 300 32px/36px $font-primary;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 53px 0 95px;
+        margin: 53px 0 85px;
     }
 
     &__link {
