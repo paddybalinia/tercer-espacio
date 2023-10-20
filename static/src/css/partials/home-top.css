@@ -28,6 +28,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 2;
 }
 .home-top__figure {
   margin: 0 auto;
@@ -55,15 +56,19 @@
           animation: arrow-anim 1.2s ease-in-out infinite;
 }
 .home-top__bg {
-  background: url(../../dist/images/bg-home-top.png) no-repeat center;
-  background-size: cover;
-  -webkit-transform: rotate(-160deg);
-          transform: rotate(-160deg);
   position: absolute;
-  bottom: -141px;
-  right: -250px;
-  width: 514px;
-  height: 481px;
+  bottom: 0;
+  right: 0;
+  height: 550px;
+  width: 434px;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.home-top__bg.visible {
+  background: url(../../dist/images/bg-hometop.jpg) no-repeat center;
+  background-size: cover;
+  opacity: 1;
 }
 
 @media (min-width: 768px) {

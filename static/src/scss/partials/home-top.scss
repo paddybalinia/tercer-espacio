@@ -16,6 +16,7 @@
         gap: 55px;
         display: flex;
         flex-direction: column;
+        z-index: 2;
     }
 
     &__figure {
@@ -46,14 +47,20 @@
     }
 
     &__bg {
-        background: url(../../dist/images/bg-home-top.png) no-repeat center;
-        background-size: cover;
-        transform: rotate(-160deg);
+
         position: absolute;
-        bottom: -141px;
-        right: -250px;
-        width: 514px;
-        height: 481px;
+        bottom: 0;
+        right: 0;
+        height: 550px;
+        width: 434px;
+        opacity: 0;
+        transition: $transition;
+
+        &.visible {
+            background: url(../../dist/images/bg-hometop.jpg) no-repeat center;
+            background-size: cover;
+            opacity: 1;
+        }
     }
 }
 

@@ -14,6 +14,17 @@
     }
 }
 
+.mod-background {
+    opacity: 0;
+    transition: $transition;
+
+    &.visible {
+        background: url(../../dist/images/bg-mod-background.jpg) no-repeat 0 0;
+        background-size: cover;
+        opacity: 1;
+    }
+}
+
 @media (min-width: 768px) {
     .mod-quote {
         &__text {
