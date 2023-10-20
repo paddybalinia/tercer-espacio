@@ -1,0 +1,130 @@
+@import '../vars.scss';
+
+.navigation {
+    background: #f4f4f4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+    pointer-events: none;
+
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: inherit;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 96px;
+        box-sizing: border-box;
+        padding: 0 30px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        column-gap: 70px;
+    }
+
+    &__content {
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 30px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 70vh;
+    }
+
+    &__nav-1 {
+        font: 300 50px/58px $font-primary;
+        letter-spacing: -0.25px;
+        color: #606060;
+
+        &__arrow {
+            opacity: 0;
+            transform: translate(0, 0);
+            transition: $transition;
+            position: absolute;
+        }
+
+        &__li {
+            margin-top: 14px;
+        }
+
+        &__a {
+            transition: $transition;
+
+            &:hover,
+            &.active {
+                color: black;
+
+                & .navigation__nav-1__arrow {
+                    opacity: 1;
+                    transform: translate(20px, 0);
+                }
+            }
+        }
+    }
+
+
+    &__social {
+        font: 300 22px/28px $font-primary;
+        max-width: 330px;
+
+        &__span {
+            display: block;
+        }
+
+        &__a {
+            transition: $transition;
+
+            &:hover {
+                color: $color-primary-hover;
+            }
+        }
+
+    }
+}
+
+
+@media (min-width: 760px) {
+    .navigation {
+        &__header {
+            max-width: $grid-width;
+            margin: 0 auto;
+            padding: 0 20px;
+
+            &__text {
+                font: 200 16px/1 $font-primary;
+            }
+        }
+
+        &__content {
+            max-width: $grid-width;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        &__nav-1 {
+            font: 300 64px/72px $font-primary;
+            letter-spacing: -0.25px;
+            color: #606060;
+        }
+
+        &__social {
+            font: 300 28px/34px $font-primary;
+        }
+    }
+}
