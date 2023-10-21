@@ -1,10 +1,24 @@
 .mod-follow {
   font: 300 32px/36px "Sharp Grotesk", sans-serif;
-  margin: 55px 0 71px;
+  margin: 58px 0 71px;
+}
+.mod-follow__a {
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
   .mod-follow {
     font: 300 72px/72px "Sharp Grotesk", sans-serif;
+    margin: 106px 0 73px;
+  }
+  .mod-follow__block {
+    display: block;
+  }
+  .mod-follow__a {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .mod-follow__a:hover {
+    color: #a891ff;
   }
 }

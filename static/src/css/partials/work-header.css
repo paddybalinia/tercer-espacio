@@ -1,0 +1,62 @@
+.work__header {
+  margin: 0 0 -5px;
+  padding: 26px 0 0;
+}
+.work__header__title {
+  font: 300 64px/72px "Sharp Grotesk", sans-serif;
+  letter-spacing: -0.25px;
+  margin: 0 0 11px;
+}
+
+.filter {
+  display: block;
+  position: relative;
+  margin: 0 -20px;
+}
+.filter__ul {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 16px 0 12px 20px;
+}
+.filter__li {
+  padding-right: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: top;
+}
+.filter__btn {
+  font: 200 16px/24px "Sharp Grotesk", sans-serif;
+  letter-spacing: 0.15px;
+  color: #A4A4A4;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.filter__btn:hover, .filter__btn.active {
+  color: #000000;
+}
+.filter::before, .filter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(209, 211, 211, 0)), to(#f4f4f4));
+  background: linear-gradient(to right, rgba(209, 211, 211, 0) 0%, #f4f4f4 100%);
+}
+.filter::before {
+  left: 0;
+  right: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#f4f4f4), to(rgba(209, 211, 211, 0)));
+  background: linear-gradient(to right, #f4f4f4 0%, rgba(209, 211, 211, 0) 100%);
+}
+
+@media (min-width: 768px) {
+  .work__header {
+    margin: 0 0 -7px;
+    padding-top: 52px;
+  }
+  .work__header__title {
+    margin: 0 0 39px;
+  }
+}

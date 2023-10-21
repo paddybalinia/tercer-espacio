@@ -2,7 +2,11 @@
 
 .mod-follow {
     font: 300 32px/36px $font-primary;
-    margin: 55px 0 71px;
+    margin: 58px 0 71px;
+
+    &__a {
+        display: inline-block;
+    }
 }
 
 
@@ -10,6 +14,18 @@
 
     .mod-follow {
         font: 300 72px/72px $font-primary;
+        margin: 106px 0 73px;
 
+        &__block {
+            display: block;
+        }
+
+        &__a {
+            transition: $transition ease-out;
+
+            &:hover {
+                color: $color-primary-hover;
+            }
+        }
     }
 }

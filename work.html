@@ -118,26 +118,28 @@
             <div class="container">
                 <h2 class="work__header__title">Work</h2>
 
-                <ul class="filter">
-                    <li>
-                        <button type="button" class="filter__btn" aria-label="All">All</button>
-                    </li>
-                    <li>
-                        <button type="button" class="filter__btn" aria-label="Motion">Motion</button>
-                    </li>
-                    <li>
-                        <button type="button" class="filter__btn" aria-label="Art Direction">Art Direction</button>
-                    </li>
-                    <li>
-                        <button type="button" class="filter__btn" aria-label="3D">3D</button>
-                    </li>
-                    <li>
-                        <button type="button" class="filter__btn" aria-label="Branding">Branding</button>
-                    </li>
-                    <li>
-                        <button type="button" class="filter__btn" aria-label="Illustration">Illustration</button>
-                    </li>
-                </ul>
+                <div class="filter">
+                    <ul class="filter__ul">
+                        <li class="filter__li">
+                            <button type="button" class="filter__btn active" aria-label="All">All</button>
+                        </li>
+                        <li class="filter__li">
+                            <button type="button" class="filter__btn" aria-label="Motion">Motion</button>
+                        </li>
+                        <li class="filter__li">
+                            <button type="button" class="filter__btn" aria-label="Art Direction">Art Direction</button>
+                        </li>
+                        <li class="filter__li">
+                            <button type="button" class="filter__btn" aria-label="3D">3D</button>
+                        </li>
+                        <li class="filter__li">
+                            <button type="button" class="filter__btn" aria-label="Branding">Branding</button>
+                        </li>
+                        <li class="filter__li">
+                            <button type="button" class="filter__btn" aria-label="Illustration">Illustration</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -189,6 +191,72 @@
                     </div>
                 </div>
 
+                <div class="col col_6">
+                    <div class="work viewport-observer animation-bottom delay-4">
+                        <figure class="work__figure">
+                            <a href="#" title="#">
+                                <img data-lazyload="static/dist/images/work-portada-docusign.jpg" alt="work" width="610"
+                                    height="375" class="work__figure__img">
+                            </a>
+                        </figure>
+                        <div class="work__data">
+                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                            </h3>
+                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                            <span class="work__caption">art direction / animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col_6">
+                    <div class="work viewport-observer animation-bottom delay-6">
+                        <figure class="work__figure">
+                            <a href="#" title="#">
+                                <img data-lazyload="static/dist/images/work-portada-docusign.jpg" alt="work" width="610"
+                                    height="375" class="work__figure__img">
+                            </a>
+                        </figure>
+                        <div class="work__data">
+                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                            </h3>
+                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                            <span class="work__caption">art direction / animation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col_6">
+                    <div class="work viewport-observer animation-bottom delay-4">
+                        <figure class="work__figure">
+                            <a href="#" title="#">
+                                <img data-lazyload="static/dist/images/work-portada-docusign.jpg" alt="work" width="610"
+                                    height="375" class="work__figure__img">
+                            </a>
+                        </figure>
+                        <div class="work__data">
+                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                            </h3>
+                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                            <span class="work__caption">art direction / animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col_6">
+                    <div class="work viewport-observer animation-bottom delay-6">
+                        <figure class="work__figure">
+                            <a href="#" title="#">
+                                <img data-lazyload="static/dist/images/work-portada-docusign.jpg" alt="work" width="610"
+                                    height="375" class="work__figure__img">
+                            </a>
+                        </figure>
+                        <div class="work__data">
+                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                            </h3>
+                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                            <span class="work__caption">art direction / animation</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="col col_6">
                     <div class="work viewport-observer animation-bottom delay-4">
                         <figure class="work__figure">
@@ -291,8 +359,10 @@
             <div class="container">
                 <p class="mod-follow__text">
                     <span class="mod-follow__block">Follow us on </span>
-                    <span class="mod-follow__block">Instagram→Linkedin*Behance</span>
-                    <span class="mod-follow__block">↘Vimeo</span>
+                    <span class="mod-follow__block"><a href="#" class="mod-follow__a" title="Instagram">Instagram</a><a
+                            href="#" class="mod-follow__a" title="Linkedin">→Linkedin</a><a href="#"
+                            class="mod-follow__a" title="Behance">*Behance</a></span>
+                    <span class="mod-follow__block"><a href="#" class="mod-follow__a" title="Vimeo">↘Vimeo</a></span>
                 </p>
             </div>
         </div>
@@ -376,7 +446,7 @@
         <div class="navigation__content">
             <ul class="navigation__nav-1">
                 <li class="navigation__nav-1__li navigation__ani navigation__ani-1">
-                    <a href="#" class="navigation__nav-1__a" title="Work">Work <span
+                    <a href="#" class="navigation__nav-1__a active" title="Work">Work <span
                             class="navigation__nav-1__arrow">→</span></a>
                 </li>
                 <li class="navigation__nav-1__li navigation__ani navigation__ani-2">
