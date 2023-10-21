@@ -615,7 +615,6 @@ body {
 
 .work__bg__1:before {
   content: "";
-  background-color: red;
   height: 1043px;
   position: absolute;
   top: 0;
