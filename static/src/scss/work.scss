@@ -7,11 +7,9 @@
 @import 'partials/header.scss';
 @import 'partials/navigation.scss';
 // generic
+@import 'partials/work-ui.scss';
 @import 'partials/mod-work.scss';
 @import 'partials/work.scss';
+@import 'partials/work-header.scss';
 @import 'partials/work-workmin.scss';
 @import 'partials/work-follow.scss';
-
-body {
-    padding-top: 94px;
-}

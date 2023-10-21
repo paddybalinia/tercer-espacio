@@ -609,6 +609,29 @@ input {
     font: 300 28px/34px "Sharp Grotesk", sans-serif;
   }
 }
+body {
+  padding-top: 94px;
+}
+
+.work__bg__1:before {
+  content: "";
+  background-color: red;
+  height: 1043px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 547px;
+}
+.work__bg__1.visible:before {
+  background: url(../../dist/images/bg-work-1.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+
+.work__bg__2.visible {
+  background: url(../../dist/images/bg-work-2.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+
 .mod-work__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,6 +787,71 @@ input {
     margin-bottom: 41px;
   }
 }
+.work__header {
+  margin: 0 0 -5px;
+  padding: 26px 0 0;
+}
+.work__header__title {
+  font: 300 64px/72px "Sharp Grotesk", sans-serif;
+  letter-spacing: -0.25px;
+  margin: 0 0 11px;
+}
+
+.filter {
+  display: block;
+  position: relative;
+  margin: 0 -20px;
+}
+.filter__ul {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 16px 0 12px 20px;
+}
+.filter__li {
+  padding-right: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: top;
+}
+.filter__btn {
+  font: 200 16px/24px "Sharp Grotesk", sans-serif;
+  letter-spacing: 0.15px;
+  color: #A4A4A4;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.filter__btn:hover, .filter__btn.active {
+  color: #000000;
+}
+.filter::before, .filter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(209, 211, 211, 0)), to(#f4f4f4));
+  background: linear-gradient(to right, rgba(209, 211, 211, 0) 0%, #f4f4f4 100%);
+}
+.filter::before {
+  left: 0;
+  right: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#f4f4f4), to(rgba(209, 211, 211, 0)));
+  background: linear-gradient(to right, #f4f4f4 0%, rgba(209, 211, 211, 0) 100%);
+}
+
+@media (min-width: 768px) {
+  .work__header {
+    margin: 0 0 -7px;
+    padding-top: 52px;
+  }
+  .work__header__title {
+    margin: 0 0 39px;
+  }
+  .filter::after, .filter::before {
+    display: none;
+  }
+}
 .workmin__item {
   border-top: 1px solid #000;
   display: -webkit-box;
@@ -772,22 +860,17 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 16px 0;
+  padding: 11px 0 8px;
   width: 100%;
   font: 200 16px/24px "Sharp Grotesk", sans-serif;
   letter-spacing: 0.15px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.workmin__item:hover {
-  background: black;
-  color: white;
-}
-.workmin__item:hover .workmin__caption {
-  color: white;
-}
-.workmin__item:hover .workmin__arrow__svg {
-  stroke: white;
+.workmin__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .workmin__arrow__svg {
   position: relative;
@@ -807,14 +890,27 @@ input {
 }
 
 @media (min-width: 768px) {
+  .workmin {
+    padding: 79px 0 0;
+  }
   .workmin__item {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     font: 200 16px/24px "Sharp Grotesk", sans-serif;
+    padding: 11px 0 27px;
+  }
+  .workmin__item:hover {
+    background: black;
+    color: white;
+    padding-left: 20px;
+  }
+  .workmin__item:hover .workmin__caption {
+    color: white;
   }
   .workmin__item:hover .workmin__arrow__svg {
     left: -15px;
+    stroke: white;
   }
   .workmin__arrow__svg {
     left: -25px;
@@ -832,14 +928,25 @@ input {
 }
 .mod-follow {
   font: 300 32px/36px "Sharp Grotesk", sans-serif;
-  margin: 55px 0 71px;
+  margin: 58px 0 71px;
+}
+.mod-follow__a {
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
   .mod-follow {
     font: 300 72px/72px "Sharp Grotesk", sans-serif;
+    margin: 106px 0 73px;
   }
-}
-body {
-  padding-top: 94px;
+  .mod-follow__block {
+    display: block;
+  }
+  .mod-follow__a {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .mod-follow__a:hover {
+    color: #a891ff;
+  }
 }
