@@ -609,6 +609,29 @@ input {
     font: 300 28px/34px "Sharp Grotesk", sans-serif;
   }
 }
+body {
+  padding-top: 94px;
+}
+
+.work__bg__1:before {
+  content: "";
+  background-color: red;
+  height: 1043px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 547px;
+}
+.work__bg__1.visible:before {
+  background: url(../../dist/images/bg-work-1.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+
+.work__bg__2.visible {
+  background: url(../../dist/images/bg-work-2.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+
 .mod-work__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,6 +848,9 @@ input {
   .work__header__title {
     margin: 0 0 39px;
   }
+  .filter::after, .filter::before {
+    display: none;
+  }
 }
 .workmin__item {
   border-top: 1px solid #000;
@@ -923,7 +949,4 @@ input {
   .mod-follow__a:hover {
     color: #a891ff;
   }
-}
-body {
-  padding-top: 94px;
 }

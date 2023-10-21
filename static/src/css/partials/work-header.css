@@ -59,4 +59,7 @@
   .work__header__title {
     margin: 0 0 39px;
   }
+  .filter::after, .filter::before {
+    display: none;
+  }
 }

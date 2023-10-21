@@ -1,0 +1,32 @@
+@import '../vars.scss';
+
+body {
+    padding-top: 94px;
+}
+
+.work__bg__1 {
+    &:before {
+        content: '';
+        background-color: red;
+        height: 1043px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 547px;
+    }
+
+    &.visible {
+        &:before {
+
+            background: url(../../dist/images/bg-work-1.jpg) no-repeat 0 0;
+            background-size: cover;
+        }
+    }
+}
+
+.work__bg__2 {
+    &.visible {
+        background: url(../../dist/images/bg-work-2.jpg) no-repeat 0 0;
+        background-size: cover;
+    }
+}
