@@ -3,6 +3,7 @@
 .mod-follow {
     font: 300 32px/36px $font-primary;
     margin: 58px 0 71px;
+    padding: 0 20px;
 
     &__a {
         display: inline-block;
@@ -15,6 +16,7 @@
     .mod-follow {
         font: 300 72px/72px $font-primary;
         margin: 106px 0 73px;
+        padding: 0;
 
         &__block {
             display: block;

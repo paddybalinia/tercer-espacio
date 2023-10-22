@@ -2,7 +2,7 @@
 
 .work__header {
     margin: 0 0 -5px;
-    padding: 26px 0 0;
+    padding: 26px 20px 0;
 
     &__title {
         font: 300 64px/72px $font-primary;
@@ -41,8 +41,7 @@
         }
     }
 
-    &::before,
-    &::after {
+    &::before {
         content: "";
         position: absolute;
         top: 0;

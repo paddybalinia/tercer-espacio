@@ -792,7 +792,7 @@ body {
 }
 .work__header {
   margin: 0 0 -5px;
-  padding: 26px 0 0;
+  padding: 26px 20px 0;
 }
 .work__header__title {
   font: 300 64px/72px "Sharp Grotesk", sans-serif;
@@ -826,7 +826,7 @@ body {
 .filter__btn:hover, .filter__btn.active {
   color: #000000;
 }
-.filter::before, .filter::after {
+.filter::before {
   content: "";
   position: absolute;
   top: 0;
@@ -854,6 +854,9 @@ body {
   .filter::after, .filter::before {
     display: none;
   }
+}
+.workmin {
+  padding: 0 20px;
 }
 .workmin__item {
   border-top: 1px solid #000;
@@ -932,6 +935,7 @@ body {
 .mod-follow {
   font: 300 32px/36px "Sharp Grotesk", sans-serif;
   margin: 58px 0 71px;
+  padding: 0 20px;
 }
 .mod-follow__a {
   display: inline-block;
@@ -941,6 +945,7 @@ body {
   .mod-follow {
     font: 300 72px/72px "Sharp Grotesk", sans-serif;
     margin: 106px 0 73px;
+    padding: 0;
   }
   .mod-follow__block {
     display: block;

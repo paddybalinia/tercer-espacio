@@ -1,6 +1,6 @@
 .work__header {
   margin: 0 0 -5px;
-  padding: 26px 0 0;
+  padding: 26px 20px 0;
 }
 .work__header__title {
   font: 300 64px/72px "Sharp Grotesk", sans-serif;
@@ -34,7 +34,7 @@
 .filter__btn:hover, .filter__btn.active {
   color: #000000;
 }
-.filter::before, .filter::after {
+.filter::before {
   content: "";
   position: absolute;
   top: 0;
