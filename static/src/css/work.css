@@ -622,7 +622,7 @@ body {
   width: 547px;
 }
 .work__bg__1.visible:before {
-  background: url(../../dist/images/bg-work-1.jpg) no-repeat 0 0;
+  background: url(../../dist/images/bg-work.jpg) no-repeat 0 0;
   background-size: cover;
 }
 
