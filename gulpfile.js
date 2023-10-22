@@ -75,7 +75,12 @@ const jsFiles = [
   "static/src/js/partials/TextTyper.js",
 ];
 
-const contactJsFiles = ["static/src/js/partials/ContactForm.js"];
+const sectionJsFiles = [
+  "static/src/js/partials/Header.js",
+  "static/src/js/partials/LazyLoadImg.js",
+  "static/src/js/partials/ScrollIntoView.js",
+  "static/src/js/partials/ViewportObserver.js",
+];
 
 function combineScripts() {
   return gulp
@@ -84,10 +89,10 @@ function combineScripts() {
     .pipe(gulp.dest("static/src/js"));
 }
 
-function combineContactScript() {
+function combineSectionScript() {
   return gulp
-    .src(contactJsFiles)
-    .pipe(concat("Contact.js"))
+    .src(sectionJsFiles)
+    .pipe(concat("Section.js"))
     .pipe(gulp.dest("static/src/js"));
 }
 
@@ -107,7 +112,7 @@ const buildTasks = gulp.parallel(
   optimizeImages,
   combineScripts,
   optimizeFonts,
-  combineContactScript // Agrega la tarea de combinación del script de contacto
+  combineSectionScript // Agrega la tarea de combinación del script de contacto
 );
 
 exports.build = buildTasks;
