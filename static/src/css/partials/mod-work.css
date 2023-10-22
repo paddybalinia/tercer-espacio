@@ -96,10 +96,11 @@
 
 @media (min-width: 768px) {
   .mod-work__header {
-    padding: 58px 10px 35px;
+    padding: 58px 0 35px;
   }
   .mod-work__content {
     padding: 0;
+    margin: 0 -10px;
   }
   .mod-work__more--center {
     margin: 16px 0 0;
