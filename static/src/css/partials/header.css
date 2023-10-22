@@ -47,9 +47,9 @@
 
 @media (min-width: 760px) {
   .header__container {
-    max-width: 1240px;
+    max-width: 1260px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .header__text {
     font: 200 16px/1 "Sharp Grotesk", sans-serif;

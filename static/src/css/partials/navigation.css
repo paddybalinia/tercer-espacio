@@ -145,7 +145,7 @@
 
 @media (min-width: 760px) {
   .navigation__header {
-    max-width: 1240px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -156,7 +156,7 @@
     margin: 0;
   }
   .navigation__content {
-    max-width: 1240px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 20px;
   }
