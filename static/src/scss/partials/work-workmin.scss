@@ -1,6 +1,8 @@
 @import '../vars.scss';
 
 .workmin {
+    padding: 0 20px;
+
     &__item {
         border-top: 1px solid #000;
         display: flex;

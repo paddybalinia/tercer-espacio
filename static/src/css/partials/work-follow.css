@@ -1,6 +1,7 @@
 .mod-follow {
   font: 300 32px/36px "Sharp Grotesk", sans-serif;
   margin: 58px 0 71px;
+  padding: 0 20px;
 }
 .mod-follow__a {
   display: inline-block;
@@ -10,6 +11,7 @@
   .mod-follow {
     font: 300 72px/72px "Sharp Grotesk", sans-serif;
     margin: 106px 0 73px;
+    padding: 0;
   }
   .mod-follow__block {
     display: block;

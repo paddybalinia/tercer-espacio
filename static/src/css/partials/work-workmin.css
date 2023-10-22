@@ -1,3 +1,6 @@
+.workmin {
+  padding: 0 20px;
+}
 .workmin__item {
   border-top: 1px solid #000;
   display: -webkit-box;
