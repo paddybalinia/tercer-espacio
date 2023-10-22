@@ -590,7 +590,7 @@ input {
   .navigation__header {
     max-width: 1260px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .navigation__header__text {
     font: 200 16px/1 "Sharp Grotesk", sans-serif;
@@ -601,7 +601,7 @@ input {
   .navigation__content {
     max-width: 1260px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .navigation__nav-1 {
     font: 300 64px/72px "Sharp Grotesk", sans-serif;
