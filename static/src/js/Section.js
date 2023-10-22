@@ -2,6 +2,7 @@
   "use strict";
 
   var Header = document.querySelector(".header"),
+    Navigation = document.querySelector(".navigation"),
     lastScrollY =
       window.scrollY ||
       window.pageYOffset ||
@@ -11,6 +12,8 @@
   // Constructor
   function Constructor() {
     const LinkToggle = document.querySelectorAll("[data-togglenav]");
+
+    NavigationHover();
 
     for (let e = 0; e < LinkToggle.length; e++) {
       LinkToggle[e].addEventListener("click", NavToggle, false);
@@ -23,6 +26,27 @@
     Nav.classList.toggle("active");
     // const NavOverlay = document.querySelector(".nav__overlay");
     // NavOverlay.classList.toggle("active");
+  }
+  function NavigationHover() {
+    const enlaces = document.querySelectorAll(".navigation__nav-1__a");
+    var dataSection = "";
+    enlaces.forEach((enlace) => {
+      enlace.addEventListener("mouseover", function () {
+        dataSection = this.dataset.section;
+
+        const element = Navigation.querySelector(
+          "[data-nav=" + dataSection + "]"
+        );
+        element.classList.add("active");
+      });
+
+      enlace.addEventListener("mouseout", function () {
+        const element = Navigation.querySelector(
+          "[data-nav=" + dataSection + "]"
+        );
+        element.classList.remove("active");
+      });
+    });
   }
 
   /**
