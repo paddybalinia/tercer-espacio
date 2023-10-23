@@ -1,0 +1,93 @@
+.studio__img {
+  height: 297px;
+}
+.studio__img.visible {
+  background: url(../images/bg-about-mobile.jpg) no-repeat center;
+  background-size: cover;
+}
+.studio__header {
+  padding: 0 20px;
+  margin: 30px 0 52px;
+}
+.studio__header__title {
+  font: 300 32px/32px "Sharp Grotesk", sans-serif;
+  margin: 0 0 58px;
+}
+.studio__header__text {
+  font: 300 24px/30px "Sharp Grotesk", sans-serif;
+  color: #606060;
+}
+.studio__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 28px;
+  padding: 51px 0px;
+}
+.studio__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.studio__num {
+  font: 300 64px/72px "Sharp Grotesk", sans-serif;
+  letter-spacing: -0.25px;
+}
+.studio__text {
+  font: 200 22px/28px "Sharp Grotesk", sans-serif;
+  color: #606060;
+}
+.studio-color {
+  color: #ACFF58;
+}
+
+@media (min-width: 768px) {
+  .studio__img {
+    height: 500px;
+  }
+  .studio__img.visible {
+    background: url(../images/bg-about.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .studio__header {
+    padding: 0 20px;
+    margin: 51px 0 82px;
+  }
+  .studio__header__title {
+    font: 300 45px/52px "Sharp Grotesk", sans-serif;
+    margin: 0 0 73px;
+    max-width: 1040px;
+  }
+  .studio__header__text {
+    font: 300 24px/30px "Sharp Grotesk", sans-serif;
+  }
+  .studio__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 104px 0px;
+  }
+  .studio__box {
+    gap: 42px;
+  }
+}

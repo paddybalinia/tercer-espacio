@@ -1,0 +1,94 @@
+@import '../vars.scss';
+
+.studio {
+    &__img {
+        height: 297px;
+
+        &.visible {
+            background: url(../images/bg-about-mobile.jpg) no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &__header {
+        padding: 0 20px;
+        margin: 30px 0 52px;
+
+        &__title {
+            font: 300 32px/32px $font-primary;
+            margin: 0 0 58px;
+        }
+
+        &__text {
+            font: 300 24px/30px $font-primary;
+            color: #606060;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 28px;
+        padding: 51px 0px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__num {
+        font: 300 64px/72px $font-primary;
+        letter-spacing: -0.25px;
+    }
+
+    &__text {
+        font: 200 22px/28px $font-primary;
+        color: #606060;
+    }
+
+    &-color {
+        color: #ACFF58;
+    }
+}
+
+@media (min-width: 768px) {
+    .studio {
+        &__img {
+            height: 500px;
+
+            &.visible {
+                background: url(../images/bg-about.jpg) no-repeat center;
+                background-size: cover;
+            }
+        }
+
+        &__header {
+            padding: 0 20px;
+            margin: 51px 0 82px;
+
+            &__title {
+                font: 300 45px/52px $font-primary;
+                margin: 0 0 73px;
+                max-width: 1040px;
+            }
+
+            &__text {
+                font: 300 24px/30px $font-primary;
+            }
+        }
+
+        &__container {
+            justify-content: space-around;
+            flex-direction: row;
+            padding: 104px 0px;
+        }
+
+        &__box {
+            gap: 42px;
+        }
+    }
+}
