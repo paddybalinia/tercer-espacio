@@ -443,6 +443,7 @@ input {
 }
 .navigation {
   background: #f4f4f4;
+  color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -684,6 +685,19 @@ input {
 body {
   background: black;
   color: white;
+  padding-top: 94px;
+}
+
+.header {
+  background: black;
+  color: white;
+}
+.header path {
+  stroke: white;
+}
+.header--sticky {
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
 .workmin {
@@ -761,5 +775,32 @@ body {
   .workmin__caption {
     color: #606060;
     width: auto;
+  }
+}
+.about__header {
+  padding: 0 20px;
+  margin: 30px 0 52px;
+}
+.about__header__title {
+  font: 300 32px/32px "Sharp Grotesk", sans-serif;
+  margin: 0 0 58px;
+}
+.about__header__text {
+  font: 300 24px/30px "Sharp Grotesk", sans-serif;
+  color: #606060;
+}
+
+@media (min-width: 768px) {
+  .about__header {
+    padding: 0 20px;
+    margin: 51px 0 82px;
+  }
+  .about__header__title {
+    font: 300 45px/52px "Sharp Grotesk", sans-serif;
+    margin: 0 0 73px;
+    max-width: 1040px;
+  }
+  .about__header__text {
+    font: 300 24px/30px "Sharp Grotesk", sans-serif;
   }
 }

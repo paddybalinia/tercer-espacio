@@ -1,0 +1,37 @@
+@import '../vars.scss';
+
+.about {
+    &__header {
+        padding: 0 20px;
+        margin: 30px 0 52px;
+
+        &__title {
+            font: 300 32px/32px $font-primary;
+            margin: 0 0 58px;
+        }
+
+        &__text {
+            font: 300 24px/30px $font-primary;
+            color: #606060;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .about {
+        &__header {
+            padding: 0 20px;
+            margin: 51px 0 82px;
+
+            &__title {
+                font: 300 45px/52px $font-primary;
+                margin: 0 0 73px;
+                max-width: 1040px;
+            }
+
+            &__text {
+                font: 300 24px/30px $font-primary;
+            }
+        }
+    }
+}
