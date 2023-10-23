@@ -700,81 +700,143 @@ body {
           box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
-.workmin {
+.footer {
+  border-color: #fff;
+}
+
+.team__title {
+  font: 300 32px/32px "Sharp Grotesk", sans-serif;
+  padding: 0 20px;
+  margin: 0 0 75px;
+}
+
+.accordion {
   padding: 0 20px;
 }
-.workmin__item {
-  border-top: 1px solid #000;
+.accordion__item {
+  border-top: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 11px 0 8px;
+  padding: 23px 0 30px;
   width: 100%;
-  font: 200 16px/24px "Sharp Grotesk", sans-serif;
+  font: 200 16px/26px "Sharp Grotesk", sans-serif;
   letter-spacing: 0.15px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.workmin__arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.accordion__arrow {
+  display: none;
 }
-.workmin__arrow__svg {
+.accordion__arrow__svg {
   position: relative;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.workmin__title {
-  max-width: 100px;
+.accordion__title {
+  font: 200 28px/34px "Sharp Grotesk", sans-serif;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 320px;
+          flex: 0 0 320px;
 }
-.workmin__caption {
-  color: #606060;
-  font: 200 12px/20px "Sharp Grotesk", sans-serif;
-  width: 59px;
-}
-.workmin__tag {
-  width: 100px;
+.accordion__img, .accordion__caption, .accordion__tag {
+  display: none;
 }
 
 @media (min-width: 768px) {
-  .workmin {
-    padding: 79px 0 0;
+  .team__title {
+    font: 300 64px/72px "Sharp Grotesk", sans-serif;
+    text-align: right;
+    display: block;
+    margin: 0 0 81px;
+    padding: 0;
   }
-  .workmin__item {
+  .accordion {
+    padding: 0 0 304px;
+  }
+  .accordion__item {
+    position: relative;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     font: 200 16px/24px "Sharp Grotesk", sans-serif;
-    padding: 11px 0 27px;
   }
-  .workmin__item:hover {
+  .accordion__item:hover {
     background: black;
     color: white;
-    padding-left: 20px;
   }
-  .workmin__item:hover .workmin__caption {
+  .accordion__item:hover .accordion__title {
+    color: #FFC226;
+  }
+  .accordion__item:hover .accordion__caption {
     color: white;
   }
-  .workmin__item:hover .workmin__arrow__svg {
+  .accordion__item:hover .accordion__arrow__svg {
     left: -15px;
     stroke: white;
   }
-  .workmin__arrow__svg {
+  .accordion__item:hover .accordion__img {
+    width: 230px;
+    opacity: 1;
+  }
+  .accordion__arrow__svg {
     left: -25px;
   }
-  .workmin__title {
+  .accordion__title {
     max-width: inherit;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 320px;
+            flex: 0 0 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .workmin__tag {
+  .accordion__tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 160px;
+            flex: 0 0 160px;
     width: auto;
   }
-  .workmin__caption {
+  .accordion__arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .accordion__caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     color: #606060;
+    font: 200 12px/20px "Sharp Grotesk", sans-serif;
     width: auto;
+  }
+  .accordion__img {
+    -webkit-transition: all 1.5s cubic-bezier(0, 0.805, 0.145, 0.995), opacity 0.2s;
+    transition: all 1.5s cubic-bezier(0, 0.805, 0.145, 0.995), opacity 0.2s;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    display: block;
+    width: 170px;
+    height: 270px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    left: 420px;
+    top: -43px;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 12px;
   }
 }
 .about__header {

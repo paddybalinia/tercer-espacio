@@ -1,0 +1,141 @@
+@import '../vars.scss';
+
+.team {
+    &__title {
+        font: 300 32px/32px $font-primary;
+        padding: 0 20px;
+        margin: 0 0 75px;
+    }
+}
+
+.accordion {
+    padding: 0 20px;
+
+    &__item {
+        border-top: 1px solid white;
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 0 30px;
+        width: 100%;
+        font: 200 16px/26px $font-primary;
+        letter-spacing: 0.15px;
+        transition: $transition ease-out;
+    }
+
+    &__arrow {
+        display: none;
+
+        &__svg {
+            position: relative;
+            transition: $transition ease-out;
+        }
+    }
+
+    &__title {
+        font: 200 28px/34px $font-primary;
+        flex: 0 0 320px;
+    }
+
+    &__img,
+    &__caption,
+    &__tag {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .team {
+        &__title {
+            font: 300 64px/72px $font-primary;
+            text-align: right;
+            display: block;
+            margin: 0 0 81px;
+            padding: 0;
+        }
+    }
+
+    .accordion {
+        padding: 0 0 304px;
+
+        &__item {
+            position: relative;
+            align-items: center;
+            font: 200 16px/24px $font-primary;
+
+            &:hover {
+                background: black;
+                color: white;
+
+
+                & .accordion__title {
+                    color: #FFC226;
+                }
+
+                & .accordion__caption {
+                    color: white;
+                }
+
+                & .accordion__arrow__svg {
+                    left: -15px;
+                    stroke: white;
+                }
+
+                & .accordion__img {
+                    width: 230px;
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        &__arrow__svg {
+            left: -25px;
+        }
+
+        &__title {
+            max-width: inherit;
+            flex: 0 0 320px;
+            display: flex;
+        }
+
+        &__tag {
+            display: flex;
+            flex: 0 0 160px;
+            width: auto;
+        }
+
+        &__arrow {
+            display: flex;
+        }
+
+        &__caption {
+            display: flex;
+            color: #606060;
+            font: 200 12px/20px $font-primary;
+            width: auto;
+        }
+
+        &__img {
+            transition: all 1.5s cubic-bezier(0, .805, .145, .995), opacity .2s;
+            transition-delay: 0s;
+            -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+            opacity: 0;
+            -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            display: block;
+            width: 170px;
+            height: 270px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            position: absolute;
+            left: 420px;
+            top: -43px;
+            z-index: 1;
+            pointer-events: none;
+            border-radius: 12px;
+        }
+    }
+}
