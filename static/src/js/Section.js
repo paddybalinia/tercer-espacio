@@ -24,8 +24,6 @@
   function NavToggle() {
     const Nav = document.querySelector(".navigation");
     Nav.classList.toggle("active");
-    // const NavOverlay = document.querySelector(".nav__overlay");
-    // NavOverlay.classList.toggle("active");
   }
   function NavigationHover() {
     const enlaces = document.querySelectorAll(".navigation__nav-1__a");
