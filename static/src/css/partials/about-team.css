@@ -15,7 +15,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 23px 0 30px;
+  padding: 23px 0;
   width: 100%;
   font: 200 16px/26px "Sharp Grotesk", sans-serif;
   letter-spacing: 0.15px;
