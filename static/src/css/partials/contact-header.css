@@ -1,0 +1,29 @@
+.contact__header {
+  border-bottom: 1px solid white;
+  margin: 94px 20px 52px;
+  padding: 0 0 58px;
+}
+.contact__title {
+  font: 300 45px/52px "Sharp Grotesk", sans-serif;
+  word-wrap: break-word;
+  margin: 0 0 45px;
+}
+.contact__subtitle {
+  font: 200 16px/26px "Sharp Grotesk", sans-serif;
+}
+.contact__place {
+  font: 200 36px/44px "Sharp Grotesk", sans-serif;
+}
+.contact__street {
+  font: 300 24px/30px "Sharp Grotesk", sans-serif;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .contact__header {
+    margin: 94px 0 52px;
+  }
+  .contact__title {
+    margin: 0 0 69px;
+  }
+}
