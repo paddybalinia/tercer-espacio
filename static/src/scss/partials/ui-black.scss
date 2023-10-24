@@ -4,6 +4,10 @@ body {
     background: black;
     color: white;
     padding-top: 94px;
+
+    & a:hover {
+        color: $color-secondary-hover;
+    }
 }
 
 .header {

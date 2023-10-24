@@ -707,418 +707,58 @@ body a:hover {
   border-color: #fff;
 }
 
-.team__title {
-  font: 300 32px/32px "Sharp Grotesk", sans-serif;
-  padding: 0 20px;
-  margin: 0 0 75px;
+.contact__header {
+  border-bottom: 1px solid white;
+  margin: 94px 20px 52px;
+  padding: 0 0 58px;
 }
-
-.accordion {
-  padding: 0 20px;
-}
-.accordion__item {
-  border-top: 1px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 23px 0;
-  width: 100%;
-  font: 200 16px/26px "Sharp Grotesk", sans-serif;
-  letter-spacing: 0.15px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-.accordion__arrow {
-  display: none;
-}
-.accordion__arrow__svg {
-  position: relative;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-.accordion__title {
-  font: 200 28px/34px "Sharp Grotesk", sans-serif;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 320px;
-          flex: 0 0 320px;
-}
-.accordion__img, .accordion__caption, .accordion__tag {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .team__title {
-    font: 300 64px/72px "Sharp Grotesk", sans-serif;
-    text-align: right;
-    display: block;
-    margin: 0 0 81px;
-    padding: 0;
-  }
-  .accordion {
-    padding: 0 0 304px;
-  }
-  .accordion__item {
-    position: relative;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font: 200 16px/24px "Sharp Grotesk", sans-serif;
-  }
-  .accordion__item:hover {
-    background: black;
-    color: white;
-  }
-  .accordion__item:hover .accordion__title {
-    color: #FFC226;
-  }
-  .accordion__item:hover .accordion__caption {
-    color: white;
-  }
-  .accordion__item:hover .accordion__arrow__svg {
-    left: -15px;
-    stroke: white;
-  }
-  .accordion__item:hover .accordion__img {
-    width: 230px;
-    opacity: 1;
-  }
-  .accordion__arrow__svg {
-    left: -25px;
-  }
-  .accordion__title {
-    max-width: inherit;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 320px;
-            flex: 0 0 320px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .accordion__tag {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 160px;
-            flex: 0 0 160px;
-    width: auto;
-  }
-  .accordion__arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .accordion__caption {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: #606060;
-    font: 200 12px/20px "Sharp Grotesk", sans-serif;
-    width: auto;
-  }
-  .accordion__img {
-    -webkit-transition: all 1.5s cubic-bezier(0, 0.805, 0.145, 0.995), opacity 0.2s;
-    transition: all 1.5s cubic-bezier(0, 0.805, 0.145, 0.995), opacity 0.2s;
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-    -webkit-transform: translateZ(0) translateY(0);
-    transform: translateZ(0) translateY(0);
-    opacity: 0;
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    display: block;
-    width: 170px;
-    height: 270px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    position: absolute;
-    left: 420px;
-    top: -43px;
-    z-index: 1;
-    pointer-events: none;
-    border-radius: 12px;
-  }
-}
-.about__header {
-  padding: 0 20px;
-  margin: 30px 0 52px;
-}
-.about__header__title {
-  font: 300 32px/32px "Sharp Grotesk", sans-serif;
-  margin: 0 0 58px;
-}
-.about__header__text {
-  font: 300 24px/30px "Sharp Grotesk", sans-serif;
-  color: #606060;
-}
-
-@media (min-width: 768px) {
-  .about__header {
-    padding: 0 20px;
-    margin: 51px 0 82px;
-  }
-  .about__header__title {
-    font: 300 45px/52px "Sharp Grotesk", sans-serif;
-    margin: 0 0 73px;
-    max-width: 1040px;
-  }
-  .about__header__text {
-    font: 300 24px/30px "Sharp Grotesk", sans-serif;
-  }
-}
-.studio__img {
-  height: 297px;
-}
-.studio__img.visible {
-  background: url(../images/bg-about-mobile.jpg) no-repeat center;
-  background-size: cover;
-}
-.studio__header {
-  padding: 0 20px;
-  margin: 30px 0 52px;
-}
-.studio__header__title {
-  font: 300 32px/32px "Sharp Grotesk", sans-serif;
-  margin: 0 0 58px;
-}
-.studio__header__text {
-  font: 300 24px/30px "Sharp Grotesk", sans-serif;
-  color: #606060;
-}
-.studio__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 28px;
-  padding: 51px 0px;
-}
-.studio__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.studio__num {
-  font: 300 64px/72px "Sharp Grotesk", sans-serif;
-  letter-spacing: -0.25px;
-}
-.studio__text {
-  font: 200 22px/28px "Sharp Grotesk", sans-serif;
-  color: #606060;
-}
-.studio-color {
-  color: #ACFF58;
-}
-
-@media (min-width: 768px) {
-  .studio__img {
-    height: 500px;
-  }
-  .studio__img.visible {
-    background: url(../images/bg-about.jpg) no-repeat center;
-    background-size: cover;
-  }
-  .studio__header {
-    padding: 0 20px;
-    margin: 51px 0 82px;
-  }
-  .studio__header__title {
-    font: 300 45px/52px "Sharp Grotesk", sans-serif;
-    margin: 0 0 73px;
-    max-width: 1040px;
-  }
-  .studio__header__text {
-    font: 300 24px/30px "Sharp Grotesk", sans-serif;
-  }
-  .studio__container {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 104px 0px;
-  }
-  .studio__box {
-    gap: 42px;
-  }
-}
-.philosophy__title {
-  font: 300 40px/40px "Sharp Grotesk", sans-serif;
-  color: #F4F4F4;
-  text-align: center;
-  margin: 0 0 48px;
-}
-.philosophy__container {
-  padding: 0 20px;
-}
-.philosophy__figure {
-  position: relative;
-  height: 0;
-  padding-top: 67.7613%;
-  border-radius: 26px;
-  margin: 0 0 22px;
-  width: 100%;
-  z-index: 2;
-}
-.philosophy__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-}
-.philosophy__text {
-  font: 200 16px/26px "Sharp Grotesk", sans-serif;
-  padding-left: 15px;
-  margin: 0 0 20px;
-}
-.philosophy__text__feature {
-  font: 300 28px/34px "Sharp Grotesk", sans-serif;
-  padding-left: 15px;
-  margin: 43px 0 31px;
-}
-
-@media (min-width: 768px) {
-  .philosophy {
-    padding-bottom: 56px;
-  }
-  .philosophy__title {
-    font: 300 64px/72px "Sharp Grotesk", sans-serif;
-    letter-spacing: -0.25px;
-    margin: 0 0 95px;
-  }
-  .philosophy__container {
-    padding: 0 20px;
-  }
-  .philosophy__data {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    gap: 121px;
-  }
-  .philosophy__text {
-    padding-left: 0;
-  }
-  .philosophy__text__feature {
-    padding-left: 0;
-    margin: 0 0 31px;
-  }
-  .philosophy__figure {
-    -webkit-filter: drop-shadow(0px 4px 100px rgba(18, 124, 250, 0.35));
-            filter: drop-shadow(0px 4px 100px rgba(18, 124, 250, 0.35));
-    width: 295px;
-  }
-  .philosophy__figure-2 {
-    height: 200px;
-    padding: 0;
-    margin-left: 210px;
-  }
-}
-.hub {
-  padding: 0 20px 80px;
-}
-.hub__title {
-  font: 300 64px/72px "Sharp Grotesk", sans-serif;
-  letter-spacing: -0.25px;
+.contact__title {
+  font: 300 45px/52px "Sharp Grotesk", sans-serif;
   word-wrap: break-word;
-  margin: 0 0 25px;
+  margin: 0 0 45px;
 }
-.hub__text {
+.contact__subtitle {
   font: 200 16px/26px "Sharp Grotesk", sans-serif;
-  margin: 0 0 20px;
 }
-.hub__figure {
-  position: relative;
-  height: 200px;
-  border-radius: 26px;
-  margin: 0 auto 23px;
-  width: 295px;
-  z-index: 2;
+.contact__place {
+  font: 200 36px/44px "Sharp Grotesk", sans-serif;
 }
-.hub__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-}
-.hub__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #797979;
-  font: 300 12px/20px "Sharp Grotesk", sans-serif;
-  gap: 13px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  letter-spacing: 0.1px;
-}
-.hub__bottom__text-color {
-  color: #ACFF58;
+.contact__street {
+  font: 300 24px/30px "Sharp Grotesk", sans-serif;
+  display: block;
 }
 
 @media (min-width: 768px) {
-  .hub {
-    padding: 0 0 104px;
+  .contact__header {
+    margin: 94px 0 52px;
   }
-  .hub__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
+  .contact__title {
+    margin: 0 0 69px;
   }
-  .hub__data {
-    width: 100%;
+}
+.mod-follow {
+  font: 300 32px/36px "Sharp Grotesk", sans-serif;
+  margin: 58px 0 71px;
+  padding: 0 20px;
+}
+.mod-follow__a {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .mod-follow {
+    font: 300 72px/72px "Sharp Grotesk", sans-serif;
+    margin: 106px 0 73px;
+    padding: 0;
   }
-  .hub__title {
-    margin-bottom: 57px;
+  .mod-follow__block {
+    display: block;
   }
-  .hub__text {
-    max-width: 510px;
-    margin: 0 0 21px;
+  .mod-follow__a {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
-  .hub__figure {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 295px;
-            flex: 0 0 295px;
-    -webkit-filter: drop-shadow(0px 4px 100px rgba(18, 124, 250, 0.35));
-            filter: drop-shadow(0px 4px 100px rgba(18, 124, 250, 0.35));
-  }
-  .hub__bottom {
-    max-width: 610px;
-    gap: 13px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .mod-follow__a:hover {
+    color: #a891ff;
   }
 }

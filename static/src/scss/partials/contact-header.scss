@@ -1,0 +1,42 @@
+@import '../vars.scss';
+
+.contact {
+    &__header {
+        border-bottom: 1px solid white;
+        margin: 94px 20px 52px;
+        padding: 0 0 58px;
+    }
+
+    &__title {
+        font: 300 45px/52px $font-primary;
+        word-wrap: break-word;
+        margin: 0 0 45px;
+    }
+
+    &__subtitle {
+        font: 200 16px/26px $font-primary;
+    }
+
+    &__place {
+        font: 200 36px/44px $font-primary;
+    }
+
+    &__street {
+        font: 300 24px/30px $font-primary;
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .contact {
+        &__header {
+            margin: 94px 0 52px;
+        }
+
+        &__title {
+            margin: 0 0 69px;
+        }
+    }
+}

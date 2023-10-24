@@ -3,6 +3,9 @@ body {
   color: white;
   padding-top: 94px;
 }
+body a:hover {
+  color: #FFC226;
+}
 
 .header {
   background: black;
