@@ -762,3 +762,8 @@ body a:hover {
     color: #a891ff;
   }
 }
+@media (min-width: 768px) {
+  .mod-follow {
+    margin: 50px 0 154px;
+  }
+}
