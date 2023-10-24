@@ -1,0 +1,77 @@
+@import '../vars.scss';
+
+
+.lab-grid {
+    &__container {
+        padding: 20px;
+    }
+
+    &__x2,
+    &__x3,
+    &__container {
+        display: flex;
+        column-gap: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    &::before {
+        content: '';
+        background: #E4EAFF;
+        background: linear-gradient(180deg, #E4EAFF, #F4F4F4);
+        display: block;
+        height: 70%;
+        position: absolute;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .lab-grid {
+        &__container {
+            padding: 0;
+            display: flex;
+            column-gap: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__x3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        &__x2 {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+
+        &__itemx2 {
+            grid-column-end: span 2;
+        }
+
+        &__item--vertical {
+            grid-row-end: span 2;
+        }
+    }
+}
