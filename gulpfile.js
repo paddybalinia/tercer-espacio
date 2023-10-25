@@ -82,6 +82,14 @@ const sectionJsFiles = [
   "static/src/js/partials/ViewportObserver.js",
 ];
 
+const sectionLabJsFiles = [
+  "static/src/js/partials/Header.js",
+  "static/src/js/partials/LazyLoadImg.js",
+  "static/src/js/partials/ScrollIntoView.js",
+  "static/src/js/partials/ViewportObserver.js",
+  "static/src/js/partials/Lightbox.js",
+];
+
 function combineScripts() {
   return gulp
     .src([...jsFiles]) // Combina jsFiles y contactJsFiles
@@ -93,6 +101,13 @@ function combineSectionScript() {
   return gulp
     .src(sectionJsFiles)
     .pipe(concat("Section.js"))
+    .pipe(gulp.dest("static/src/js"));
+}
+
+function combineSectionLabScript() {
+  return gulp
+    .src(sectionLabJsFiles)
+    .pipe(concat("Section-Lab.js"))
     .pipe(gulp.dest("static/src/js"));
 }
 
@@ -112,7 +127,8 @@ const buildTasks = gulp.parallel(
   optimizeImages,
   combineScripts,
   optimizeFonts,
-  combineSectionScript // Agrega la tarea de combinación del script de contacto
+  combineSectionScript,
+  combineSectionLabScript
 );
 
 exports.build = buildTasks;

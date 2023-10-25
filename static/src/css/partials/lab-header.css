@@ -7,40 +7,136 @@
   background: #E4E9FF;
 }
 .lab__header {
-  padding: 0 20px 52px;
-  margin: 30px 0 0;
+  padding: 0 20px 75px;
+  margin: 0 0 0;
 }
 .lab__header__title {
   font: 600 64px/64px "Recoleta", sans-serif;
+  margin: 0 0 13px;
 }
-.lab .branding__title {
+
+.branding {
+  position: relative;
+  padding: 80px 0 0;
+}
+.branding__figure {
+  position: absolute;
+  left: -105px;
+  top: 12px;
+}
+.branding__title {
   font: 600 64px/64px "Recoleta", sans-serif;
 }
-.lab .our-lab__title {
-  font: 600 16px/24px "Recoleta", sans-serif;
+
+.our-lab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.lab .our-lab__text {
+.our-lab__title {
+  font: 600 16px/24px "Recoleta", sans-serif;
+  margin: 0 0 24px;
+}
+.our-lab__text {
   font: 300 12px/20px "Sharp Grotesk", sans-serif;
   letter-spacing: 0.1px;
+  margin: 0 0 67px;
 }
-.lab .illustration__text {
+.our-lab__figure {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.illustration {
+  margin: 0 0 6px;
+}
+.illustration__figure {
+  height: 169px;
+  margin: 0 -20px;
+}
+.illustration__text {
   font: 600 16px/24px "Recoleta", sans-serif;
+  margin: 0 0 9px 185px;
 }
-.lab .illustration__span {
+.illustration__span {
   display: block;
+}
+.illustration__img {
+  width: 100%;
+  height: 165px;
 }
 
 @media (min-width: 768px) {
+  .lab {
+    position: relative;
+    overflow: hidden;
+  }
   .lab__header {
     padding: 0 20px 82px;
-    margin: 51px 0 0;
+    margin: 0 0 0;
   }
   .lab__header__title {
-    font: 300 45px/52px "Sharp Grotesk", sans-serif;
-    margin: 0 0 73px;
-    max-width: 1040px;
+    font: 600 128px/138px "Recoleta", sans-serif;
+    position: absolute;
+    right: -265px;
+    z-index: 2;
+    top: -36px;
   }
   .lab__header__text {
     font: 300 24px/30px "Sharp Grotesk", sans-serif;
+  }
+  .lab__header__col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .illustration {
+    margin: 120px 0 0 177px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .illustration__text {
+    margin: 0 0 9px 39px;
+  }
+  .branding {
+    position: relative;
+    padding: 80px 0 0;
+  }
+  .branding__figure {
+    position: absolute;
+    left: 73px;
+    top: 0;
+  }
+  .branding__title {
+    font: 600 128px/138px "Recoleta", sans-serif;
+    position: relative;
+    z-index: 2;
+    margin: 44px 0 0 -60px;
+  }
+  .our-lab {
+    margin: 49px 102px 0 0;
+    max-width: 285px;
+  }
+  .our-lab__title {
+    margin: -7px 0 18px;
+  }
+  .design__figure {
+    position: absolute;
+    right: 92px;
+    top: 41px;
   }
 }

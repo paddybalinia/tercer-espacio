@@ -691,41 +691,137 @@ input {
   background: #E4E9FF;
 }
 .lab__header {
-  padding: 0 20px 52px;
-  margin: 30px 0 0;
+  padding: 0 20px 75px;
+  margin: 0 0 0;
 }
 .lab__header__title {
   font: 600 64px/64px "Recoleta", sans-serif;
+  margin: 0 0 13px;
 }
-.lab .branding__title {
+
+.branding {
+  position: relative;
+  padding: 80px 0 0;
+}
+.branding__figure {
+  position: absolute;
+  left: -105px;
+  top: 12px;
+}
+.branding__title {
   font: 600 64px/64px "Recoleta", sans-serif;
 }
-.lab .our-lab__title {
-  font: 600 16px/24px "Recoleta", sans-serif;
+
+.our-lab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.lab .our-lab__text {
+.our-lab__title {
+  font: 600 16px/24px "Recoleta", sans-serif;
+  margin: 0 0 24px;
+}
+.our-lab__text {
   font: 300 12px/20px "Sharp Grotesk", sans-serif;
   letter-spacing: 0.1px;
+  margin: 0 0 67px;
 }
-.lab .illustration__text {
+.our-lab__figure {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.illustration {
+  margin: 0 0 6px;
+}
+.illustration__figure {
+  height: 169px;
+  margin: 0 -20px;
+}
+.illustration__text {
   font: 600 16px/24px "Recoleta", sans-serif;
+  margin: 0 0 9px 185px;
 }
-.lab .illustration__span {
+.illustration__span {
   display: block;
+}
+.illustration__img {
+  width: 100%;
+  height: 165px;
 }
 
 @media (min-width: 768px) {
+  .lab {
+    position: relative;
+    overflow: hidden;
+  }
   .lab__header {
     padding: 0 20px 82px;
-    margin: 51px 0 0;
+    margin: 0 0 0;
   }
   .lab__header__title {
-    font: 300 45px/52px "Sharp Grotesk", sans-serif;
-    margin: 0 0 73px;
-    max-width: 1040px;
+    font: 600 128px/138px "Recoleta", sans-serif;
+    position: absolute;
+    right: -265px;
+    z-index: 2;
+    top: -36px;
   }
   .lab__header__text {
     font: 300 24px/30px "Sharp Grotesk", sans-serif;
+  }
+  .lab__header__col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .illustration {
+    margin: 120px 0 0 177px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .illustration__text {
+    margin: 0 0 9px 39px;
+  }
+  .branding {
+    position: relative;
+    padding: 80px 0 0;
+  }
+  .branding__figure {
+    position: absolute;
+    left: 73px;
+    top: 0;
+  }
+  .branding__title {
+    font: 600 128px/138px "Recoleta", sans-serif;
+    position: relative;
+    z-index: 2;
+    margin: 44px 0 0 -60px;
+  }
+  .our-lab {
+    margin: 49px 102px 0 0;
+    max-width: 285px;
+  }
+  .our-lab__title {
+    margin: -7px 0 18px;
+  }
+  .design__figure {
+    position: absolute;
+    right: 92px;
+    top: 41px;
   }
 }
 .lab-grid__container {
@@ -748,7 +844,7 @@ input {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: auto;
+  height: 100%;
 }
 .lab-grid::before {
   content: "";
@@ -827,5 +923,194 @@ input {
   }
   .mod-follow__a:hover {
     color: #a891ff;
+  }
+}
+.lightbox-active {
+  position: relative;
+  overflow: hidden;
+}
+
+.lightbox {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 706px;
+  overflow: scroll;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
+}
+.lightbox__overlay {
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: #E5EAFF;
+  opacity: 0.8;
+}
+.lightbox__wrap {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1236px;
+  max-width: 340px;
+  position: relative;
+  z-index: 2;
+  border-radius: 12px;
+  -webkit-filter: drop-shadow(0px 4px 100px rgba(18, 124, 250, 0.35));
+          filter: drop-shadow(0px 4px 100px rgba(18, 124, 250, 0.35));
+  width: 100%;
+}
+.lightbox__nav {
+  position: absolute;
+  right: 38px;
+  top: 48px;
+  right: 8px;
+  top: 8px;
+  height: 50px;
+  width: 50px;
+}
+.lightbox__nav__svg {
+  width: 20px;
+}
+.lightbox__data {
+  position: relative;
+  padding: 50px 25px 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 28px;
+}
+.lightbox__title {
+  font: 300 32px/32px "Sharp Grotesk", sans-serif;
+  margin: 0 0 2px;
+}
+.lightbox__subtitle {
+  font: 300 24px/28px "Sharp Grotesk", sans-serif;
+}
+.lightbox__snood {
+  font: 300 20px/24px "Sharp Grotesk", sans-serif;
+}
+.lightbox__text {
+  font: 200 14px/20px "Sharp Grotesk", sans-serif;
+}
+.lightbox__img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+}
+.lightbox__next {
+  position: absolute;
+  bottom: 44px;
+  right: 24px;
+}
+
+@media (max-height: 650px) {
+  .lightbox__overflow {
+    height: 996px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+@media (max-width: 768px) and (max-height: 900px) {
+  .lightbox {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .lightbox__overlay {
+    height: 786px;
+    position: fixed;
+  }
+  .lightbox__overflow {
+    height: 856px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .lightbox__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1236px;
+  }
+  .lightbox__nav {
+    top: 32px;
+    right: 21px;
+  }
+  .lightbox__figure {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 606px;
+            flex: 0 0 606px;
+  }
+  .lightbox__data {
+    padding: 100px 52px 0;
+    gap: 26px;
+    width: 100%;
+  }
+  .lightbox__title {
+    font: 300 45px/52px "Sharp Grotesk", sans-serif;
+    margin: 0 0 16px;
+  }
+  .lightbox__subtitle {
+    font: 300 32px/36px "Sharp Grotesk", sans-serif;
+    margin: 0 0 9px;
+    max-width: 355px;
+  }
+  .lightbox__snood {
+    font: 300 28px/36px "Sharp Grotesk", sans-serif;
+  }
+  .lightbox__text {
+    font: 200 16px/26px "Sharp Grotesk", sans-serif;
+    max-width: 465px;
+  }
+  .lightbox__img {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+  }
+  .lightbox__next {
+    right: 37px;
+    bottom: 15px;
   }
 }

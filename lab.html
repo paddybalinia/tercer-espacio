@@ -132,10 +132,6 @@
                     </div>
 
                     <div class="our-lab">
-                        <figure class="our-lab__figure">
-                            <img src="static/dist/images/lab-illustration.png" title="illustration" alt="illustration"
-                                width="294" height="169" class="our-lab__img" class="lab-grid__img">
-                        </figure>
                         <h3 class="our-lab__title">Our Lab</h3>
                         <p class="our-lab__text">We were all taught reality is dual: the sun and the moon, the physical
                             and
@@ -144,23 +140,29 @@
                             elements to create a third and from this third, many, many more.</p>
                     </div>
 
-                    <figure class="design__figure">
-                        <img src="static/dist/images/lab-design.png" title="Design" alt="Design" width="295"
-                            height="170" class="design__img" class="lab-grid__img">
-                    </figure>
                 </div>
                 <div class="lab__header__col">
                     <h2 class="lab__header__title">Design &
                         Motion </h2>
 
+
                     <div class="illustration">
+
                         <p class="illustration__text">
                             <span class="illustration__span">3D</span>
                             <span class="illustration__span">Illustration</span>
                             <span class="illustration__span">Direction</span>
                             <span class="illustration__span">& Love</span>
                         </p>
+                        <figure class="illustration__figure">
+                            <img src="static/dist/images/lab-illustration.png" title="illustration" alt="illustration"
+                                width="294" height="169" class="illustration__img">
+                        </figure>
                     </div>
+                    <figure class="design__figure">
+                        <img src="static/dist/images/lab-design.png" title="Design" alt="Design" width="295"
+                            height="170" class="design__img">
+                    </figure>
                 </div>
             </section>
         </div>
@@ -171,35 +173,35 @@
         <div class="row">
             <div class="lab-grid__container">
                 <div class="lab-grid__x3">
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
                 </div>
                 <div class="lab-grid__x2">
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/610x275.png" width="610" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
-                    <div class="lab-grid__item lab-grid__item--horizontal">
+                    <div class="lab-grid__item lab-grid__item--horizontal" data-lightbox>
                         <img src="static/dist/images/dummy/610x275.png" width="610" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
                 </div>
                 <div class="lab-grid__x3">
-                    <div class="lab-grid__item lab-grid__itemx2 ">
+                    <div class="lab-grid__item lab-grid__itemx2" data-lightbox>
                         <img src="static/dist/images/dummy/820x277.png" width="820" height="277" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
-                    <div class="lab-grid__item ">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
@@ -209,10 +211,10 @@
                     <div class="lab-grid__item lab-grid__item--vertical">
                         <img src="https://via.placeholder.com/400x570" alt="">
                     </div>
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen" title="imagen" class="lab-grid__img">
                     </div>
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen" title="imagen" class="lab-grid__img">
                     </div>
 
@@ -222,15 +224,15 @@
 
                 </div> -->
                 <div class="lab-grid__x3">
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
-                    <div class="lab-grid__item">
+                    <div class="lab-grid__item" data-lightbox>
                         <img src="static/dist/images/dummy/400x275.png" width="400" height="275" alt="imagen"
                             title="imagen" class="lab-grid__img">
                     </div>
@@ -238,16 +240,6 @@
             </div>
         </div>
     </section>
-
-
-    <div class="lightbox">
-        <div class="lightbox__overlay"></div>
-        <div class="lightbox__wrap">
-            <figure class="lightbox__figurer">
-                <img src="#" alt="#" title="#" class="lightbox__img">
-            </figure>
-        </div>
-    </div>
 
     <!-- follow -->
     <section class="mod-follow">
@@ -312,6 +304,44 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- lightbox -->
+    <div class="lightbox">
+        <div class="lightbox__overlay" data-lightbox-close></div>
+        <div class="lightbox__overflow">
+            <div class="lightbox__wrap">
+
+                <figure class="lightbox__figure">
+                    <img src="static/dist/images/dummy/606x580.png" alt="image" title="image" class="lightbox__img">
+                </figure>
+                <div class="lightbox__data">
+                    <button type="button" class="lightbox__nav" aria-label="close lightbox" data-lightbox-close>
+                        <svg class="lightbox__nav__svg" width="32" height="30" viewBox="0 0 32 30" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.999951 2.02152L30.4999 27.9785" stroke="black" />
+                            <path d="M1 28.6443L31 2.02165" stroke="black" />
+                        </svg>
+                    </button>
+                    <p class="lightbox__title">*↘NatGeo</p>
+                    <p class="lightbox__subtitle">Branding Update for Nat Geo Latam</p>
+                    <p class="lightbox__snood">YEAR: 2020</p>
+                    <p class="lightbox__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <button type="button" class="lightbox__next" aria-label="next lightbox">
+
+                        <svg class="lightbox__next__svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.5677 9.02637C30.4845 17.8085 40.5562 23.2974 40.5562 23.2974M40.5562 23.2974C40.5562 23.2974 29.925 28.7862 26.5677 38.1173M40.5562 23.2974L5.64709 23.2974"
+                                stroke="black" stroke-width="2" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- navigation -->
     <nav class="navigation ">
@@ -421,7 +451,7 @@
                 });
         }
     </script>
-    <script async src="static/dist/js/Section-min.js"></script>
+    <script async src="static/dist/js/Section-Lab-min.js"></script>
 
 </body>
 

@@ -9,51 +9,92 @@
     background: #E4E9FF;
 
     &__header {
-        padding: 0 20px 52px;
-        margin: 30px 0 0;
+        padding: 0 20px 75px;
+        margin: 0 0 0;
 
         &__title {
             font: 600 64px/64px $font-secondary;
+            margin: 0 0 13px;
         }
+    }
+}
 
+.branding {
+    position: relative;
+    padding: 80px 0 0;
 
+    &__figure {
+        position: absolute;
+        left: -105px;
+        top: 12px;
     }
 
-
-    .branding__title {
+    &__title {
         font: 600 64px/64px $font-secondary;
-
     }
+}
 
-    .our-lab__title {
+.our-lab {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
         font: 600 16px/24px $font-secondary;
+        margin: 0 0 24px;
     }
 
-    .our-lab__text {
+    &__text {
         font: 300 12px/20px $font-primary;
         letter-spacing: 0.1px;
+        margin: 0 0 67px;
     }
 
-    .illustration__text {
+    &__figure {
+        order: 3;
+    }
+}
+
+.illustration {
+    margin: 0 0 6px;
+
+    &__figure {
+        height: 169px;
+        margin: 0 -20px;
+    }
+
+    &__text {
         font: 600 16px/24px $font-secondary;
+        margin: 0 0 9px 185px;
     }
 
-    .illustration__span {
+    &__span {
         display: block;
+    }
+
+    &__img {
+        width: 100%;
+        height: 165px;
     }
 }
 
 
+
 @media (min-width: 768px) {
     .lab {
+        position: relative;
+        overflow: hidden;
+
         &__header {
             padding: 0 20px 82px;
-            margin: 51px 0 0;
+            margin: 0 0 0;
 
             &__title {
-                font: 300 45px/52px $font-primary;
-                margin: 0 0 73px;
-                max-width: 1040px;
+                font: 600 128px/138px $font-secondary;
+                position: absolute;
+                right: -265px;
+                z-index: 2;
+                top: -36px;
+
             }
 
             &__text {
@@ -61,4 +102,54 @@
             }
         }
     }
+
+    .lab__header__col {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .illustration {
+        margin: 120px 0 0 177px;
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__text {
+            margin: 0 0 9px 39px;
+        }
+    }
+
+    .branding {
+        position: relative;
+        padding: 80px 0 0;
+
+        &__figure {
+            position: absolute;
+            left: 73px;
+            top: 0;
+        }
+
+        &__title {
+            font: 600 128px/138px $font-secondary;
+            position: relative;
+            z-index: 2;
+            margin: 44px 0 0 -60px;
+        }
+    }
+
+    .our-lab {
+        margin: 49px 102px 0 0;
+        max-width: 285px;
+
+        &__title {
+            margin: -7px 0 18px;
+        }
+    }
+
+    .design__figure {
+        position: absolute;
+        right: 92px;
+        top: 41px;
+    }
+
 }
