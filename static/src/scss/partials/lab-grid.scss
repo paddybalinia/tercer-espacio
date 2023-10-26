@@ -55,8 +55,10 @@
         position: absolute;
         width: 100%;
     }
+}
 
-
+.lab__data {
+    display: none;
 }
 
 
@@ -78,7 +80,7 @@
         }
 
         &__item {
-            background-color: #ffffff;
+
             border-radius: 12px;
             text-align: center;
             font-size: 24px;

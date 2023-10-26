@@ -887,6 +887,10 @@ input {
   width: 100%;
 }
 
+.lab__data {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .lab-grid__container {
     padding: 0;
@@ -913,7 +917,6 @@ input {
             flex-direction: row;
   }
   .lab-grid__item {
-    background-color: #ffffff;
     border-radius: 12px;
     text-align: center;
     font-size: 24px;
@@ -1011,6 +1014,7 @@ input {
   position: absolute;
   background: #E5EAFF;
   opacity: 0.8;
+  cursor: pointer;
 }
 .lightbox__wrap {
   background: white;
