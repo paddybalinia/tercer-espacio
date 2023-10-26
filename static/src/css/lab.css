@@ -848,6 +848,33 @@ input {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+  height: 233px;
+}
+.lab-grid__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  gap: 20px;
+}
+.lab-grid--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.lab-grid--vertical .lab-grid__img {
+  height: 470px;
 }
 .lab-grid::before {
   content: "";
@@ -875,18 +902,15 @@ input {
             flex-direction: column;
     gap: 20px;
   }
-  .lab-grid__x3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .lab-grid__x2 {
-    display: grid;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .lab-grid__item {
     background-color: #ffffff;
@@ -894,22 +918,29 @@ input {
     text-align: center;
     font-size: 24px;
   }
-  .lab-grid__itemx2 {
-    grid-column-end: span 2;
-  }
-  .lab-grid__item--vertical {
-    grid-row-end: span 2;
-  }
   .lab-grid__flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 20px;
+  }
+  .lab-grid--vertical .lab-grid__img {
+    height: inherit;
   }
   .lab-grid--right {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .lab-grid__itemx2 {
+    grid-column-end: span 2;
+  }
+  .lab-grid__img {
+    height: 100%;
   }
 }
 .mod-follow {

@@ -23,6 +23,27 @@
         width: 100%;
         object-fit: cover;
         height: 100%;
+        height: 233px;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        gap: 20px;
+    }
+
+    &--right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &--vertical {
+        & .lab-grid__img {
+
+            height: 470px;
+        }
     }
 
     &::before {
@@ -35,7 +56,10 @@
         width: 100%;
     }
 
+
 }
+
+
 
 @media (min-width: 768px) {
     .lab-grid {
@@ -47,44 +71,46 @@
             gap: 20px;
         }
 
-        &__x3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 20px;
-            justify-content: center;
-        }
-
         &__x2 {
-            display: grid;
             gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            flex-direction: row;
         }
 
         &__item {
             background-color: #ffffff;
-
             border-radius: 12px;
             text-align: center;
             font-size: 24px;
+        }
+
+        &__flex {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        &--vertical {
+            & .lab-grid__img {
+
+                height: inherit;
+            }
+        }
+
+        &--right {
+            display: grid;
+
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         &__itemx2 {
             grid-column-end: span 2;
         }
 
-        &__item--vertical {
-            grid-row-end: span 2;
-        }
+        &__img {
 
-        &__flex {
-            display: flex;
-            gap: 20px;
-        }
-
-        &--right {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
+            height: 100%;
         }
     }
 }
