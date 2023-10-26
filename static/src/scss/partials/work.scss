@@ -47,10 +47,24 @@
         letter-spacing: 0.1px;
         display: block;
     }
+
+    &__figure__hover {
+        visibility: hidden;
+        opacity: 0;
+        transition: $transition ease-out;
+    }
 }
 
 @media (min-width: 768px) {
     .work {
         margin-bottom: 41px;
+
+        &:hover {
+            & .work__figure__hover {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
+
 }
