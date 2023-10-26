@@ -61,6 +61,10 @@
   width: 100%;
 }
 
+.lab__data {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .lab-grid__container {
     padding: 0;
@@ -87,7 +91,6 @@
             flex-direction: row;
   }
   .lab-grid__item {
-    background-color: #ffffff;
     border-radius: 12px;
     text-align: center;
     font-size: 24px;
