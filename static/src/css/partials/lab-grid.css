@@ -1,6 +1,9 @@
 .lab-grid__container {
   padding: 20px;
 }
+.lab-grid__img {
+  border-radius: 12px;
+}
 .lab-grid__x2, .lab-grid__x3, .lab-grid__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,8 +64,7 @@
   }
   .lab-grid__item {
     background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 12px;
     text-align: center;
     font-size: 24px;
   }
@@ -71,5 +73,16 @@
   }
   .lab-grid__item--vertical {
     grid-row-end: span 2;
+  }
+  .lab-grid__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .lab-grid--right {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

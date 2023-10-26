@@ -6,6 +6,10 @@
         padding: 20px;
     }
 
+    &__img {
+        border-radius: 12px;
+    }
+
     &__x2,
     &__x3,
     &__container {
@@ -58,13 +62,11 @@
 
         &__item {
             background-color: #ffffff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+
+            border-radius: 12px;
             text-align: center;
             font-size: 24px;
         }
-
-
 
         &__itemx2 {
             grid-column-end: span 2;
@@ -72,6 +74,17 @@
 
         &__item--vertical {
             grid-row-end: span 2;
+        }
+
+        &__flex {
+            display: flex;
+            gap: 20px;
+        }
+
+        &--right {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
