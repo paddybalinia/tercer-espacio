@@ -711,10 +711,20 @@ input {
   letter-spacing: 0.1px;
   display: block;
 }
+.work__figure__hover {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 
 @media (min-width: 768px) {
   .work {
     margin-bottom: 41px;
+  }
+  .work:hover .work__figure__hover {
+    opacity: 1;
+    visibility: visible;
   }
 }
 .mod-quote {
