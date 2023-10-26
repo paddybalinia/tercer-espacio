@@ -457,9 +457,6 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   height: 100%;
   width: 100vw;
@@ -514,17 +511,27 @@ input {
   transition: all 0.2s;
 }
 .home-top__bg.visible {
-  background: url(../../dist/images/bg-hometop.jpg) no-repeat center;
   background-size: cover;
   opacity: 1;
 }
 
+.home-background {
+  background-color: #f4f4f4;
+  position: relative;
+  z-index: 1;
+}
+
 @media (min-width: 768px) {
+  .home-top {
+    height: 1700px;
+    max-height: inherit;
+  }
   .home-top__block {
     display: block;
   }
   .home-top__title {
     font: 300 64px/72px "Sharp Grotesk", sans-serif;
+    margin: 350px 0 0;
     text-align: center;
     letter-spacing: -0.25px;
     max-width: 1128px;
@@ -550,6 +557,14 @@ input {
             transform: translate(0, 10px);
   }
 }
+video {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 .home-video {
   width: 100%;
   max-height: 100vh;

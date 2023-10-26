@@ -118,15 +118,15 @@
 
     <!-- home top -->
     <section class="home-top">
+        <video id="myVideo" controls autoplay name="media">
+            <source src="static/dist/images/dummy/1440x734.mp4" type="video/mp4">
+        </video>
         <div class="home-top__bg viewport-observer"></div>
         <div class="home-top__center">
-            <figure class="home-top__figure">
-                <img data-lazyload="static/dist/images/bg-video.jpg" alt="video" width="152" height="99"
-                    class="home-top__img ">
-            </figure>
-            <h2 class="home-top__title " data-delay="0">
-                <span class="texto-animado">A multidimensional creative design studio.</span>
-                <span class="home-top__block texto-animado" data-delay="2000">→We bring ideas * to life.</span>
+
+            <h2 class="home-top__title " data-delay="0" id="miTexto">
+                <span class="">A multidimensional creative design studio.</span>
+                <span class="home-top__block " data-delay="2000">→We bring ideas * to life.</span>
             </h2>
         </div>
         <button type="button" class="home-top__arrow" data-anchor="video" aria-label="Scroll to video">
@@ -136,234 +136,241 @@
                     stroke="black" stroke-width="2" stroke-linejoin="round" />
             </svg>
         </button>
+
     </section>
 
     <!-- video -->
     <section class="home-video" data-section="video">
-        <img data-lazyload="static/dist/images/bg-video.jpg" width="1200" height="650" alt="Video"
-            class="home-top__video viewport-observer animation-bottom delay-4">
+        <!-- <img data-lazyload="static/dist/images/bg-video.jpg" width="1200" height="650" alt="Video"
+            class="home-top__video viewport-observer animation-bottom delay-4"> -->
+
     </section>
 
-    <!-- work -->
-    <section class="mod-work">
-        <div class="row">
+    <div class="home-background">
+        <!-- work -->
+        <section class="mod-work">
+            <div class="row">
 
-            <div class="mod-work__header">
-                <h3 class="mod-work__title">Our Recent Work</h3>
-                <div class="mod-work__more">
-                    <a href="work.html" class="mod-work__link" title="View all Projects">View all Projects</a>
+                <div class="mod-work__header">
+                    <h3 class="mod-work__title">Our Recent Work</h3>
+                    <div class="mod-work__more">
+                        <a href="work.html" class="mod-work__link" title="View all Projects">View all Projects</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="mod-work__content">
+                <div class="mod-work__content">
 
-                <div class="col col_6">
-                    <div class="work viewport-observer animation-bottom delay-4">
-                        <figure class="work__figure">
-                            <a href="#" title="Makerdao">
-                                <img data-lazyload="static/dist/images/works/makerdao.jpg" alt="Makerdao"
-                                    title="Makerdao" width="610" height="375" class="work__figure__img">
-                                <div class="work__figure__hover">
-                                    <img data-lazyload="static/dist/images/works/makerdao.gif" alt="Makerdao"
+                    <div class="col col_6">
+                        <div class="work viewport-observer animation-bottom delay-4">
+                            <figure class="work__figure">
+                                <a href="#" title="Makerdao">
+                                    <img data-lazyload="static/dist/images/works/makerdao.jpg" alt="Makerdao"
                                         title="Makerdao" width="610" height="375" class="work__figure__img">
-                                </div>
-                            </a>
-                        </figure>
-                        <div class="work__data">
-                            <h3 class="work__title"><a href="#" class="work__title__a" title="Makerdao">Makerdao</a>
-                            </h3>
-                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
-                            <span class="work__caption">art direction / animation</span>
+                                    <div class="work__figure__hover">
+                                        <img data-lazyload="static/dist/images/works/makerdao.gif" alt="Makerdao"
+                                            title="Makerdao" width="610" height="375" class="work__figure__img">
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="work__data">
+                                <h3 class="work__title"><a href="#" class="work__title__a" title="Makerdao">Makerdao</a>
+                                </h3>
+                                <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                                <span class="work__caption">art direction / animation</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col col_6">
-                    <div class="work viewport-observer animation-bottom delay-6">
-                        <figure class="work__figure">
-                            <a href="#" title="Docusign">
-                                <img data-lazyload="static/dist/images/works/docusign.jpg" alt="Docusign"
-                                    title="Docusign" width="610" height="375" class="work__figure__img">
-                                <div class="work__figure__hover">
-                                    <img data-lazyload="static/dist/images/works/docusign.gif" alt="Docusign"
+                    <div class="col col_6">
+                        <div class="work viewport-observer animation-bottom delay-6">
+                            <figure class="work__figure">
+                                <a href="#" title="Docusign">
+                                    <img data-lazyload="static/dist/images/works/docusign.jpg" alt="Docusign"
                                         title="Docusign" width="610" height="375" class="work__figure__img">
-                                </div>
-                            </a>
-                        </figure>
-                        <div class="work__data">
-                            <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
-                            </h3>
-                            <span class="work__tag">Tercer Espacio + cresci's agency</span>
-                            <span class="work__caption">art direction / animation</span>
+                                    <div class="work__figure__hover">
+                                        <img data-lazyload="static/dist/images/works/docusign.gif" alt="Docusign"
+                                            title="Docusign" width="610" height="375" class="work__figure__img">
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="work__data">
+                                <h3 class="work__title"><a href="#" class="work__title__a" title="Docusign">Docusign</a>
+                                </h3>
+                                <span class="work__tag">Tercer Espacio + cresci's agency</span>
+                                <span class="work__caption">art direction / animation</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col col_6">
-                    <div class="work viewport-observer animation-bottom delay-4">
-                        <figure class="work__figure">
-                            <a href="#" title="Supervielle Bank">
-                                <img data-lazyload="static/dist/images/works/supervielle.jpg" alt="Supervielle Bank"
-                                    title="Supervielle Bank" width="610" height="375" class="work__figure__img">
-                                <div class="work__figure__hover">
-                                    <img data-lazyload="static/dist/images/works/supervielle.gif" alt="Supervielle Bank"
+                    <div class="col col_6">
+                        <div class="work viewport-observer animation-bottom delay-4">
+                            <figure class="work__figure">
+                                <a href="#" title="Supervielle Bank">
+                                    <img data-lazyload="static/dist/images/works/supervielle.jpg" alt="Supervielle Bank"
                                         title="Supervielle Bank" width="610" height="375" class="work__figure__img">
-                                </div>
-                            </a>
-                        </figure>
-                        <div class="work__data">
-                            <h3 class="work__title"><a href="#" class="work__title__a"
-                                    title="Supervielle Bank">Supervielle Bank</a>
-                            </h3>
-                            <span class="work__tag">Tercer Espacio </span>
-                            <span class="work__caption">art direction / motion</span>
+                                    <div class="work__figure__hover">
+                                        <img data-lazyload="static/dist/images/works/supervielle.gif"
+                                            alt="Supervielle Bank" title="Supervielle Bank" width="610" height="375"
+                                            class="work__figure__img">
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="work__data">
+                                <h3 class="work__title"><a href="#" class="work__title__a"
+                                        title="Supervielle Bank">Supervielle Bank</a>
+                                </h3>
+                                <span class="work__tag">Tercer Espacio </span>
+                                <span class="work__caption">art direction / motion</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col col_6">
-                    <div class="work viewport-observer animation-bottom delay-6">
-                        <figure class="work__figure">
-                            <a href="#" title="Beyond TV">
-                                <img data-lazyload="static/dist/images/works/beyondtv.jpg" alt="Beyond TV"
-                                    title="Beyond TV" width="610" height="375" class="work__figure__img">
-                                <div class="work__figure__hover">
-                                    <img data-lazyload="static/dist/images/works/beyondtv.gif" alt="Beyond TV"
+                    <div class="col col_6">
+                        <div class="work viewport-observer animation-bottom delay-6">
+                            <figure class="work__figure">
+                                <a href="#" title="Beyond TV">
+                                    <img data-lazyload="static/dist/images/works/beyondtv.jpg" alt="Beyond TV"
                                         title="Beyond TV" width="610" height="375" class="work__figure__img">
-                                </div>
-                            </a>
-                        </figure>
-                        <div class="work__data">
-                            <h3 class="work__title"><a href="#" class="work__title__a" title="Beyond TV">Beyond
-                                    TV</a>
-                            </h3>
-                            <span class="work__tag">Tercer Espacio + cresci's agency </span>
-                            <span class="work__caption">art direction / design / animation</span>
+                                    <div class="work__figure__hover">
+                                        <img data-lazyload="static/dist/images/works/beyondtv.gif" alt="Beyond TV"
+                                            title="Beyond TV" width="610" height="375" class="work__figure__img">
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="work__data">
+                                <h3 class="work__title"><a href="#" class="work__title__a" title="Beyond TV">Beyond
+                                        TV</a>
+                                </h3>
+                                <span class="work__tag">Tercer Espacio + cresci's agency </span>
+                                <span class="work__caption">art direction / design / animation</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mod-work__more mod-work__more--center">
+                        <a href="work.html" class="mod-work__link" title="View all Projects">View all Projects</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="mod-background viewport-observer">
+            <!-- quote -->
+            <section class="mod-quote " data-section="quote">
+                <button type="button" class="mod-quote__arrow" data-anchor="quote" aria-label="Scroll to anchor">
+                    <svg class="mod-quote__svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <path
+                            d="M27.6061 18.8188C21.3854 21.5932 17.4974 28.7273 17.4974 28.7273M17.4974 28.7273C17.4974 28.7273 13.6095 21.1968 7.00002 18.8188M17.4974 28.7273L17.4974 4"
+                            stroke="black" stroke-width="2" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <p class="mod-quote__text viewport-observer animation-bottom delay-4"><span
+                        class="mod-quote__quote">*</span> We're an
+                    intentionally flexible studio —
+                    designed to scale with the needs of
+                    our clients.</p>
+            </section>
+
+            <!-- lab -->
+            <section class="mod-lab">
+                <div class="mod-lab__content viewport-observer animation-bottom delay-4">
+                    <span class="mod-lab__text">Motion →</span>
+                    <figure class="mod-lab__figure">
+                        <img data-lazyload="static/dist/images/lab-motion.jpg" alt="Motion" width="193" height="177"
+                            class="mod-lab__img">
+                    </figure>
+                    <span class="mod-lab__text">Branding * Art</span>
+                    <figure class="mod-lab__figure">
+                        <img data-lazyload="static/dist/images/lab-branding-art.jpg" alt="Branding * Art " width="346"
+                            height="177" class="mod-lab__img">
+                    </figure>
+                    <span class="mod-lab__text">Motion</span>
+                </div>
+
+                <div class="mod-lab__content viewport-observer animation-bottom delay-4">
+                    <span class="mod-lab__text">Illustration</span>
+                    <figure class="mod-lab__figure">
+                        <img data-lazyload="static/dist/images/lab-illustration.jpg" alt="Motion" width="193"
+                            height="177" class="mod-lab__img">
+                    </figure>
+                    <span class="mod-lab__text">◊ Creative</span>
+                    <figure class="mod-lab__figure">
+                        <img data-lazyload="static/dist/images/lab-creative.jpg" alt="Branding * Art " width="346"
+                            height="177" class="mod-lab__img">
+                    </figure>
+                    <span class="mod-lab__text">Direction → Illustration</span>
+                </div>
+
+                <div class="mod-lab__content viewport-observer animation-bottom delay-4">
+                    <span class="mod-lab__text">Design </span>
+                    <figure class="mod-lab__figure">
+                        <img data-lazyload="static/dist/images/lab-3d.jpg" alt="Motion" width="193" height="177"
+                            class="mod-lab__img">
+                    </figure>
+                    <span class="mod-lab__text">3D ↗ Lab</span>
+                    <figure class="mod-lab__figure">
+                        <img data-lazyload="static/dist/images/lab-lab.jpg" alt="Branding * Art " width="346"
+                            height="177" class="mod-lab__img">
+                    </figure>
+                    <span class="mod-lab__text">Motion</span>
+                </div>
+            </section>
+
+            <a href="#" title="View our Lab" class="mod-lab__view-more viewport-observer animation-bottom delay-4">View
+                our
+                Lab</a>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer viewport-observer animation-bottom delay-4">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <div class="footer__left">
+                        <p class="footer__copy">Please get in touch at <a href="mailto:info@tercerespacio.tv"
+                                title="info@tercerespacio.tv" class="footer__copy__a">info@tercerespacio.tv</a></p>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__col">
+                            <p class="footer__title">Headquarters</p>
+                            <p class="footer__text">Av. Crámer 3226 4° Piso, C1429 CABA</p>
+                        </div>
+                        <div class="footer__col footer__social">
+                            <p class="footer__title">Digital</p>
+                            <ul class="footer__ul">
+                                <li class="footer__li">
+                                    <a href="https://www.instagram.com/tercerespacio/" class="footer__li__a"
+                                        title="Instagram Tercer Espacio" rel="noopener noreferrer">Instagram <span
+                                            class="footer__arrow">↗</span></a>
+                                </li>
+                                <li class="footer__li">
+                                    <a href="https://www.linkedin.com/company/3er-espacio/" class="footer__li__a"
+                                        title="Linkedin Tercer Espacio" rel="noopener noreferrer">Linkedin
+                                        <span class="footer__arrow">↗</span></a>
+                                </li>
+                                <li class="footer__li">
+                                    <a href="https://www.behance.net/tercerespacio" class="footer__li__a"
+                                        title="Behance Tercer Espacio" rel="noopener noreferrer">Behance
+                                        <span class="footer__arrow">↗</span></a>
+                                </li>
+                                <li class="footer__li">
+                                    <a href="https://vimeo.com/tercerespacio" class="footer__li__a"
+                                        title="Vimeo Tercer Espacio" rel="noopener noreferrer">Vimeo
+                                        <span class="footer__arrow">↗</span></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="mod-work__more mod-work__more--center">
-                    <a href="work.html" class="mod-work__link" title="View all Projects">View all Projects</a>
+                <div class="footer__bottom">
+                    <a href="work.html" title="Projects" class="footer__link">Projects</a>
+                    <a href="about.html" title="About" class="footer__link">About</a>
                 </div>
             </div>
+        </footer>
 
-        </div>
-    </section>
-
-    <div class="mod-background viewport-observer">
-        <!-- quote -->
-        <section class="mod-quote " data-section="quote">
-            <button type="button" class="mod-quote__arrow" data-anchor="quote" aria-label="Scroll to anchor">
-                <svg class="mod-quote__svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                    <path
-                        d="M27.6061 18.8188C21.3854 21.5932 17.4974 28.7273 17.4974 28.7273M17.4974 28.7273C17.4974 28.7273 13.6095 21.1968 7.00002 18.8188M17.4974 28.7273L17.4974 4"
-                        stroke="black" stroke-width="2" stroke-linejoin="round" />
-                </svg>
-            </button>
-            <p class="mod-quote__text viewport-observer animation-bottom delay-4"><span
-                    class="mod-quote__quote">*</span> We're an
-                intentionally flexible studio —
-                designed to scale with the needs of
-                our clients.</p>
-        </section>
-
-        <!-- lab -->
-        <section class="mod-lab">
-            <div class="mod-lab__content viewport-observer animation-bottom delay-4">
-                <span class="mod-lab__text">Motion →</span>
-                <figure class="mod-lab__figure">
-                    <img data-lazyload="static/dist/images/lab-motion.jpg" alt="Motion" width="193" height="177"
-                        class="mod-lab__img">
-                </figure>
-                <span class="mod-lab__text">Branding * Art</span>
-                <figure class="mod-lab__figure">
-                    <img data-lazyload="static/dist/images/lab-branding-art.jpg" alt="Branding * Art " width="346"
-                        height="177" class="mod-lab__img">
-                </figure>
-                <span class="mod-lab__text">Motion</span>
-            </div>
-
-            <div class="mod-lab__content viewport-observer animation-bottom delay-4">
-                <span class="mod-lab__text">Illustration</span>
-                <figure class="mod-lab__figure">
-                    <img data-lazyload="static/dist/images/lab-illustration.jpg" alt="Motion" width="193" height="177"
-                        class="mod-lab__img">
-                </figure>
-                <span class="mod-lab__text">◊ Creative</span>
-                <figure class="mod-lab__figure">
-                    <img data-lazyload="static/dist/images/lab-creative.jpg" alt="Branding * Art " width="346"
-                        height="177" class="mod-lab__img">
-                </figure>
-                <span class="mod-lab__text">Direction → Illustration</span>
-            </div>
-
-            <div class="mod-lab__content viewport-observer animation-bottom delay-4">
-                <span class="mod-lab__text">Design </span>
-                <figure class="mod-lab__figure">
-                    <img data-lazyload="static/dist/images/lab-3d.jpg" alt="Motion" width="193" height="177"
-                        class="mod-lab__img">
-                </figure>
-                <span class="mod-lab__text">3D ↗ Lab</span>
-                <figure class="mod-lab__figure">
-                    <img data-lazyload="static/dist/images/lab-lab.jpg" alt="Branding * Art " width="346" height="177"
-                        class="mod-lab__img">
-                </figure>
-                <span class="mod-lab__text">Motion</span>
-            </div>
-        </section>
-
-        <a href="#" title="View our Lab" class="mod-lab__view-more viewport-observer animation-bottom delay-4">View our
-            Lab</a>
     </div>
-
-    <!-- footer -->
-    <footer class="footer viewport-observer animation-bottom delay-4">
-        <div class="footer__container">
-            <div class="footer__top">
-                <div class="footer__left">
-                    <p class="footer__copy">Please get in touch at <a href="mailto:info@tercerespacio.tv"
-                            title="info@tercerespacio.tv" class="footer__copy__a">info@tercerespacio.tv</a></p>
-                </div>
-                <div class="footer__right">
-                    <div class="footer__col">
-                        <p class="footer__title">Headquarters</p>
-                        <p class="footer__text">Av. Crámer 3226 4° Piso, C1429 CABA</p>
-                    </div>
-                    <div class="footer__col footer__social">
-                        <p class="footer__title">Digital</p>
-                        <ul class="footer__ul">
-                            <li class="footer__li">
-                                <a href="https://www.instagram.com/tercerespacio/" class="footer__li__a"
-                                    title="Instagram Tercer Espacio" rel="noopener noreferrer">Instagram <span
-                                        class="footer__arrow">↗</span></a>
-                            </li>
-                            <li class="footer__li">
-                                <a href="https://www.linkedin.com/company/3er-espacio/" class="footer__li__a"
-                                    title="Linkedin Tercer Espacio" rel="noopener noreferrer">Linkedin
-                                    <span class="footer__arrow">↗</span></a>
-                            </li>
-                            <li class="footer__li">
-                                <a href="https://www.behance.net/tercerespacio" class="footer__li__a"
-                                    title="Behance Tercer Espacio" rel="noopener noreferrer">Behance
-                                    <span class="footer__arrow">↗</span></a>
-                            </li>
-                            <li class="footer__li">
-                                <a href="https://vimeo.com/tercerespacio" class="footer__li__a"
-                                    title="Vimeo Tercer Espacio" rel="noopener noreferrer">Vimeo
-                                    <span class="footer__arrow">↗</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <a href="work.html" title="Projects" class="footer__link">Projects</a>
-                <a href="about.html" title="About" class="footer__link">About</a>
-            </div>
-        </div>
-    </footer>
 
     <!-- navigation -->
     <nav class="navigation">
@@ -472,6 +479,69 @@
                     console.log('Error al registrar el Service Worker:', error);
                 });
         }
+    </script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var video = document.getElementById("myVideo");
+            var texto = document.getElementById("miTexto");
+
+            // Valores de inicio y final para el ancho del video
+            var startWidth = 30; // % de ancho inicial
+            var endWidth = 100;  // % de ancho máximo (ajusta según tus necesidades)
+
+            // Valores de inicio y final para la posición vertical (top)
+            var startTop = "90px";  // Valor inicial de la posición vertical
+            var endTop = "90px";   // Valor final de la posición vertical
+
+            // Altura desde la parte superior del documento donde comienza el cambio de tamaño
+            var startScroll = 0;  // Ajusta según tus necesidades
+
+            // Altura desde la parte superior del documento donde el cambio de tamaño está completo
+            var endScroll = 700;  // Ajusta según tus necesidades
+
+
+            // Altura desde la parte superior del documento donde la opacidad comienza a cambiar
+            var fadeOutScrollStart = 000;  // Ajusta según tus necesidades
+
+            // Altura desde la parte superior del documento donde la opacidad se establece en 0
+            var fadeOutScrollEnd = 200;  // Ajusta según tus necesidades
+
+            window.addEventListener("scroll", function () {
+                var scrollPosition = window.scrollY || window.pageYOffset;
+                console.log(scrollPosition)
+
+                // Calcula el porcentaje de desplazamiento en función de startScroll y endScroll
+                var scrollPercentage = (scrollPosition - startScroll) / (endScroll - startScroll);
+
+                // Limita el porcentaje a los valores entre 0 y 1
+                scrollPercentage = Math.min(1, Math.max(0, scrollPercentage));
+
+                // Calcula el ancho del video en función del porcentaje
+                var newWidth = startWidth + (endWidth - startWidth) * scrollPercentage;
+
+                // Calcula la posición vertical (top) en función del porcentaje
+                var newTop = `calc(${startTop} + ${scrollPercentage * (parseInt(endTop) - parseInt(startTop))}px)`;
+
+                // Calcula la opacidad en función del desplazamiento vertical
+                var newOpacity = 1 - (scrollPosition - fadeOutScrollStart) / (fadeOutScrollEnd - fadeOutScrollStart);
+
+                // Asegúrate de que la opacidad esté en el rango 0-1
+                newOpacity = Math.min(1, Math.max(0, newOpacity));
+
+
+                // Aplica los nuevos estilos al video
+                video.style.width = newWidth + "%";
+                video.style.top = newTop;
+
+                // Aplica la nueva opacidad al elemento de texto
+                texto.style.opacity = newOpacity;
+            });
+        });
+
+
     </script>
     <script async src="static/dist/js/Home-min.js"></script>
 
