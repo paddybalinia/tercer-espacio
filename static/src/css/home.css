@@ -792,12 +792,17 @@ input {
   white-space: nowrap;
   margin-bottom: 10px;
 }
-.mod-lab__img {
-  border-radius: 12px;
-}
 .mod-lab__content, .mod-lab__figure, .mod-lab__img {
   height: 95px;
-  width: auto;
+}
+.mod-lab__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+  width: 106px;
+}
+.mod-lab__img-2 {
+  width: 174px;
 }
 .mod-lab__view-more {
   border: 1px solid #000;
@@ -826,6 +831,15 @@ input {
   }
   .mod-lab__content, .mod-lab__figure, .mod-lab__img {
     height: 177px;
+  }
+  .mod-lab__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
+    width: 193px;
+  }
+  .mod-lab__img-2 {
+    width: 325px;
   }
   .mod-lab__view-more {
     margin: 81px auto 0;
