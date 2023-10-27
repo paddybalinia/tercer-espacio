@@ -16,15 +16,23 @@
         margin-bottom: 10px;
     }
 
-    &__img {
-        border-radius: 12px;
-    }
+
 
     &__content,
     &__figure,
     &__img {
         height: 95px;
-        width: auto;
+        // width: auto;
+    }
+
+    &__img {
+        object-fit: cover;
+        border-radius: 12px;
+        width: 106px;
+
+        &-2 {
+            width: 174px;
+        }
     }
 
     &__view-more {
@@ -57,6 +65,16 @@
         &__figure,
         &__img {
             height: 177px;
+        }
+
+        &__img {
+            object-fit: cover;
+            border-radius: 12px;
+            width: 193px;
+
+            &-2 {
+                width: 325px;
+            }
         }
 
         &__view-more {
