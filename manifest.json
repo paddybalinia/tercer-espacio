@@ -10,6 +10,11 @@
       "purpose": "maskable"
     },
     {
+      "src": "static/dist/images/apps/android-chrome-512x512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    },
+    {
       "src": "static/dist/images/apps/android-chrome-48x48.png",
       "sizes": "48x48",
       "type": "image/png"
