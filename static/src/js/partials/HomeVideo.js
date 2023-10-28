@@ -10,6 +10,9 @@
 
   // Obtén el ancho del viewport en píxeles
   var viewportWidth = window.innerWidth;
+  if (viewportWidth < 768) {
+    return;
+  }
 
   // Valores de inicio y final para el ancho del video en píxeles
   var endWidth = viewportWidth; // Ancho máximo igual al ancho del viewport (ajusta según tus necesidades)
