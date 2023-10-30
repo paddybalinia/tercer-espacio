@@ -37,12 +37,17 @@
     var labYear = labData.querySelector(".lab__year").textContent;
     var labText = labData.querySelector(".lab__text").textContent;
 
+    //alert(e.dataset.vertical);
+
+    var isVetical = e.dataset.vertical ? true : false;
+
     updateData({
       src: labImg,
       title: labTitle,
       subtitle: labSubtitle,
       year: labYear,
       text: labText,
+      verical: isVetical,
     });
   }
 
@@ -52,12 +57,18 @@
     subtitle = "subtitulo",
     year = "year",
     text = "text",
+    verical = false,
   }) {
     var lightbox__img = document.querySelector(".lightbox__img"),
       lightbox__title = document.querySelector(".lightbox__title"),
       lightbox__subtitle = document.querySelector(".lightbox__subtitle"),
       lightbox__snood = document.querySelector(".lightbox__snood"),
+      lightbox__figure = document.querySelector(".lightbox__figure"),
       lightbox__text = document.querySelector(".lightbox__text");
+
+    verical
+      ? lightbox__figure.classList.add("lightbox__figure--vertical")
+      : lightbox__figure.classList.remove("lightbox__figure--vertical");
 
     lightbox__img.src = src;
     lightbox__title.textContent = title;

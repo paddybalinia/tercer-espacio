@@ -178,6 +178,11 @@
         -ms-flex: 0 0 606px;
             flex: 0 0 606px;
   }
+  .lightbox__figure--vertical {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 400px;
+            flex: 0 0 400px;
+  }
   .lightbox__data {
     padding: 100px 52px 0;
     gap: 26px;

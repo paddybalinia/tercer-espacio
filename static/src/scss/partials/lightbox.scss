@@ -168,7 +168,12 @@
 
         &__figure {
             flex: 0 0 606px;
+
+            &--vertical {
+                flex: 0 0 400px;
+            }
         }
+
 
         &__data {
             padding: 100px 52px 0;
