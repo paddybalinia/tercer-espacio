@@ -108,7 +108,7 @@
   right: 24px;
 }
 
-@media (max-height: 650px) {
+@media (max-height: 650px) and (max-width: 768px) {
   .lightbox__overflow {
     height: 996px;
     -webkit-box-align: center;
@@ -120,6 +120,27 @@
   }
 }
 @media (max-width: 768px) and (max-height: 900px) {
+  .lightbox {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .lightbox__overlay {
+    height: 786px;
+    position: fixed;
+  }
+  .lightbox__overflow {
+    height: 856px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-height: 630px) {
   .lightbox {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
