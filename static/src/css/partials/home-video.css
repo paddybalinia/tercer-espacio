@@ -14,7 +14,8 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -180px;
+  -webkit-transform: translateY(-180px);
+          transform: translateY(-180px);
   left: 0;
 }
 
