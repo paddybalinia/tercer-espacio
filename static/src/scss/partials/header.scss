@@ -10,7 +10,7 @@
     width: 100%;
     z-index: 9;
     box-shadow: 0px 0 0 rgba(0, 0, 0, .08);
-    transition: $transition;
+    transition: $transition ease-out;
 
     &__container {
         display: flex;
@@ -20,6 +20,7 @@
         height: 96px;
         box-sizing: border-box;
         padding: 0 30px;
+        transition: $transition ease-out;
     }
 
     &__right {
@@ -31,6 +32,10 @@
 
     &--sticky {
         box-shadow: 0px 1px 6px rgba(0, 0, 0, .08);
+
+        & .header__container {
+            height: 66px;
+        }
     }
 }
 

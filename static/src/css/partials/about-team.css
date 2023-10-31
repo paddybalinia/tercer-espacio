@@ -63,7 +63,7 @@
     color: white;
   }
   .accordion__item:hover .accordion__title {
-    color: #FFC226;
+    color: #ACFF58;
   }
   .accordion__item:hover .accordion__caption {
     color: white;

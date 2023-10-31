@@ -1,5 +1,5 @@
 (function (window, document) {
-  "use strcit";
+  "use strict";
 
   var video = document.getElementById("myVideo");
   var texto = document.getElementById("miTexto");
@@ -46,11 +46,13 @@
     // Limita el porcentaje a los valores entre 0 y 1
     scrollPercentage = Math.min(1, Math.max(0, scrollPercentage));
 
-    // Calcula el ancho del video en función del porcentaje
-    var newWidth = minWidth + (endWidth - minWidth) * scrollPercentage;
+    // Calcula el ancho del video en función del porcentaje y redondea
+    var newWidth = Math.round(
+      minWidth + (endWidth - minWidth) * scrollPercentage
+    );
 
-    // Calcula la posición vertical (top) en función del porcentaje
-    var newTop = startTop + scrollPercentage * (endTop - startTop);
+    // Calcula la posición vertical (top) en función del porcentaje y redondea
+    var newTop = Math.round(startTop + scrollPercentage * (endTop - startTop));
 
     // Calcula la opacidad en función del desplazamiento vertical
     var newOpacity =
@@ -63,7 +65,9 @@
 
     // Aplica los nuevos estilos al video
     video.style.width = newWidth + "px";
-    iframe.style.top = newTop + "px";
+
+    // Aplica la transformación en lugar de la posición "top" al elemento "iframe"
+    iframe.style.transform = "translateY(" + newTop + "px)";
 
     // Aplica la nueva opacidad al elemento de texto
     texto.style.opacity = newOpacity;

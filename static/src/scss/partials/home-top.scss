@@ -81,6 +81,12 @@
             display: block;
         }
 
+        &__title,
+        & iframe,
+        & .iframe__figure {
+            transition: all 0.1s;
+        }
+
         &__title {
             font: 300 64px/72px $font-primary;
             margin: 328px 0 0;
