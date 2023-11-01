@@ -1,0 +1,32 @@
+.single__info {
+  text-align: center;
+  margin: 58px 0 30px;
+}
+.single__info__title {
+  font: 300 24px/30px "Sharp Grotesk", sans-serif;
+  margin: 0 0 58px;
+}
+.single__info__text {
+  font: 300 32px/32px "Sharp Grotesk", sans-serif;
+  margin: 0 0 65px;
+}
+.single__info__container {
+  border-bottom: 1px solid black;
+  margin: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .single__info {
+    margin: 90px 0 60px;
+  }
+  .single__info__title {
+    margin: 0 0 58px;
+  }
+  .single__info__text {
+    font: 300 45px/52px "Sharp Grotesk", sans-serif;
+    margin: 0 0 130px;
+  }
+  .single__info__container {
+    margin: 0;
+  }
+}

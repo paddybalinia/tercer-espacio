@@ -1,0 +1,60 @@
+@import '../vars.scss';
+
+.info__project {
+    padding: 67px 0 0;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        padding: 0 16px;
+    }
+
+    &__title {
+        font: 300 24px/30px $font-primary;
+    }
+
+    &__text {
+        font: 200 16px/26px $font-primary;
+        color: #606060;
+    }
+
+    &__subtitle {
+        font: 300 32px/32px $font-primary;
+        text-align: center;
+        margin: 0 0 89px;
+    }
+
+    &__arrow {
+        margin: 36px auto 56px;
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .info__project {
+        padding: 69px 0 0;
+
+        &__top {
+            flex-direction: row;
+            padding: 0;
+            gap: 0;
+        }
+
+        &__col {
+            flex: 0 0 50%;
+        }
+
+        &__subtitle {
+            font: 300 45px/52px $font-primary;
+            max-width: 890px;
+            margin: 0 auto 119px;
+        }
+
+        &__arrow {
+            margin: 61px auto 86px;
+        }
+    }
+
+}

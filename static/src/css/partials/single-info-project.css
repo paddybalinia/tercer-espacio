@@ -1,0 +1,57 @@
+.info__project {
+  padding: 67px 0 0;
+}
+.info__project__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 38px;
+  padding: 0 16px;
+}
+.info__project__title {
+  font: 300 24px/30px "Sharp Grotesk", sans-serif;
+}
+.info__project__text {
+  font: 200 16px/26px "Sharp Grotesk", sans-serif;
+  color: #606060;
+}
+.info__project__subtitle {
+  font: 300 32px/32px "Sharp Grotesk", sans-serif;
+  text-align: center;
+  margin: 0 0 89px;
+}
+.info__project__arrow {
+  margin: 36px auto 56px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .info__project {
+    padding: 69px 0 0;
+  }
+  .info__project__top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    gap: 0;
+  }
+  .info__project__col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .info__project__subtitle {
+    font: 300 45px/52px "Sharp Grotesk", sans-serif;
+    max-width: 890px;
+    margin: 0 auto 119px;
+  }
+  .info__project__arrow {
+    margin: 61px auto 86px;
+  }
+}

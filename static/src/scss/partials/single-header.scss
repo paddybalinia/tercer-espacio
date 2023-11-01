@@ -1,0 +1,41 @@
+@import '../vars.scss';
+
+body {
+    padding-top: 96px;
+}
+
+.single__header {
+    margin: 0 0 32px;
+
+    &__container {
+        height: 311px;
+    }
+
+    &__title {
+        font: 300 24px/28px $font-primary;
+        padding: 24px 16px 29px 16px;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .single__header {
+        margin: 0 0 64px;
+
+        &__container {
+            height: 600px;
+        }
+
+        &__title {
+            font: 300 45px/52px $font-primary;
+            padding: 52px 0px 49px;
+        }
+
+    }
+}
