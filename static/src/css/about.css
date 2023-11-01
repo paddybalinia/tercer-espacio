@@ -961,10 +961,10 @@ body a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 104px 0px;
+    padding: 104px 0 214px;
   }
   .studio__box {
-    gap: 42px;
+    gap: 45px;
   }
 }
 .philosophy__title {
@@ -1006,7 +1006,7 @@ body a:hover {
 
 @media (min-width: 768px) {
   .philosophy {
-    padding-bottom: 56px;
+    padding-bottom: 139px;
   }
   .philosophy__title {
     font: 300 64px/72px "Sharp Grotesk", sans-serif;
