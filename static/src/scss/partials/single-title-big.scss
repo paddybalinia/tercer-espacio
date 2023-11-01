@@ -1,3 +1,52 @@
 @import '../vars.scss';
 
-@media (min-width: 768px) {}
+.title-big {
+    background: #F7F6F5;
+    padding: 106px 0 44px;
+
+    &__container {
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__title {
+        font: 300 64px/64px $font-primary;
+        word-wrap: break-word;
+    }
+
+    &__text {
+        font: 300 20px/24px $font-primary;
+        text-align: right;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .title-big {
+        background: #F7F6F5;
+        padding: 106px 0 44px;
+
+        &__container {
+            padding: 0;
+            gap: 40px;
+        }
+
+        &__title {
+            font: 300 128px/128px $font-primary;
+            max-width: 690px;
+        }
+
+        &__text {
+            font: 300 24px/30px $font-primary;
+            text-align: right;
+            max-width: 470px;
+            display: inline-block;
+        }
+
+        &__right {
+            text-align: right;
+        }
+    }
+}

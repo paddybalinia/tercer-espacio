@@ -1,0 +1,47 @@
+.title-big {
+  background: #F7F6F5;
+  padding: 106px 0 44px;
+}
+.title-big__container {
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.title-big__title {
+  font: 300 64px/64px "Sharp Grotesk", sans-serif;
+  word-wrap: break-word;
+}
+.title-big__text {
+  font: 300 20px/24px "Sharp Grotesk", sans-serif;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .title-big {
+    background: #F7F6F5;
+    padding: 106px 0 44px;
+  }
+  .title-big__container {
+    padding: 0;
+    gap: 40px;
+  }
+  .title-big__title {
+    font: 300 128px/128px "Sharp Grotesk", sans-serif;
+    max-width: 690px;
+  }
+  .title-big__text {
+    font: 300 24px/30px "Sharp Grotesk", sans-serif;
+    text-align: right;
+    max-width: 470px;
+    display: inline-block;
+  }
+  .title-big__right {
+    text-align: right;
+  }
+}

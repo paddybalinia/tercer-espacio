@@ -1,0 +1,73 @@
+.section__invert {
+  background: black;
+  color: white;
+  padding: 100px 16px 48px;
+}
+.section__invert__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 41px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+.section__invert__text {
+  font: 300 20px/24px "Sharp Grotesk", sans-serif;
+}
+.section__invert__feature {
+  font: 300 24px/28px "Sharp Grotesk", sans-serif;
+  margin: 0 0 40px;
+}
+.section__invert__figure {
+  position: relative;
+  height: 0;
+  padding-top: 58%;
+  width: 100%;
+}
+.section__invert__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .section__invert {
+    background: black;
+    color: white;
+    padding: 144px 0 96px;
+  }
+  .section__invert__container {
+    gap: 109px;
+  }
+  .section__invert__text {
+    font: 300 28px/36px "Sharp Grotesk", sans-serif;
+    max-width: 635px;
+  }
+  .section__invert__feature {
+    font: 300 36px/44px "Sharp Grotesk", sans-serif;
+    text-align: right;
+    margin: 0 0 49px;
+  }
+  .section__invert__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section__invert__right {
+    max-width: 672px;
+  }
+  .section__invert__reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}

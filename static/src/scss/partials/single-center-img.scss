@@ -1,3 +1,34 @@
 @import '../vars.scss';
 
-@media (min-width: 768px) {}
+.section__center-img {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.marginBottom {
+    margin-bottom: 82px;
+}
+
+@media (min-width: 768px) {
+
+    .section__center-img {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+
+        &__img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+}

@@ -215,17 +215,19 @@
     </section>
 
     <!-- section__center-img -->
-    <section class="section__center-img">
-        <img src="static/dist/images/dummy/1440x600@2x.svg" title="image" alt="image" width="1440" height="600">
+    <section class="section__center-img marginBottom">
+        <img src="static/dist/images/dummy/1440x600@2x.svg" title="image" alt="image" width="1440" height="600"
+            class="section__center-img__image">
     </section>
 
     <!-- section__center-img -->
     <section class="section__center-img">
-        <img src="static/dist/images/dummy/1440x600@2x.svg" title="image" alt="image" width="1440" height="600">
+        <img src="static/dist/images/dummy/1440x600@2x.svg" title="image" alt="image" width="1440" height="600"
+            class="section__center-img__image">
     </section>
 
     <!-- section__invert -->
-    <section class="section__invert">
+    <section class="section__invert marginBottom">
         <div class="row">
             <div class="section__invert__container">
                 <div class="section__invert__row">
@@ -234,11 +236,16 @@
                         dimensions in the direction of color.
                     </p>
                 </div>
-                <div class="section__invert__row">
-                    <p class="section__invert__feature">Happily, this also gave us the visual “pop” we were looking for.
-                    </p>
-                    <img src="static/dist/images/dummy/672x390@2x.svg" class="section__invert__img" title="image"
-                        alt="image" width="672" height="390">
+                <div class="section__invert__row section__invert__reverse">
+                    <div class="section__invert__right">
+                        <p class="section__invert__feature">Happily, this also gave us the visual “pop” we were looking
+                            for.
+                        </p>
+                        <figure class="section__invert__figure">
+                            <img src="static/dist/images/dummy/672x390@2x.svg" class="section__invert__img"
+                                title="image" alt="image" width="672" height="390">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -249,8 +256,10 @@
         <div class="row">
             <div class="section__img-txt__container">
                 <div class="section__img-txt__col">
-                    <img src="static/dist/images/dummy/494x379@2x.svg" class="section__invert__img" title="image"
-                        alt="image" width="494" height="379">
+                    <figure class="section__img-txt__figure">
+                        <img src="static/dist/images/dummy/494x379@2x.svg" class="section__img-txt__img" title="image"
+                            alt="image" width="494" height="379">
+                    </figure>
                 </div>
                 <div class="section__img-txt__col">
                     <p class="section__img-txt__text"><strong>Maker Dao</strong> generates an enormous number of
@@ -262,15 +271,22 @@
 
                 </div>
             </div>
+            <button type="button" class="section__img-txt__arrow hide_mobile" data-anchor="video" aria-label="Scroll">
+                <svg class="section__img-txt__svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <path
+                        d="M27.6061 18.8188C21.3854 21.5932 17.4974 28.7273 17.4974 28.7273M17.4974 28.7273C17.4974 28.7273 13.6095 21.1968 7.00002 18.8188M17.4974 28.7273L17.4974 4"
+                        stroke="black" stroke-width="2" stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
     </section>
 
     <!-- title-big -->
-    <section class="title-big">
+    <section class="title-big ">
         <div class="row">
             <div class="title-big__container">
                 <h3 class="title-big__title">Brand Animation</h3>
-                <div class="title-big__row">
+                <div class="title-big__row title-big__right">
                     <p class="title-big__text">Maker Dao is an umbrella that contains various entities.
                         Our system had to be robust enough to have room for all of them.</p>
                 </div>
@@ -314,7 +330,8 @@
 
     <!-- section__center-img -->
     <section class="section__center-img">
-        <img src="static/dist/images/dummy/1440x600@2x.svg" title="image" alt="image" width="1440" height="600">
+        <img src="static/dist/images/dummy/1440x600@2x.svg" title="image" alt="image" width="1440" height="600"
+            class="section__center-img__image">
     </section>
 
     <!-- grid-3-col -->
