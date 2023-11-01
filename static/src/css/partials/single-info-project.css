@@ -22,7 +22,8 @@
 .info__project__subtitle {
   font: 300 32px/32px "Sharp Grotesk", sans-serif;
   text-align: center;
-  margin: 0 0 89px;
+  margin: 0 auto 89px;
+  max-width: 300px;
 }
 .info__project__arrow {
   margin: 36px auto 56px;

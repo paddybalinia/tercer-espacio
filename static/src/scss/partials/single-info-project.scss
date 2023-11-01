@@ -22,7 +22,8 @@
     &__subtitle {
         font: 300 32px/32px $font-primary;
         text-align: center;
-        margin: 0 0 89px;
+        margin: 0 auto 89px;
+        max-width: 300px;
     }
 
     &__arrow {
