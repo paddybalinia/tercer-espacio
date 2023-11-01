@@ -759,7 +759,7 @@ body a:hover {
     font: 300 64px/72px "Sharp Grotesk", sans-serif;
     text-align: right;
     display: block;
-    margin: 0 0 81px;
+    margin: 0 0 85px;
     padding: 0;
   }
   .accordion {
@@ -1090,7 +1090,7 @@ body a:hover {
 
 @media (min-width: 768px) {
   .hub {
-    padding: 0 0 104px;
+    padding: 0 0 189px;
   }
   .hub__container {
     display: -webkit-box;
