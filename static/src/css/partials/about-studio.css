@@ -85,9 +85,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 104px 0px;
+    padding: 104px 0 214px;
   }
   .studio__box {
-    gap: 42px;
+    gap: 45px;
   }
 }
