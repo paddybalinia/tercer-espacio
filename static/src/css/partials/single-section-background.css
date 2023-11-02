@@ -1,9 +1,9 @@
-.section__background--1 {
+.section__background--1.visible {
   background: url(../images/background-single-1.jpg) no-repeat 0 0;
   background-size: cover;
 }
 
-.section__background--2 {
+.section__background--2.visible {
   background: url(../images/background-single-2.jpg) no-repeat 0 0;
   background-size: cover;
 }
