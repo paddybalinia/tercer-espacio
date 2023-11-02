@@ -91,6 +91,13 @@
         font: 200 14px/20px $font-primary;
     }
 
+    &__title:empty,
+    &__subtitle:empty,
+    &__text:empty,
+    &__snood:empty {
+        display: none;
+    }
+
     &__img {
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
