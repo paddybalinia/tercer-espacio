@@ -16,6 +16,9 @@
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+.workmin__container {
+  border-bottom: 1px solid #000;
+}
 .workmin__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
