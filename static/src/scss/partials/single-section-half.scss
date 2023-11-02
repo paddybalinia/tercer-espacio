@@ -1,0 +1,51 @@
+@import '../vars.scss';
+
+.section__half {
+    margin: 0 0 54px;
+
+    &__container {
+        display: flex;
+        padding: 0 16px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    &__text {
+        color: #606060;
+        font: 200 14px/20px $font-primary;
+    }
+
+    &__feature {
+        font: 300 24px/28px $font-primary;
+
+    }
+}
+
+@media (min-width: 768px) {
+
+    .section__half {
+
+        &__container {
+            padding: 0;
+            flex-direction: row;
+            gap: 0;
+        }
+
+        &__col {
+            flex: 0 0 50%;
+        }
+
+        &__text {
+            color: #606060;
+            font: 200 16px/26px $font-primary;
+            padding-right: 75px;
+        }
+
+        &__feature {
+            font: 300 36px/44px $font-primary;
+            padding-right: 95px;
+        }
+
+
+    }
+}

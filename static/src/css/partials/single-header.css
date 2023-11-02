@@ -1,0 +1,33 @@
+body {
+  padding-top: 96px;
+}
+
+.single__header {
+  margin: 0 0 32px;
+}
+.single__header__container {
+  height: 311px;
+}
+.single__header__title {
+  font: 300 24px/28px "Sharp Grotesk", sans-serif;
+  padding: 24px 16px 29px 16px;
+}
+.single__header__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .single__header {
+    margin: 0 0 64px;
+  }
+  .single__header__container {
+    height: 600px;
+  }
+  .single__header__title {
+    font: 300 45px/52px "Sharp Grotesk", sans-serif;
+    padding: 52px 0px 49px;
+  }
+}

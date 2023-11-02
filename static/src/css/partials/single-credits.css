@@ -1,0 +1,13 @@
+.credits {
+  text-align: center;
+  font: 300 28px/36px "Sharp Grotesk", sans-serif;
+}
+.credits__text {
+  margin: 0 0 39px;
+}
+.credits__span {
+  display: block;
+}
+.credits__container {
+  border-bottom: 1px solid black;
+}
