@@ -38,7 +38,7 @@
 
 @media (min-width: 768px) {
     .grid-3-col {
-        padding: 72px 0;
+        padding: 72px 0 65px;
 
         &__container {
             flex-direction: row;
@@ -56,6 +56,10 @@
         &__arrow {
             display: block;
             margin: 120px auto 0;
+        }
+
+        &__text {
+            margin: 343px 0 0;
         }
     }
 }

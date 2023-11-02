@@ -20,10 +20,6 @@
   height: auto;
 }
 
-.marginBottom {
-  margin-bottom: 82px;
-}
-
 @media (min-width: 768px) {
   .section__center-img {
     display: -webkit-box;
@@ -40,6 +36,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0;
   }
   .section__center-img__img {
     width: inherit;

@@ -38,7 +38,7 @@
 
 @media (min-width: 768px) {
   .grid-4-img {
-    padding: 24px 0 200px;
+    padding: 24px 0 64px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

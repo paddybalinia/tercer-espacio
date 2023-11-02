@@ -39,7 +39,7 @@
 
 @media (min-width: 768px) {
   .grid-3-col {
-    padding: 72px 0;
+    padding: 72px 0 65px;
   }
   .grid-3-col__container {
     -webkit-box-orient: horizontal;
@@ -57,5 +57,8 @@
   .grid-3-col__arrow {
     display: block;
     margin: 120px auto 0;
+  }
+  .grid-3-col__text {
+    margin: 343px 0 0;
   }
 }

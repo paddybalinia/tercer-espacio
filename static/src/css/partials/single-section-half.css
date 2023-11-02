@@ -21,6 +21,9 @@
 }
 
 @media (min-width: 768px) {
+  .section__half {
+    margin: 0 0 108px;
+  }
   .section__half__container {
     padding: 0;
     -webkit-box-orient: horizontal;

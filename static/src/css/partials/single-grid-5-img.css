@@ -43,7 +43,7 @@
 
 @media (min-width: 768px) {
   .grid-5-img {
-    padding: 56px 0;
+    padding: 56px 0 59px;
   }
   .grid-5-img__row {
     -webkit-box-orient: horizontal;

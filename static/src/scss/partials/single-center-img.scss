@@ -14,9 +14,6 @@
     }
 }
 
-.marginBottom {
-    margin-bottom: 82px;
-}
 
 @media (min-width: 768px) {
 
@@ -26,6 +23,7 @@
         overflow: hidden;
         align-items: center;
         justify-content: center;
+        margin: 0;
 
         &__img {
             width: inherit;
