@@ -69,8 +69,10 @@
     verical
       ? lightbox__figure.classList.add("lightbox__figure--vertical")
       : lightbox__figure.classList.remove("lightbox__figure--vertical");
-
+    lightbox__img.src = "";
     lightbox__img.src = src;
+    lightbox__img.alt = title;
+    lightbox__img.title = title;
     lightbox__title.textContent = title;
     lightbox__subtitle.textContent = subtitle;
     lightbox__snood.textContent = year;

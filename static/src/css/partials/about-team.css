@@ -6,6 +6,10 @@
 
 .accordion {
   padding: 0 20px;
+  margin-bottom: 80px;
+}
+.accordion > :last-child {
+  border-bottom: 1px solid white;
 }
 .accordion__item {
   border-top: 1px solid white;
@@ -49,6 +53,7 @@
     padding: 0;
   }
   .accordion {
+    margin-bottom: 0;
     padding: 0 0 304px;
   }
   .accordion__item {
