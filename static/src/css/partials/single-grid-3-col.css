@@ -1,5 +1,5 @@
 .grid-3-col {
-  padding: 72px 16px;
+  padding: 36px 16px;
 }
 .grid-3-col__container {
   display: -webkit-box;
@@ -34,7 +34,7 @@
 }
 .grid-3-col__text {
   font: 300 24px/30px "Sharp Grotesk", sans-serif;
-  margin-top: 27px;
+  margin: 36px 0 15px;
 }
 
 @media (min-width: 768px) {

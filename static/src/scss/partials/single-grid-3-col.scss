@@ -1,7 +1,7 @@
 @import '../vars.scss';
 
 .grid-3-col {
-    padding: 72px 16px;
+    padding: 36px 16px;
 
     &__container {
         display: flex;
@@ -32,7 +32,7 @@
 
     &__text {
         font: 300 24px/30px $font-primary;
-        margin-top: 27px;
+        margin: 36px 0 15px;
     }
 }
 

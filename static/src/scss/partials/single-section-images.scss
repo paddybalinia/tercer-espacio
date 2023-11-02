@@ -1,7 +1,7 @@
 @import '../vars.scss';
 
 .section__images {
-    margin: 0 0 56px;
+    margin: 0 0 91px;
     padding: 0 16px;
 
     &__container {
@@ -36,6 +36,7 @@
 
 @media (min-width: 768px) {
     .section__images {
+        margin: 0 0 56px;
 
         &__container {
             flex-direction: row;
