@@ -1,7 +1,8 @@
 @import '../vars.scss';
 
 .section__invert {
-    background: black;
+    background: black url(../images/bg-mod-invert-mobile.jpg) bottom left no-repeat;
+    background-size: cover;
     color: white;
     padding: 100px 16px 48px;
 
@@ -42,7 +43,8 @@
 @media (min-width: 768px) {
 
     .section__invert {
-        background: black;
+        background: black url(../images/bg-mod-invert.jpg) bottom left no-repeat;
+        background-size: cover;
         color: white;
         padding: 144px 0 96px;
 
