@@ -1,5 +1,4 @@
 .title-big {
-  background: #F7F6F5;
   padding: 106px 0 44px;
 }
 .title-big__container {
@@ -24,7 +23,6 @@
 
 @media (min-width: 768px) {
   .title-big {
-    background: #F7F6F5;
     padding: 106px 0 44px;
   }
   .title-big__container {

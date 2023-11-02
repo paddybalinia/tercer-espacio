@@ -1,0 +1,10 @@
+.section__space {
+  display: block;
+  height: 48px;
+}
+
+@media (min-width: 768px) {
+  .section__space {
+    height: 82px;
+  }
+}
