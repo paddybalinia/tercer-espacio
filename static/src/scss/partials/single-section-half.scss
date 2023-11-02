@@ -1,7 +1,7 @@
 @import '../vars.scss';
 
 .section__half {
-    margin: 0 0 54px;
+    margin: 0 0 90px;
 
     &__container {
         display: flex;
@@ -24,6 +24,7 @@
 @media (min-width: 768px) {
 
     .section__half {
+        margin: 0 0 108px;
 
         &__container {
             padding: 0;
