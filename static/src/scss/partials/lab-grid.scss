@@ -73,14 +73,16 @@
             gap: 20px;
         }
 
+
         &__x2 {
             gap: 20px;
             display: flex;
             flex-direction: row;
+            flex: 2;
         }
 
         &__item {
-
+            flex: 1;
             border-radius: 12px;
             text-align: center;
             font-size: 24px;
@@ -108,6 +110,11 @@
 
         &__itemx2 {
             grid-column-end: span 2;
+            flex: 2;
+        }
+
+        &--vertical {
+            flex: 0 0 400px;
         }
 
         &__img {
