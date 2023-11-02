@@ -97,6 +97,9 @@
 .lightbox__text {
   font: 200 14px/20px "Sharp Grotesk", sans-serif;
 }
+.lightbox__title:empty, .lightbox__subtitle:empty, .lightbox__text:empty, .lightbox__snood:empty {
+  display: none;
+}
 .lightbox__img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
