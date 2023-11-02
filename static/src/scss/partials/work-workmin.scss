@@ -12,8 +12,10 @@
         font: 200 16px/24px $font-primary;
         letter-spacing: 0.15px;
         transition: $transition ease-out;
+    }
 
-
+    &__container {
+        border-bottom: 1px solid #000;
     }
 
     &__arrow {
