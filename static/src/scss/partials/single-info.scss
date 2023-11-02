@@ -2,7 +2,8 @@
 
 .single__info {
     text-align: center;
-    margin: 58px 0 30px;
+    margin: 0 0 30px;
+    padding-top: 58px;
 
     &__title {
         font: 300 24px/30px $font-primary;
@@ -23,7 +24,8 @@
 @media (min-width: 768px) {
 
     .single__info {
-        margin: 90px 0 60px;
+        margin: 0 0 60px;
+        padding-top: 90px;
 
         &__title {
             margin: 0 0 58px;

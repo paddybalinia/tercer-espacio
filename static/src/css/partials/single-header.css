@@ -3,7 +3,7 @@ body {
 }
 
 .single__header {
-  margin: 0 0 32px;
+  margin: 0 0 0;
 }
 .single__header__container {
   height: 311px;
@@ -21,7 +21,7 @@ body {
 
 @media (min-width: 768px) {
   .single__header {
-    margin: 0 0 64px;
+    margin: 0 0 0;
   }
   .single__header__container {
     height: 600px;

@@ -1,0 +1,14 @@
+@import '../vars.scss';
+
+.section__space {
+    display: block;
+    height: 48px;
+    // background-color: red;
+}
+
+@media (min-width: 768px) {
+
+    .section__space {
+        height: 82px;
+    }
+}

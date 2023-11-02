@@ -1,6 +1,7 @@
 .single__info {
   text-align: center;
-  margin: 58px 0 30px;
+  margin: 0 0 30px;
+  padding-top: 58px;
 }
 .single__info__title {
   font: 300 24px/30px "Sharp Grotesk", sans-serif;
@@ -17,7 +18,8 @@
 
 @media (min-width: 768px) {
   .single__info {
-    margin: 90px 0 60px;
+    margin: 0 0 60px;
+    padding-top: 90px;
   }
   .single__info__title {
     margin: 0 0 58px;
