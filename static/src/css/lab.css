@@ -1096,6 +1096,7 @@ input {
 .lightbox__img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  height: auto;
   width: 100%;
 }
 .lightbox__next {
