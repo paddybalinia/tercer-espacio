@@ -25,23 +25,94 @@
   letter-spacing: 0.15px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  position: relative;
+  height: 160px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
 }
-.accordion__arrow {
-  display: none;
+.accordion__item.active, .accordion__item:hover {
+  background: black;
+  color: white;
+}
+.accordion__item.active .accordion__title, .accordion__item:hover .accordion__title {
+  color: #ACFF58;
+}
+.accordion__item.active .accordion__caption, .accordion__item:hover .accordion__caption {
+  color: white;
+}
+.accordion__item.active .accordion__arrow__svg, .accordion__item:hover .accordion__arrow__svg {
+  left: -15px;
+  stroke: white;
+}
+.accordion__item.active .accordion__img {
+  width: 230px;
+  opacity: 1;
 }
 .accordion__arrow__svg {
+  left: 0;
   position: relative;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .accordion__title {
   font: 200 28px/34px "Sharp Grotesk", sans-serif;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 320px;
-          flex: 0 0 320px;
+  -webkit-box-flex: inherit;
+      -ms-flex: inherit;
+          flex: inherit;
+  max-width: 180px;
 }
-.accordion__img, .accordion__caption, .accordion__tag {
-  display: none;
+.accordion__img {
+  -webkit-transition: all 1.5s cubic-bezier(0, 0.805, 0.145, 0.995), opacity 0.2s;
+  transition: all 1.5s cubic-bezier(0, 0.805, 0.145, 0.995), opacity 0.2s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transform: translateZ(0) translateY(0);
+  transform: translateZ(0) translateY(0);
+  opacity: 0;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  display: block;
+  width: 170px;
+  height: 270px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 12px;
+  right: 20px;
+  top: -25px;
+}
+.accordion__title, .accordion__caption, .accordion__arrow, .accordion__tag {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  width: 50%;
+}
+.accordion__arrow, .accordion__caption {
+  text-align: right;
+}
+.accordion__tag {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+.accordion__arrow {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  position: relative;
+  top: 7px;
+}
+.accordion__arrow__svg {
+  stroke: white;
 }
 
 @media (min-width: 768px) {
@@ -62,24 +133,16 @@
         -ms-flex-align: center;
             align-items: center;
     font: 200 16px/24px "Sharp Grotesk", sans-serif;
-  }
-  .accordion__item:hover {
-    background: black;
-    color: white;
-  }
-  .accordion__item:hover .accordion__title {
-    color: #ACFF58;
-  }
-  .accordion__item:hover .accordion__caption {
-    color: white;
-  }
-  .accordion__item:hover .accordion__arrow__svg {
-    left: -15px;
-    stroke: white;
-  }
-  .accordion__item:hover .accordion__img {
-    width: 230px;
-    opacity: 1;
+    height: inherit;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .accordion__arrow__svg {
     left: -25px;
@@ -106,6 +169,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: inherit;
   }
   .accordion__caption {
     display: -webkit-box;
@@ -114,27 +178,13 @@
     color: #606060;
     font: 200 12px/20px "Sharp Grotesk", sans-serif;
     width: auto;
+    -webkit-box-flex: inherit;
+        -ms-flex: inherit;
+            flex: inherit;
   }
   .accordion__img {
-    -webkit-transition: all 1.5s cubic-bezier(0, 0.805, 0.145, 0.995), opacity 0.2s;
-    transition: all 1.5s cubic-bezier(0, 0.805, 0.145, 0.995), opacity 0.2s;
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-    -webkit-transform: translateZ(0) translateY(0);
-    transform: translateZ(0) translateY(0);
-    opacity: 0;
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    display: block;
-    width: 170px;
-    height: 270px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    position: absolute;
     left: 420px;
     top: -43px;
-    z-index: 1;
-    pointer-events: none;
-    border-radius: 12px;
+    right: inherit;
   }
 }
