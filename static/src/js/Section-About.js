@@ -230,9 +230,12 @@
     for (let e = 0; e < LinkToggle.length; e++) {
       LinkToggle[e].addEventListener("click", ToggleEvent, false);
     }
+    alert("as");
   }
 
   function ToggleEvent() {
+    const isActive = this.classList.contains("active");
+
     // Obtén todos los elementos con la clase "active"
     const activeElements = document.querySelectorAll(".accordion__item.active");
 
@@ -241,8 +244,10 @@
       element.classList.remove("active");
     });
 
-    // Agrega la clase "active" al elemento actual (el que se hizo clic)
-    this.classList.add("active");
+    // Si el elemento actual no tenía la clase "active", agrégasela
+    if (!isActive) {
+      this.classList.add("active");
+    }
   }
 
   // Export
