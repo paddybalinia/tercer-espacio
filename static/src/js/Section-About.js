@@ -230,7 +230,6 @@
     for (let e = 0; e < LinkToggle.length; e++) {
       LinkToggle[e].addEventListener("click", ToggleEvent, false);
     }
-    alert("as");
   }
 
   function ToggleEvent() {
