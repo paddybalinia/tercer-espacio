@@ -25,12 +25,47 @@
         font: 200 16px/26px $font-primary;
         letter-spacing: 0.15px;
         transition: $transition ease-out;
+        position: relative;
+
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+            background: black;
+            color: white;
+
+            & .accordion__title {
+                color: $color-secondary-hover;
+            }
+
+            & .accordion__caption {
+                color: white;
+            }
+
+            & .accordion__arrow__svg {
+                left: -15px;
+                stroke: white;
+            }
+        }
+
+        &.active {
+
+            & .accordion__img {
+                width: 230px;
+                opacity: 1;
+            }
+        }
     }
 
     &__arrow {
-        display: none;
 
         &__svg {
+            left: 0;
             position: relative;
             transition: $transition ease-out;
         }
@@ -38,13 +73,59 @@
 
     &__title {
         font: 200 28px/34px $font-primary;
-        flex: 0 0 320px;
+
+        flex: inherit;
+        max-width: 180px;
     }
 
-    &__img,
+    &__img {
+
+        transition: all 1.5s cubic-bezier(0, .805, .145, .995), opacity .2s;
+        transition-delay: 0s;
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+        display: block;
+        width: 170px;
+        height: 270px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: absolute;
+
+        z-index: 1;
+        pointer-events: none;
+        border-radius: 12px;
+        right: 20px;
+        top: -25px;
+    }
+
+    &__title,
     &__caption,
+    &__arrow,
     &__tag {
-        display: none;
+        flex: 0 0 40%;
+        width: 50%;
+    }
+
+    &__arrow,
+    &__caption {
+        text-align: right;
+    }
+
+    &__tag {
+        flex: 0;
+    }
+
+    &__arrow {
+        flex: 0;
+        position: relative;
+        top: 7px;
+    }
+
+    &__arrow__svg {
+        stroke: white;
     }
 }
 
@@ -70,30 +151,10 @@
             align-items: center;
             font: 200 16px/24px $font-primary;
 
-            &:hover {
-                background: black;
-                color: white;
-
-
-                & .accordion__title {
-                    color: $color-secondary-hover;
-                }
-
-                & .accordion__caption {
-                    color: white;
-                }
-
-                & .accordion__arrow__svg {
-                    left: -15px;
-                    stroke: white;
-                }
-
-                & .accordion__img {
-                    width: 230px;
-                    opacity: 1;
-                }
-            }
-
+            height: inherit;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         &__arrow__svg {
@@ -114,6 +175,7 @@
 
         &__arrow {
             display: flex;
+            top: inherit;
         }
 
         &__caption {
@@ -121,27 +183,14 @@
             color: #606060;
             font: 200 12px/20px $font-primary;
             width: auto;
+            flex: inherit;
         }
 
         &__img {
-            transition: all 1.5s cubic-bezier(0, .805, .145, .995), opacity .2s;
-            transition-delay: 0s;
-            -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-            opacity: 0;
-            -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-            display: block;
-            width: 170px;
-            height: 270px;
-            -o-object-fit: cover;
-            object-fit: cover;
-            position: absolute;
             left: 420px;
             top: -43px;
-            z-index: 1;
-            pointer-events: none;
-            border-radius: 12px;
+            right: inherit;
         }
+
     }
 }
