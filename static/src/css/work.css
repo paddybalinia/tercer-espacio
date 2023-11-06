@@ -982,6 +982,9 @@ body {
 .workmin__tag {
   width: 100px;
 }
+.workmin__filter {
+  width: 100%;
+}
 
 @media (min-width: 768px) {
   .workmin {

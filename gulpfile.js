@@ -82,6 +82,14 @@ const sectionJsFiles = [
   "static/src/js/partials/ViewportObserver.js",
 ];
 
+const sectionProjectsJsFiles = [
+  "static/src/js/partials/Header.js",
+  "static/src/js/partials/LazyLoadImg.js",
+  "static/src/js/partials/ScrollIntoView.js",
+  "static/src/js/partials/ViewportObserver.js",
+  "static/src/js/partials/ProjectsFilter.js",
+];
+
 const sectionLabJsFiles = [
   "static/src/js/partials/Header.js",
   "static/src/js/partials/LazyLoadImg.js",
@@ -109,6 +117,13 @@ function combineSectionScript() {
   return gulp
     .src(sectionJsFiles)
     .pipe(concat("Section.js"))
+    .pipe(gulp.dest("static/src/js"));
+}
+
+function combineSectionProjectsScript() {
+  return gulp
+    .src(sectionProjectsJsFiles)
+    .pipe(concat("Section-Projects.js"))
     .pipe(gulp.dest("static/src/js"));
 }
 
@@ -143,7 +158,8 @@ const buildTasks = gulp.parallel(
   optimizeFonts,
   combineSectionScript,
   combineSectionLabScript,
-  combineSectionAboutScript
+  combineSectionAboutScript,
+  combineSectionProjectsScript
 );
 
 exports.build = buildTasks;
