@@ -1426,3 +1426,31 @@ body {
   background: url(../images/background-single-2.jpg) no-repeat 0 0;
   background-size: cover;
 }
+
+.section__video {
+  display: block;
+  height: 311px;
+  position: relative;
+  overflow: hidden;
+}
+.section__video__iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+  .section__video {
+    height: 600px;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .section__video__iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}

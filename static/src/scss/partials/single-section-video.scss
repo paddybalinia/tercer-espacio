@@ -1,0 +1,39 @@
+@import '../vars.scss';
+
+.section__video {
+    display: block;
+    height: 311px;
+    position: relative;
+    overflow: hidden;
+
+    &__iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .section__video {
+        height: 600px;
+    }
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+    .section__video__iframe {
+        /* height = 100 * (9 / 16) = 56.25 */
+        height: 56.25vw;
+    }
+}
+
+// @media (max-aspect-ratio: 16/9) {
+//     .section__video__iframe {
+//         /* width = 100 / (9 / 16) = 177.777777 */
+//         width: 177.78vh;
+//     }
+// }
