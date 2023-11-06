@@ -1091,6 +1091,15 @@ body {
     width: inherit;
     height: inherit;
   }
+  .section__center-img__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section__center-img .section__center-img__image--full {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
 }
 .credits {
   text-align: center;
@@ -1334,7 +1343,7 @@ body {
     max-width: 635px;
   }
   .section__invert__feature {
-    font: 300 36px/44px "Sharp Grotesk", sans-serif;
+    font: 300 28px/36px "Sharp Grotesk", sans-serif;
     text-align: right;
     margin: 0 0 49px;
   }
