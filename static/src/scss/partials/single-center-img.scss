@@ -29,5 +29,14 @@
             width: inherit;
             height: inherit;
         }
+
+        &__image {
+            object-fit: cover;
+        }
+
+        & .section__center-img__image--full {
+            object-fit: cover;
+            width: 100%;
+        }
     }
 }

@@ -42,4 +42,13 @@
     width: inherit;
     height: inherit;
   }
+  .section__center-img__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section__center-img .section__center-img__image--full {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
 }

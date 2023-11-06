@@ -312,7 +312,7 @@ input {
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 1260px;
+    max-width: 1720px;
   }
   .footer__copy__a {
     display: initial;
@@ -977,7 +977,7 @@ body {
 .workmin__caption {
   color: #606060;
   font: 200 12px/20px "Sharp Grotesk", sans-serif;
-  width: 59px;
+  width: 80px;
 }
 .workmin__tag {
   width: 100px;
@@ -1011,13 +1011,22 @@ body {
   }
   .workmin__title {
     max-width: inherit;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 210px;
+            flex: 0 0 210px;
   }
   .workmin__tag {
     width: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 260px;
+            flex: 0 0 260px;
   }
   .workmin__caption {
     color: #606060;
     width: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 250px;
+            flex: 0 0 250px;
   }
 }
 .mod-follow {

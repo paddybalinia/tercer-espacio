@@ -241,9 +241,10 @@
     <div class="section__space"></div>
 
     <!-- section__center-img -->
-    <section class="section__center-img viewport-observer animation-bottom delay-4">
+    <section class="section__center-img section__center-img--full viewport-observer animation-bottom delay-4">
         <img data-lazyload="static/dist/images/project/markerdao/marker-dao-full-2.jpg" title="Background Marker DAO"
-            alt="Background Marker DAO" width="1440" height="600" class="section__center-img__image">
+            alt="Background Marker DAO" width="1440" height="600"
+            class="section__center-img__image section__center-img__image--full">
     </section>
 
     <!-- section__invert -->
@@ -400,9 +401,11 @@
     <div class="section__space"></div>
 
     <!-- section__center-img -->
-    <section class="section__center-img viewport-observer delay-4 animation-bottom">
-        <img data-lazyload="static/dist/images/dummy/1440x600@2x.svg" title="image" alt="image" width="1440"
-            height="600" class="section__center-img__image">
+    <section class="section__video viewport-observer delay-4 animation-bottom">
+
+        <iframe title="vimeo player" class="section__video__iframe"
+            src="https://player.vimeo.com/video/783974174?h=0292e06bf8&autoplay=1&muted=1&loop=1&background=1"
+            width="1440" height="600" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <!-- grid-3-col -->
@@ -474,13 +477,13 @@
             <p class="mod-follow__text">
                 <span class="mod-follow__block">Follow us on </span>
                 <span class="mod-follow__block"><a href="https://www.instagram.com/tercerespacio/" class="mod-follow__a"
-                        rel="noopener noreferrer" title="Instagram">Instagram</a><a
-                        href="https://www.linkedin.com/company/3er-espacio/" class="mod-follow__a"
+                        target="_blank" rel="noopener noreferrer" title="Instagram">Instagram</a><a
+                        href="https://www.linkedin.com/company/3er-espacio/" class="mod-follow__a" target="_blank"
                         rel="noopener noreferrer" title="Linkedin">→Linkedin</a><a
-                        href="https://www.behance.net/tercerespacio" class="mod-follow__a" rel="noopener noreferrer"
-                        title="Behance">*Behance</a></span>
+                        href="https://www.behance.net/tercerespacio" class="mod-follow__a" target="_blank"
+                        rel="noopener noreferrer" title="Behance">*Behance</a></span>
                 <span class="mod-follow__block"><a href="https://vimeo.com/tercerespacio" class="mod-follow__a"
-                        rel="noopener noreferrer" title="Vimeo">↘Vimeo</a></span>
+                        target="_blank" rel="noopener noreferrer" title="Vimeo">↘Vimeo</a></span>
             </p>
         </div>
     </section>
@@ -496,28 +499,30 @@
                 <div class="footer__right">
                     <div class="footer__col">
                         <p class="footer__title">Headquarters</p>
-                        <p class="footer__text">Av. Crámer 3226 4° Piso, C1429 CABA</p>
+                        <p class="footer__text">Buenos Aires, Argentina
+                            → 3226 Cramer Ave. 4th floor
+                        </p>
                     </div>
                     <div class="footer__col footer__social">
                         <p class="footer__title">Digital</p>
                         <ul class="footer__ul">
                             <li class="footer__li">
-                                <a href="https://www.instagram.com/tercerespacio/" class="footer__li__a"
+                                <a href="https://www.instagram.com/tercerespacio/" class="footer__li__a" target="_blank"
                                     title="Instagram Tercer Espacio" rel="noopener noreferrer">Instagram <span
                                         class="footer__arrow">↗</span></a>
                             </li>
                             <li class="footer__li">
                                 <a href="https://www.linkedin.com/company/3er-espacio/" class="footer__li__a"
-                                    title="Linkedin Tercer Espacio" rel="noopener noreferrer">Linkedin
+                                    target="_blank" title="Linkedin Tercer Espacio" rel="noopener noreferrer">Linkedin
                                     <span class="footer__arrow">↗</span></a>
                             </li>
                             <li class="footer__li">
-                                <a href="https://www.behance.net/tercerespacio" class="footer__li__a"
+                                <a href="https://www.behance.net/tercerespacio" class="footer__li__a" target="_blank"
                                     title="Behance Tercer Espacio" rel="noopener noreferrer">Behance
                                     <span class="footer__arrow">↗</span></a>
                             </li>
                             <li class="footer__li">
-                                <a href="https://vimeo.com/tercerespacio" class="footer__li__a"
+                                <a href="https://vimeo.com/tercerespacio" class="footer__li__a" target="_blank"
                                     title="Vimeo Tercer Espacio" rel="noopener noreferrer">Vimeo
                                     <span class="footer__arrow">↗</span></a>
                             </li>
@@ -526,7 +531,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <a href="work.html" title="Projects" class="footer__link">Projects</a>
+                <a href="projects.html" title="Projects" class="footer__link">Projects</a>
                 <a href="about.html" title="About" class="footer__link">About</a>
             </div>
         </div>
@@ -568,8 +573,9 @@
         <div class="navigation__content">
             <ul class="navigation__nav-1">
                 <li class="navigation__nav-1__li navigation__ani navigation__ani-1">
-                    <a href="work.html" class="navigation__nav-1__a active" data-section="work" title="Work">Work <span
-                            class="navigation__nav-1__arrow">→</span></a>
+                    <a href="projects.html" class="navigation__nav-1__a active" data-section="work"
+                        title="Projects">Projects
+                        <span class="navigation__nav-1__arrow">→</span></a>
                 </li>
                 <li class="navigation__nav-1__li navigation__ani navigation__ani-2">
                     <a href="lab.html" class="navigation__nav-1__a" data-section="lab" title="Lab">Lab <span
@@ -589,18 +595,18 @@
                 <p class="navigation__social navigation__ani navigation__ani-5">
                     <span class="navigation__social__span">Follow us on </span>
                     <span class="navigation__social__span">
-                        <a href="https://www.instagram.com/tercerespacio/" class="navigation__social__a"
+                        <a href="https://www.instagram.com/tercerespacio/" target="_blank" class="navigation__social__a"
                             title="Instagram" rel="noopener noreferrer">Instagram</a>
-                        <a href="https://www.linkedin.com/company/3er-espacio/" class="navigation__social__a"
-                            title="Linkedin" rel="noopener noreferrer">→Linkedin</a>
+                        <a href="https://www.linkedin.com/company/3er-espacio/" target="_blank"
+                            class="navigation__social__a" title="Linkedin" rel="noopener noreferrer">→Linkedin</a>
                     </span>
                     <span class="navigation__social__span">
-                        <a href="https://www.behance.net/tercerespacio" class="navigation__social__a" title="Behance"
-                            rel="noopener noreferrer">*Behance</a>
+                        <a href="https://www.behance.net/tercerespacio" target="_blank" class="navigation__social__a"
+                            title="Behance" rel="noopener noreferrer">*Behance</a>
                     </span>
                     <span class="navigation__social__span">
-                        <a href="https://vimeo.com/tercerespacio" class="navigation__social__a" title="Vimeo"
-                            rel="noopener noreferrer">↘Vimeo</a>
+                        <a href="https://vimeo.com/tercerespacio" target="_blank" class="navigation__social__a"
+                            title="Vimeo" rel="noopener noreferrer">↘Vimeo</a>
                     </span>
                 </p>
             </div>
