@@ -11,3 +11,9 @@
 .credits__container {
   border-bottom: 1px solid black;
 }
+.credits__container--noborder {
+  border-bottom: 0;
+}
+.credits__a {
+  text-decoration: underline;
+}
