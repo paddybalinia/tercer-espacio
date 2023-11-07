@@ -19,6 +19,9 @@
   width: 100%;
   height: auto;
 }
+.section__center-img.nomargin {
+  margin-bottom: 0;
+}
 
 @media (min-width: 768px) {
   .section__center-img {

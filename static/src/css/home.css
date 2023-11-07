@@ -383,7 +383,7 @@ input {
     margin: 82px 0 0;
   }
   .footer__link {
-    margin-bottom: 88px;
+    margin-bottom: 0;
   }
 }
 .header {

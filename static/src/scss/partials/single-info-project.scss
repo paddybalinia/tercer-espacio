@@ -30,6 +30,13 @@
         margin: 36px auto 56px;
         display: block;
     }
+
+    &__col {
+        flex: 0 0 50%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 768px) {
@@ -45,6 +52,7 @@
 
         &__col {
             flex: 0 0 50%;
+
         }
 
         &__subtitle {
