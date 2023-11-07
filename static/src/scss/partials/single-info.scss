@@ -8,6 +8,11 @@
     &__title {
         font: 300 24px/30px $font-primary;
         margin: 0 0 55px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
     }
 
     &__text {
