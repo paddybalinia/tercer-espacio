@@ -16,8 +16,19 @@
     &.nomargin {
         margin-bottom: 0;
     }
+
+    & .section__center-img__image--full {
+        object-fit: cover;
+        width: 100%;
+
+    }
 }
 
+@media (max-width: 768px) {
+    .section__center-img__image--full {
+        height: 300px;
+    }
+}
 
 @media (min-width: 768px) {
 
@@ -41,6 +52,7 @@
         & .section__center-img__image--full {
             object-fit: cover;
             width: 100%;
+
         }
     }
 }
