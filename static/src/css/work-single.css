@@ -754,6 +754,17 @@ body {
 .single__info__title {
   font: 300 24px/30px "Sharp Grotesk", sans-serif;
   margin: 0 0 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
 }
 .single__info__text {
   font: 300 32px/32px "Sharp Grotesk", sans-serif;
@@ -1453,4 +1464,9 @@ body {
     /* height = 100 * (9 / 16) = 56.25 */
     height: 56.25vw;
   }
+}
+.mod__arrow {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
