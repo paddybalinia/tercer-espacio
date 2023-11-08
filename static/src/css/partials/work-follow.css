@@ -24,3 +24,8 @@
     color: #a891ff;
   }
 }
+@media (min-width: 760px) and (max-width: 1200px) {
+  .mod-follow {
+    font: 300 60px/60px "Sharp Grotesk", sans-serif;
+  }
+}

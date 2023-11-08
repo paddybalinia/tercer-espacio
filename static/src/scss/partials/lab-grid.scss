@@ -118,8 +118,26 @@
         }
 
         &__img {
-
             height: 100%;
+        }
+    }
+}
+
+@media (min-width: 995px) and (max-width: 1100px) {
+    .lab-grid {
+
+        &--vertical {
+            flex: 0 0 350px;
+        }
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+    .lab-grid {
+
+        &--vertical {
+            flex: 0 0 310px;
         }
     }
 }

@@ -66,3 +66,25 @@
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .section__img-txt {
+        padding: 15px 0 22px;
+    }
+
+    .section__img-txt__container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .section__img-txt__figure {
+        margin: 0 auto;
+    }
+
+    .section__img-txt__text {
+        max-width: inherit;
+    }
+
+
+}

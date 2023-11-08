@@ -43,3 +43,11 @@
     text-align: right;
   }
 }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .title-big {
+    padding: 0;
+  }
+  .title-big__title {
+    font: 300 98px/98px "Sharp Grotesk", sans-serif;
+  }
+}

@@ -221,3 +221,113 @@
         }
     }
 }
+
+@media (min-width: 960px) and (max-width: 1200px) {
+    .lightbox {
+        &__wrap {
+            max-width: 960px;
+        }
+
+        &__figure {
+            flex: 0 0 475px;
+        }
+
+        &__data {
+            padding: 50px 35px 0;
+            gap: 10px;
+        }
+
+        &__nav {
+            top: 12px;
+        }
+
+        &__title {
+            font: 300 40px/47px $font-primary;
+        }
+
+        &__subtitle {
+            font: 300 27px/31px $font-primary;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .lightbox {
+
+        align-items: baseline;
+
+        &__wrap {
+            max-width: 380px;
+            flex-direction: column;
+        }
+
+        &__figure {
+            flex: 0 0 315px;
+        }
+
+        &__nav {
+            position: absolute;
+            right: 38px;
+            top: 48px;
+            right: 8px;
+            top: 8px;
+            height: 50px;
+            width: 50px;
+
+            &__svg {
+                width: 20px;
+            }
+        }
+
+        &__data {
+            position: relative;
+            padding: 50px 25px 124px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        &__title {
+            font: 300 32px/32px $font-primary;
+            margin: 0 0 2px;
+        }
+
+        &__subtitle {
+            font: 300 24px/28px $font-primary;
+        }
+
+        &__snood {
+            font: 300 20px/24px $font-primary;
+        }
+
+        &__text {
+            font: 200 14px/20px $font-primary;
+        }
+
+        &__img {
+            object-fit: cover;
+            height: 100%;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            border-bottom-left-radius: 0;
+        }
+
+        &__overlay {
+            height: 786px;
+            position: fixed;
+            height: 996px;
+            align-items: center;
+            justify-content: start;
+        }
+
+        &__overflow {
+            height: 856px;
+
+            align-items: baseline;
+
+            justify-content: start;
+            margin-top: 20px;
+        }
+
+    }
+}

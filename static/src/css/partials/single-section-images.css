@@ -67,3 +67,15 @@
     width: 400px;
   }
 }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .section__images__col {
+    gap: 45px;
+  }
+  .section__images__container {
+    gap: 45px;
+  }
+  .section__images__figure {
+    width: 330px;
+    padding-top: 520px;
+  }
+}

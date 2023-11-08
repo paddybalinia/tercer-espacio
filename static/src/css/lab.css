@@ -381,6 +381,11 @@ input {
     margin-bottom: 0;
   }
 }
+@media (min-width: 760px) and (max-width: 1200px) {
+  .footer__bottom {
+    font: 300 91px/91px "Sharp Grotesk", sans-serif;
+  }
+}
 .header {
   font-size: 22px;
   color: black;
@@ -965,6 +970,20 @@ input {
     height: 100%;
   }
 }
+@media (min-width: 995px) and (max-width: 1100px) {
+  .lab-grid--vertical {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 350px;
+            flex: 0 0 350px;
+  }
+}
+@media (min-width: 768px) and (max-width: 995px) {
+  .lab-grid--vertical {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 310px;
+            flex: 0 0 310px;
+  }
+}
 .mod-follow {
   font: 300 32px/36px "Sharp Grotesk", sans-serif;
   margin: 58px 0 71px;
@@ -989,6 +1008,11 @@ input {
   }
   .mod-follow__a:hover {
     color: #a891ff;
+  }
+}
+@media (min-width: 760px) and (max-width: 1200px) {
+  .mod-follow {
+    font: 300 60px/60px "Sharp Grotesk", sans-serif;
   }
 }
 .lightbox-active {
@@ -1209,5 +1233,113 @@ input {
   .lightbox__next {
     right: 37px;
     bottom: 15px;
+  }
+}
+@media (min-width: 960px) and (max-width: 1200px) {
+  .lightbox__wrap {
+    max-width: 960px;
+  }
+  .lightbox__figure {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 475px;
+            flex: 0 0 475px;
+  }
+  .lightbox__data {
+    padding: 50px 35px 0;
+    gap: 10px;
+  }
+  .lightbox__nav {
+    top: 12px;
+  }
+  .lightbox__title {
+    font: 300 40px/47px "Sharp Grotesk", sans-serif;
+  }
+  .lightbox__subtitle {
+    font: 300 27px/31px "Sharp Grotesk", sans-serif;
+  }
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  .lightbox {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .lightbox__wrap {
+    max-width: 380px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .lightbox__figure {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 315px;
+            flex: 0 0 315px;
+  }
+  .lightbox__nav {
+    position: absolute;
+    right: 38px;
+    top: 48px;
+    right: 8px;
+    top: 8px;
+    height: 50px;
+    width: 50px;
+  }
+  .lightbox__nav__svg {
+    width: 20px;
+  }
+  .lightbox__data {
+    position: relative;
+    padding: 50px 25px 124px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 28px;
+  }
+  .lightbox__title {
+    font: 300 32px/32px "Sharp Grotesk", sans-serif;
+    margin: 0 0 2px;
+  }
+  .lightbox__subtitle {
+    font: 300 24px/28px "Sharp Grotesk", sans-serif;
+  }
+  .lightbox__snood {
+    font: 300 20px/24px "Sharp Grotesk", sans-serif;
+  }
+  .lightbox__text {
+    font: 200 14px/20px "Sharp Grotesk", sans-serif;
+  }
+  .lightbox__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+  }
+  .lightbox__overlay {
+    height: 786px;
+    position: fixed;
+    height: 996px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .lightbox__overflow {
+    height: 856px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 20px;
   }
 }

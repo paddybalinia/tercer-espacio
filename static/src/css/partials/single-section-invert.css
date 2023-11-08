@@ -73,3 +73,11 @@
             flex-direction: row-reverse;
   }
 }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .section__invert {
+    padding: 90px 0;
+  }
+  .section__invert__container {
+    gap: 65px;
+  }
+}

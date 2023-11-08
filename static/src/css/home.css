@@ -386,6 +386,11 @@ input {
     margin-bottom: 0;
   }
 }
+@media (min-width: 760px) and (max-width: 1200px) {
+  .footer__bottom {
+    font: 300 91px/91px "Sharp Grotesk", sans-serif;
+  }
+}
 .header {
   font-size: 22px;
   color: black;
