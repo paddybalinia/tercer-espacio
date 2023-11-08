@@ -178,9 +178,9 @@
     color: #606060;
     font: 200 12px/20px "Sharp Grotesk", sans-serif;
     width: auto;
-    -webkit-box-flex: inherit;
-        -ms-flex: inherit;
-            flex: inherit;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 160px;
+            flex: 0 0 160px;
   }
   .accordion__img {
     left: 420px;
