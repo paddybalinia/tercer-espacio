@@ -92,3 +92,11 @@
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .studio {
+        &__container {
+            padding: 104px 0;
+        }
+    }
+}

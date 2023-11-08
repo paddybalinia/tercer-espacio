@@ -122,3 +122,12 @@
         }
     }
 }
+
+@media (min-width: 760px) and (max-width: 1200px) {
+    .footer {
+
+        &__bottom {
+            font: 300 91px/91px $font-primary;
+        }
+    }
+}

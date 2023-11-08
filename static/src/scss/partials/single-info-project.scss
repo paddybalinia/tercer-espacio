@@ -67,3 +67,18 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .info__project {
+        padding: 50px 0 0;
+
+        &__top {
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        &__subtitle {
+            font: 300 40px/46px $font-primary;
+        }
+    }
+}

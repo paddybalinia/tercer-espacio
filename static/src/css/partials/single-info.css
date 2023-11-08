@@ -43,3 +43,10 @@
     margin: 0;
   }
 }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .single__info__text {
+    font: 300 40px/47px "Sharp Grotesk", sans-serif;
+    padding: 0 15px;
+    margin: 0 0 100px;
+  }
+}

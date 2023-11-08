@@ -46,7 +46,12 @@
             font: 300 36px/44px $font-primary;
             padding-right: 95px;
         }
+    }
+}
 
-
+@media (min-width: 768px) and (max-width: 1100px) {
+    .section__half__container {
+        flex-direction: column-reverse;
+        gap: 20px;
     }
 }
