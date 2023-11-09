@@ -98,14 +98,6 @@ const sectionLabJsFiles = [
   "static/src/js/partials/Lightbox.js",
 ];
 
-const sectionAboutJsFiles = [
-  "static/src/js/partials/Header.js",
-  "static/src/js/partials/LazyLoadImg.js",
-  "static/src/js/partials/ScrollIntoView.js",
-  "static/src/js/partials/ViewportObserver.js",
-  "static/src/js/partials/TeamAbout.js",
-];
-
 function combineScripts() {
   return gulp
     .src([...jsFiles]) // Combina jsFiles y contactJsFiles
@@ -133,12 +125,6 @@ function combineSectionLabScript() {
     .pipe(concat("Section-Lab.js"))
     .pipe(gulp.dest("static/src/js"));
 }
-function combineSectionAboutScript() {
-  return gulp
-    .src(sectionAboutJsFiles)
-    .pipe(concat("Section-About.js"))
-    .pipe(gulp.dest("static/src/js"));
-}
 
 function watchFiles() {
   gulp.watch(paths.images.src, optimizeImages);
@@ -158,7 +144,6 @@ const buildTasks = gulp.parallel(
   optimizeFonts,
   combineSectionScript,
   combineSectionLabScript,
-  combineSectionAboutScript,
   combineSectionProjectsScript
 );
 
