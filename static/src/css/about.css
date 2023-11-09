@@ -756,21 +756,21 @@ body a:hover {
       flex-wrap: wrap;
   cursor: pointer;
 }
-.accordion__item.active, .accordion__item:hover {
+.accordion__item:hover {
   background: black;
   color: white;
 }
-.accordion__item.active .accordion__title, .accordion__item:hover .accordion__title {
+.accordion__item:hover .accordion__title {
   color: #ACFF58;
 }
-.accordion__item.active .accordion__caption, .accordion__item:hover .accordion__caption {
+.accordion__item:hover .accordion__caption {
   color: white;
 }
-.accordion__item.active .accordion__arrow__svg, .accordion__item:hover .accordion__arrow__svg {
+.accordion__item:hover .accordion__arrow__svg {
   left: -15px;
   stroke: white;
 }
-.accordion__item.active .accordion__img {
+.accordion__item:hover .accordion__img {
   width: 230px;
   opacity: 1;
 }

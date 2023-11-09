@@ -34,7 +34,7 @@
         flex-wrap: wrap;
         cursor: pointer;
 
-        &.active,
+
         &:hover {
             background: black;
             color: white;
@@ -51,15 +51,14 @@
                 left: -15px;
                 stroke: white;
             }
-        }
-
-        &.active {
 
             & .accordion__img {
                 width: 230px;
                 opacity: 1;
             }
         }
+
+
     }
 
     &__arrow {
