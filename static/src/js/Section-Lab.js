@@ -253,7 +253,9 @@
   function GetData(e) {
     index = e.dataset.index;
     var labData = e.querySelector(".lab__data");
-    var labImg = labData.querySelector(".lab__img").dataset.imgsrc;
+    var labImg =
+      labData.parentNode.querySelector(".lab__img").dataset.lazyload ||
+      labData.parentNode.querySelector(".lab__img").src;
     var labTitle = labData.querySelector(".lab__title").textContent;
     var labSubtitle = labData.querySelector(".lab__subtitle").textContent;
     var labYear = labData.querySelector(".lab__year").textContent;

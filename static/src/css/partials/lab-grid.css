@@ -65,6 +65,14 @@
   display: none;
 }
 
+.lab__img {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 @media (min-width: 768px) {
   .lab-grid__container {
     padding: 0;
