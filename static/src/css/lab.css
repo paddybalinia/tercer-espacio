@@ -897,6 +897,7 @@ input {
   width: 100%;
 }
 
+.lab__img,
 .lab__data {
   display: none;
 }
