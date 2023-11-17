@@ -1,0 +1,1 @@
+!function(){"use strict";function e(e,r){const t=document.querySelectorAll(e);if(!t.length)return;const n=new IntersectionObserver((e,t)=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add(r),t.unobserve(e.target))})});t.forEach(e=>{n.observe(e)})}window.ViewportObserver=void new e(".viewport-observer","visible")}();

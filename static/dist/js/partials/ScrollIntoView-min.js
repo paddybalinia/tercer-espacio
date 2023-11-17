@@ -1,0 +1,1 @@
+!function(){"use strict";function t(t){t.preventDefault();const e=this.dataset.anchor,n=document.querySelector("[data-section="+e+"]");n&&n.scrollIntoView()}window.ScrollIntoView=function(){const e=document.querySelectorAll("[data-anchor]");for(let n=0;n<e.length;n++)e[n].addEventListener("click",t,!1)}()}();
