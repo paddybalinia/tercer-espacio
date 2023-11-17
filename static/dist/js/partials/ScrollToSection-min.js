@@ -1,0 +1,1 @@
+!function(){"use strict";document.querySelectorAll("nav a");window.addEventListener("scroll",function(){document.querySelectorAll("nav a").forEach(e=>{const t=document.querySelector(e.getAttribute("href")).getBoundingClientRect();t.top<=window.innerHeight/2&&t.bottom>=window.innerHeight/2?e.classList.add("active"):e.classList.remove("active")})}),window.ScrollToSection=void 0}();

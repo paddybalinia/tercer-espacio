@@ -1,0 +1,1 @@
+!function(){"use strict";function t(){const t=this.classList.contains("active");document.querySelectorAll(".accordion__item.active").forEach(function(t){t.classList.remove("active")}),t||this.classList.add("active")}window.About=function(){const c=document.querySelectorAll(".accordion__item");for(let e=0;e<c.length;e++)c[e].addEventListener("click",t,!1)}()}();
